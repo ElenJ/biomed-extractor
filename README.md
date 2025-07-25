@@ -17,3 +17,112 @@ Automatically extract PICO elements & structured summaries from ClinicalTrials.g
 docker build -t biomed-extractor .
 docker run -p 8501:8501 biomed-extractor
 ```
+
+## Project structure
+
+```
+biomed-extractor/
+├── .github/
+│   └── workflows/           # CI/CD setup (e.g. GitHub Actions for testing)
+├── app/                     # All application (tool) code
+│   ├── __init__.py
+│   ├── main.py              # Entrypoint for Streamlit/FastAPI/etc.
+│   ├── nlp/                 # NLP/model logic: data processing, inference
+│   │   ├── __init__.py
+│   │   ├── pipelines.py
+│   │   └── utils.py
+│   ├── data/                # Data loading and ClinicalTrials.gov API code
+│   │   ├── __init__.py
+│   │   └── loader.py
+│   └── config.py            # Central (editable) config
+├── tests/                   # Unit/integration tests
+│   ├── __init__.py
+│   ├── test_pipelines.py
+│   └── test_loader.py
+├── data/                    # (optional) Sample input data, not raw/full datasets
+│   └── example_trials.xml
+├── Dockerfile               # Docker container build instructions
+├── requirements.txt         # Python dependencies
+├── README.md                # Main documentation with setup, usage, and background
+├── LICENSE
+├── .gitignore
+└── setup.py                 # (Optional) For pip-installable packaging
+```
+## Project Plan
+
+This plan assumes you’ll spend about 10–15 hours a week on the project and can be adjusted based on your pace and resources. The goal is to have a working prototype by the end of 8–10 weeks, with clear milestones and check-ins to keep you on track.
+
+
+## **LLM-Powered Clinical Study Information Extraction Tool**
+**Goal:** Develop a prototype tool that allows users to upload clinical trial abstracts or biomedical documents and automatically extracts key information (e.g., PICO elements) and generates structured summaries. The tool will have a user-friendly interface (Streamlit/Gradio or RShiny).
+
+
+
+### **Phase 1: Scoping and Foundation (1 week)**
+- **Define goals, audiences, and main use cases**
+- **Decide on tech stack** (Python with Streamlit/Gradio OR R with Shiny)
+- **Select initial dataset(s)** (e.g., PubMed abstracts, public COVID19 trial data, ClinicalTrials.gov exports)
+#### **Check-in 1:** Clearly written project scope, target users, and outline of technical approach.
+
+
+### **Phase 2: Data Collection & Preparation (1 week)**
+- **Acquire sample documents** (10–100 abstracts/trials for rapid iteration; can scale up later)
+- **Create or locate gold-standard annotations** (small set where PICO elements are labeled; can start by annotating a small batch yourself)
+- **Basic text preprocessing** (cleaning, segmenting, field extraction)
+#### **Check-in 2:** Dataset prepared, previewed in Jupyter/R Notebook; sample annotation table.
+
+
+### **Phase 3: Model Selection & Prototyping (2–3 weeks)**
+- **Experiment with ready-made transformer models**  
+  (Start with huggingface pipelines for NER/extraction using BioBERT/ClinicalBERT, or generic BERT if needed)
+- **Prototype information extraction**  
+  (initial extractors for Population/Intervention/Comparator/Outcome via prompt or finetuned NER/classifier)
+- **Prototype text summarization** (using models like T5, BioGPT, or BART)
+#### **Check-in 3:** Jupyter notebook (or R notebook) with initial extraction and summarization results on your dataset.
+
+
+### **Phase 4: Model Refinement & Evaluation (2 weeks)**
+- **Improve extraction by fine-tuning (if resources permit), prompt engineering, or post-processing rules**
+- **Build evaluation scripts** (compare extraction/summaries to ground truth; report precision/recall or qualitative evaluation)
+- **Draft user-facing explanations about model confidence and limitations**
+#### **Check-in 4:** Evaluation notebook/code; basic writeup (README or md doc) of performance and sample outputs with discussion.
+
+
+
+### **Phase 5: App & Interface Development (2 weeks)**
+- **Design UI/UX mockup:** Flow from document upload to extraction & summary presentation.
+- **Build MVP UI** (Streamlit/Gradio/RShiny prototype where user uploads docs and sees results)
+- **Integrate model into interface** so it processes real-time uploads
+- **Handle errors, edge cases, and input variations**
+#### **Check-in 5:** Working prototype app; can be demonstrated live to a user.
+
+
+
+### **Phase 6: Packaging, Documentation & Sharing (1 week)**
+- **Document installation and usage instructions (README.md)**
+- **Include test/sample documents**
+- **Add screenshots/gifs and a short video demo if possible**
+- **Write a blog post or LinkedIn article explaining the tool, its use case, and technical highlights**
+#### **Final Check-in:** Fully documented public GitHub repo + demo material ready for sharing with potential clients or as an educational case study.
+
+
+
+### **Optional Stretch Goals:**
+- Deploy with Docker for easy private/in-house setup.
+- Add interactive corrections: allow user to edit outputs and track feedback.
+- Incorporate QA functionality (“Ask a question about the documents”).
+- Track usage, feedback, or error logs.
+
+
+
+### **Self-Check Questions for Each Phase**
+- **Is the main use case still clear and valuable?**
+- **Can another user (e.g., a researcher) successfully run/install the prototype?**
+- **Does the interface clearly present results and limitations?**
+- **Are there at least 1–2 evaluated metrics, and are sample outputs interpretable?**
+
+
+
+**Remember:**  
+Update your README every 1–2 weeks with progress and learning reflections—this not only helps keep you on track, it also generates content for your eventual project blog post or book chapter.
+
