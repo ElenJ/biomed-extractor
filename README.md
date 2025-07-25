@@ -41,6 +41,37 @@ biomed-extractor/
 │   └── test_loader.py
 ├── data/                    # (optional) Sample input data, not raw/full datasets
 │   └── example_trials.xml
+├── docs/
+│   ├── goals_and_use_cases.docx # Document outlining project goals, use cases, and target audience
+│   ├── goals_and_use_cases.pdf # PDF version of the goals and use cases document
+│   ├── requirements.md        # Detailed requirements and specifications
+│   ├── architecture.md       # High-level architecture overview
+│   ├── design.md             # Design decisions and rationale  
+│   ├── user_interface.md      # User interface design and user experience considerations
+│   ├── data_sources.md       # Information on data sources and APIs used
+│   ├── model_selection.md    # Model selection process and rationale
+│   ├── evaluation.md         # Evaluation metrics and methods
+│   ├── deployment.md         # Deployment instructions and considerations
+│   ├── testing.md            # Testing strategy and test cases
+│   ├── user_manual.md        # User manual for the tool
+│   ├── troubleshooting.md    # Common issues and troubleshooting steps
+│   ├── changelog.md          # Change log for version history
+│   ├── architecture_diagram.png # Visual representation of the system architecture
+│   ├── design_diagram.png    # Visual representation of the design
+│   ├── user_interface_mockup.png # Mockup of the user interface
+│   ├── data_flow_diagram.png # Data flow diagram showing how data moves through
+│   ├── model_architecture.png # Diagram of the model architecture
+│   ├── evaluation_metrics.png # Visual representation of evaluation metrics
+│   ├── deployment_diagram.png # Diagram showing deployment architecture
+│   ├── testing_strategy.png   # Visual representation of the testing strategy
+│   ├── user_manual_screenshots/ # Screenshots for the user manual
+│   │   ├── upload_screen.png  # Screenshot of the upload screen
+│   │   ├── results_screen.png # Screenshot of the results screen
+│   │   └── settings_screen.png # Screenshot of the settings screen
+│   ├── troubleshooting_examples/ # Examples of common issues and solutions
+│   │   ├── issue_1.md         # Example of a common issue and its solution
+│   │   ├── issue_2.md         # Another common issue and its solution
+│   │   └── issue_3.md         # Yet another common issue and its solution
 ├── Dockerfile               # Docker container build instructions
 ├── requirements.txt         # Python dependencies
 ├── README.md                # Main documentation with setup, usage, and background
