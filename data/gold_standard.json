@@ -1,0 +1,80 @@
+[
+  {
+    "doc_id": "NCT06424236",
+    "population": ["participants with an Alzheimer's disease-causing mutation"],
+    "intervention": ["gantenerumab"],
+    "comparator": ["placebo", "solanezumab", "gantenerumab"],
+    "outcome": ["Change From Baseline in Composite [11C] Pittsburgh Compound B (PiB)-Positron Emission Tomography (PET) Composite Standardized Uptake Value Ratio (C-SUVR) at Weeks 52, 104 and 156"]
+  },
+  {
+    "doc_id": "NCT03131453",
+    "population": ["cognitively unimpaired participants aged 60 to 75 years, with at least one apolipoprotein E allele (APOE4), (homozygotes (HMs) or heterozygotes (HTs)) and, if HTs, with evidence of elevated brain amyloid"],
+    "intervention": ["CNP520 50 mg", "CNP520 15 mg"],
+    "comparator": ["placebo"],
+    "outcome": ["Time to Event (Diagnosis of Mild Cognitive Impairment or Dementia, Due to Alzheimer's Disease (AD))"]
+  },
+  {
+    "doc_id": "NCT05256134",
+    "population": ["amyloid-positive, cognitively unimpaired participants at risk for or at the earliest stages of AD"],
+    "intervention": ["gantenerumab"],
+    "comparator": ["placebo"],
+    "outcome": ["Change From Baseline in PACC-5 Score"]
+  },
+  {
+    "doc_id": "NCT02565511",
+    "population": ["cognitively unimpaired APOE4 homozygotes (HMs) aged 60 to 75 years"],
+    "intervention": ["CAD106 Immunotherapy","CNP520","Alum"],
+    "comparator": ["placebo"],
+    "outcome": ["Time to Event (Diagnosis of Mild Cognitive Impairment or Dementia, Due to Alzheimer's Disease (AD))"]
+  },
+  {
+    "doc_id": "NCT04408755",
+    "population": ["participants with a diagnosis of probable Alzheimer's disease (AD) and had clinically significant, moderate/severe agitation secondary to AD"],
+    "intervention": ["AVP-786"],
+    "comparator": ["placebo"],
+    "outcome": ["Change From the End of Period A (Week 1) to Week 10 in the Cohen-Mansfield Agitation Inventory (CMAI) Composite Score"]
+  },
+  {
+    "doc_id": "NCT04464564",
+    "population": ["participants for this study had a diagnosis of probable Alzheimer's disease (AD) and had clinically significant, moderate/severe agitation secondary to AD"],
+    "intervention": ["AVP-786"],
+    "comparator": ["placebo"],
+    "outcome": ["Change From the End of Period A (Week 1) to Week 10 in the Clinical Global Impression of Severity of Illness (CGIS) Score, as Related to Agitation"]
+  },
+  {
+    "doc_id": "NCT03814382",
+    "population": ["adults with a diagnosis of cognitively unimpaired, or probable Alzheimer's Disease, Frontotemporal Dementia or Dementia with Lewy Bodies"],
+    "intervention": ["Acupuncture"],
+    "comparator": [],
+    "outcome": ["Heart Rate Variability as Measured by BioStamp","Galvanic Skin Response"]
+  },
+  {
+    "doc_id": "NCT02769000",
+    "population": ["patients with early Alzheimer's dementia"],
+    "intervention": ["Radiation: 10 GY", "Radiation: 20 GY"],
+    "comparator": [],
+    "outcome": ["CTCAE toxicity grading"]
+  },
+  {
+    "doc_id": "NCT06677203",
+    "population": ["adult participants with early Alzheimer's disease"],
+    "intervention": ["ASN51"],
+    "comparator": ["placebo"],
+    "outcome": ["Number of Participants With Adverse Events (AEs)", "Change From Baseline in Columbia-Suicide Severity Rating Scale (C-SSRS)"]
+  },
+  {
+    "doc_id": "NCT02791191",
+    "population": ["participants with mild Alzheimer's disease (AD) dementia"],
+    "intervention": ["LY3202626"],
+    "comparator": ["placebo"],
+    "outcome": ["Change From Baseline in F-AV-1451 Positron Emission Tomography (PET) Standard Uptake Value Ratio (SUVr) at 52 Weeks"]
+  },
+  {
+    "doc_id": "NCT02972658",
+    "population": ["participants with early Alzheimer's disease dementia"],
+    "intervention": ["Lanabecestat"],
+    "comparator": [],
+    "outcome": ["Change From Baseline Analysis on the 13-item Alzheimer's Disease Assessment Scale - Cognitive Subscale (ADAS-Cog13)"]
+  }
+]
+

@@ -1,0 +1,3 @@
+Source: ClinicalTrials.gov
+Search: Alzheimer Disease, Alzheimer's Disease
+Filter: Terminated, Interventional, Terminated (111 studies)

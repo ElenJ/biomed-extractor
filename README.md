@@ -39,8 +39,9 @@ biomed-extractor/
 │   ├── __init__.py
 │   ├── test_pipelines.py
 │   └── test_loader.py
-├── data/                    # (optional) Sample input data, not raw/full datasets
-│   └── example_trials.xml
+├── data/                    # Sample input data
+│   ├── example_trials.csv # Example ClinicalTrials.gov CSV data
+│   └── example_trials.json # Example ClinicalTrials.gov data
 ├── docs/
 │   ├── goals_and_use_cases.docx # Document outlining project goals, use cases, and target audience
 │   ├── goals_and_use_cases.pdf # PDF version of the goals and use cases document
@@ -94,6 +95,8 @@ This plan assumes you’ll spend about 10–15 hours a week on the project and c
 - **Decide on tech stack** (Python with Streamlit/Gradio OR R with Shiny)
 - **Select initial dataset(s)** (e.g., PubMed abstracts, public COVID19 trial data, ClinicalTrials.gov exports)
 #### **Check-in 1:** Clearly written project scope, target users, and outline of technical approach.
+- **Task achieved**: goals and use cases document as well as initial architecture and design documents written, initial dataset identified (ClinicalTrials.gov), tech stack chosen (Python/Streamlit).
+TODO: check documents once tool programming is done (some were created, but the text is rather dummy-like; change xml to json everywhere)
 
 
 ### **Phase 2: Data Collection & Preparation (1 week)**

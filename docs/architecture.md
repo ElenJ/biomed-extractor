@@ -11,6 +11,7 @@ This document provides a high-level overview of the architecture for the Biomedi
 ## **1. High-Level Architecture Diagram**
 
 ![Architecture Diagram](architecture_diagram.png)
+
 This diagram illustrates the main components of the system, including the user interface, NLP processing pipeline, data handling, and deployment layer. Each component is designed to work together seamlessly to provide a robust information extraction tool for biomedical documents.
 
 ## **2. Component Overview**
