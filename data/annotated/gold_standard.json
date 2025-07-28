@@ -75,6 +75,69 @@
     "intervention": ["Lanabecestat"],
     "comparator": [],
     "outcome": ["Change From Baseline Analysis on the 13-item Alzheimer's Disease Assessment Scale - Cognitive Subscale (ADAS-Cog13)"]
+  },
+  {
+    "doc_id": "NCT00676143",
+    "population": ["patients with mild to moderate Alzheimer Disease"],
+    "intervention": ["bapineuzumab"],
+    "comparator": ["placebo"],
+    "outcome": ["Change From Baseline in Alzheimer's Disease Assessment Scale-Cognitive (ADAS-Cog)/11 Subscale Total Score at Week 78"]
+  },
+  {
+    "doc_id": "NCT00667810",
+    "population": ["patients with mild to moderate Alzheimer Disease"],
+    "intervention": ["bapineuzumab"],
+    "comparator": ["placebo"],
+    "outcome": ["The Change From Baseline in the Alzheimer's Disease Assessment Scale-Cognitive Subscale (ADAS-Cog)/11 Total Score at Week 78"]
+  },
+  {
+    "doc_id": "NCT01561430",
+    "population": ["participants with mild cognitive impairment (MCI) due to Alzheimer's Disease (AD) or mild AD and who test positive for amyloid plaque"],
+    "intervention": ["LY2886721"],
+    "comparator": ["Placebo"],
+    "outcome": ["Change From Baseline to 12 Weeks in Cerebrospinal Fluid (CSF) Amyloid Beta (Aβ)1-40 and Aβ1-42 Concentrations","Change From Baseline to 26 Weeks in CSF Aβ1-40 and Aβ1-42 Concentrations"]
+  },
+  {
+    "doc_id": "NCT02783573",
+    "population": ["participants with mild Alzheimer's disease (AD) dementia"],
+    "intervention": ["Lanabecestat"],
+    "comparator": ["Placebo"],
+    "outcome": ["Change From Baseline in Alzheimer´s Disease Assessment Scale- Cognitive Subscale (ADAS-Cog13) Score"]
+  },
+  {
+    "doc_id": "NCT02884492",
+    "population": ["elderly subjects with different clinical and biomarker profiles of Alzheimer's disease (AD)"],
+    "intervention": ["18F-THK-5351"],
+    "comparator": [],
+    "outcome": ["18F-THK-5351 Standardized Uptake Value Ratio"]
+  },
+  {
+    "doc_id": "NCT05602727",
+    "population": ["participants with mild to moderate Alzheimer's Disease (AD) dementia"],
+    "intervention": ["MK-1942"],
+    "comparator": ["Placebo"],
+    "outcome": ["Change From Baseline in the Alzheimer's Disease Assessment Scale-11-item Cognitive Subscale (ADAS-Cog11) Score at Week 12", "Number of Participants Experiencing an Adverse Event (AE)", "Number of Participants Discontinuing Study Medication Due to an Adverse Event"]
+  },
+  {
+    "doc_id": "NCT03289143",
+    "population": ["participants with prodromal to mild Alzheimer's disease"],
+    "intervention": ["Semorinemab", "[18F]GTP1"],
+    "comparator": ["Placebo"],
+    "outcome": ["Change From Baseline on the CDR-SB", "Percentage of Participants With Adverse Events", "Change From Baseline on the C-SSRS", "Other Abnormal MRI Findings"]
+  },
+  {
+    "doc_id": "NCT03491150",
+    "population": ["participants who complete Study BN29552 or BN29553"],
+    "intervention": ["Crenezumab"],
+    "comparator": [],
+    "outcome": ["Percentage of Participants With Adverse Events (AEs) and Serious Adverse Events (SAEs)", "Percentage of Participants With Anti-Crenezumab Antibodies"]
+  },
+  {
+    "doc_id": "NCT01900665",
+    "population": ["participants with mild AD"],
+    "intervention": ["Solanezumab"],
+    "comparator": ["Placebo"],
+    "outcome": ["Change From Baseline in Alzheimer's Disease Assessment Scale-Cognitive 14 Item Subscore (ADAS-Cog14)"]
   }
 ]
 
