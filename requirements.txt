@@ -5,3 +5,5 @@ requests
 transformers
 scikit-learn
 pytest
+re
+unicodedata
