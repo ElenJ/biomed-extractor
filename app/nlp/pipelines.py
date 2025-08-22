@@ -10,9 +10,15 @@ if PROJECT_ROOT not in sys.path:
     sys.path.insert(0, PROJECT_ROOT)
 # load functions for import of clinicaltrials.gov data written previously
 from app.data.loader import load_trials_json, extract_from_clinicaltrials
-from utils import * # custom functions required for NER and summarization
+#from utils import * # custom functions required for NER and summarization
 from transformers import pipeline
 import pandas as pd
+from app.nlp.utils import (
+    compose_trial_text, chunk_text_by_chars, run_ner_on_long_text, clean_population_entities,
+    merge_entities, extract_pico_from_merged_entities, normalize_intervention, is_substring_duplicate,
+    deduplicate_intervention_entities, summarize_textRank, extract_comparator, remove_comparator_terms,
+    clean_outcomes, process_trials_for_PICO
+) # this cumbersome import is needed to run the tests, as the functions are used there
 
 # Example for NER
 def load_ner_pipeline(model_name="kamalkraj/BioELECTRA-PICO"):

@@ -29,10 +29,14 @@ biomed-extractor/
 │   ├── main.py              # Entrypoint for Streamlit/FastAPI/etc.
 │   ├── nlp/                 # NLP/model logic: data processing, inference
 │   │   ├── __init__.py
-│   │   ├── pipelines.py
-│   │   └── utils.py
+│   │   ├── pipelines.py    # Huggingface pipelines for NER/summarization
+│   │   ├── utils.py         # Utility functions for data processing and model inference
+│   │   ├── evaluate_model.py # Evaluation logic for model outputs
+│   │   ├── demo_inference.ipynb    # Jupyter notebook showing model inference and evaluation
+│   │   └── development_inference.ipynb # Jupyter notebook used to develop PICO extraction
 │   ├── data/                # Data loading and ClinicalTrials.gov API code
 │   │   ├── __init__.py
+│   │   ├── data_cleaning.ipynb # Jupyter notebook demonstrating data cleaning
 │   │   └── loader.py
 │   └── config.py            # Central (editable) config
 ├── tests/                   # Unit/integration tests
