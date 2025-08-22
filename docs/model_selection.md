@@ -30,9 +30,8 @@ To choose the appropriate models, the following criteria were considered:
 
 
 
-## 3. Models Considered
+## 3. MoBiomedical/Clinical Pre-trained Modelsdels Considered
 
-### 3.1 Biomedical/Clinical Pre-trained Models
 
 | Focus on      | Model                       | Availability In Huggingface                                                                             | Model Size | Parameters      | Training -   ResourceRequirementsRAMVRAMDockerCompatibility                                                                                                                                              | Inference -   ResourceRequirementsRAMVRAMDockerCompatibility                                           | SupportForLocalOfflineBatchInference | LicensingConsiderations                              | Reference                                                                | Notes                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | Decision Support*                                                                       |
 |---------------|-----------------------------|---------------------------------------------------------------------------------------------------------|------------|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|--------------------------------------|------------------------------------------------------|--------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
@@ -64,15 +63,6 @@ To choose the appropriate models, the following criteria were considered:
 These models are pre-trained or further pre-trained on large biomedical literature, clinical notes, or PubMed abstracts, which makes them ideal for accurate NER and relation extraction in clinical trial documentation.
 
 *Notes and Decision Support: based on the [BLURB benchmark](https://microsoft.github.io/BLURB/leaderboard.html) for biomedical NLP tasks.
-
-
-### 3.3 Summarization Models
-
-- **SciBERT + Simple Head** (for extractive summaries)
-- **T5-base (pre-trained or biomedical variants)**
-- **BioGPT** (for open-ended summarization)
-
-Biomedical versions of T5 and GPT models, trained on PubMed data or similar, are better at abstracting long-form text into concise, clinically meaningful summaries.
 
 
 
@@ -110,17 +100,22 @@ Overall comparison of current biomedical models is benchmarked [here](https://mi
 - Rationale:  
   - BioGPT outperformed  previous best performance for QA obtained by BioLinkBERT, achieving a new state-of-the-art on this task [publication, table 5](https://arxiv.org/pdf/2210.10341)
   - BioGPT showed higher accuracy in text generation related to biomedical literature, making it suitable for generating structured summaries from clinical trial abstracts.
+  - downside: BioGPT is a decoder model only, so it is nout suitable for summarization, requiring encoder-decoder architecture.
 
   **Fallback/Secondary Models:**  
-- **BioLinkBERT-Base**
+- **BioLinkBERT-Base** or **BioBERT**
   - High performer for general biomedical QA and other tasks (RE, NER).
   - Moderate requirements, broad entity extraction capability, suitable for multiple use cases, simplifying pipeline by using the same model for both extraction and summarization.
+  - BioBERT is a well-known model for biomedical text, but BioLinkBERT is more recent and has shown better performance in benchmarks.
 
 **Lightweight/Constrained Hardware Option:**
 
 - BioMobileBERT or CompactBioBERT
   - Quantized/distilled versions for inference on lower-memory hardware
   - minor relative performance drop.
+
+**Note:**
+Despite the research upfront of the project, the selected models were not usable for summarization, so the summarization model was changed to a different one, which is not listed in the table above. Alternatives could have been the abstractive summary model L-macc/autotrain-Biomedical_sc_summ-1217846148, which is an encoder-decoder model suitable for summarization tasks, or the extractive summarization model NotXia/pubmedbert-bio-ext-summ, which is also an encoder-decoder model. Both models are available on Huggingface and can be used for summarization tasks. Due to size constraints of L-macc/autotrain-Biomedical_sc_summ-1217846148 as well as its time usage, extractive summarization was preferred for this task. However, rather than referring to the extractive summarization LLM, the conventional TextRank algorithm was used for summarization, which is a well-known algorithm for extractive summarization tasks. The TextRank algorithm is implemented in the `sumy` library, which is a Python library for text summarization. The TextRank algorithm is based on the PageRank algorithm and is suitable for extractive summarization tasks. It works by ranking sentences in a document based on their importance and relevance to the overall content of the document. The TextRank algorithm is a good choice for summarization tasks where the goal is to extract the most important sentences from a document without generating new text.  
 
 ## 5. Model Evaluation and Decision Process
 
