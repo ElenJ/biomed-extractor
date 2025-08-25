@@ -2,13 +2,13 @@ import os
 import pandas as pd
 import re
 import sys
+from rouge_score import rouge_scorer
 # Insert the project root (biomed_extractor) into sys.path
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 if PROJECT_ROOT not in sys.path:
     sys.path.insert(0, PROJECT_ROOT)
 # load functions for import of clinicaltrials.gov data written previously
 from app.data.loader import load_trials_json, extract_from_clinicaltrials
-#from utils import * # custom functions required for NER and summarization
 from app.nlp.pipelines import load_ner_pipeline
 from app.nlp.utils import (
     compose_trial_text, chunk_text_by_chars, run_ner_on_long_text, clean_population_entities,
@@ -87,23 +87,76 @@ def substring_partial_overlap(set_gold, set_pred):
     return precision, recall, f1
 
 
-def add_partial_overlap_cols(df_gold, ner_res_model, pico_cols):
+def evaluate_summary_rouge_score(df_gold, predicted_df, gold_col='short_description', pred_col='summary'):
+    """
+    Evaluate summaries using rouge_score and return mean precision, recall, F1 for ROUGE-1, ROUGE-2, ROUGE-L.
+    """
+    scorer = rouge_scorer.RougeScorer(['rouge1', 'rouge2', 'rougeL'], use_stemmer=True)
+    r1_p, r1_r, r1_f = [], [], []
+    r2_p, r2_r, r2_f = [], [], []
+    rl_p, rl_r, rl_f = [], [], []
+    
+    refs = df_gold[gold_col].fillna("").astype(str).tolist()
+    preds = predicted_df[pred_col].fillna("").astype(str).tolist()
+    
+    for ref, pred in zip(refs, preds):
+        scores = scorer.score(ref, pred)
+        r1_p.append(scores['rouge1'].precision); r1_r.append(scores['rouge1'].recall); r1_f.append(scores['rouge1'].fmeasure)
+        r2_p.append(scores['rouge2'].precision); r2_r.append(scores['rouge2'].recall); r2_f.append(scores['rouge2'].fmeasure)
+        rl_p.append(scores['rougeL'].precision); rl_r.append(scores['rougeL'].recall); rl_f.append(scores['rougeL'].fmeasure)
+
+    results = {
+        'SUMMARY_ROUGE-1': {'precision': sum(r1_p)/len(r1_p), 'recall': sum(r1_r)/len(r1_r), 'f1': sum(r1_f)/len(r1_f)},
+        'SUMMARY_ROUGE-2': {'precision': sum(r2_p)/len(r2_p), 'recall': sum(r2_r)/len(r2_r), 'f1': sum(r2_f)/len(r2_f)},
+        'SUMMARY_ROUGE-L': {'precision': sum(rl_p)/len(rl_p), 'recall': sum(rl_r)/len(rl_r), 'f1': sum(rl_f)/len(rl_f)},
+    }
+    return results
+
+def add_per_row_rouge(df_gold, predicted_df, gold_col='short_description', pred_col='summary'):
+    """
+    Appends per-row ROUGE-1/2/L precision, recall, F1 columns to df_gold DataFrame.
+    Returns the modified DataFrame and a ROUGE summary (averages).
+    """
+    scorer = rouge_scorer.RougeScorer(['rouge1', 'rouge2', 'rougeL'], use_stemmer=True)
+    # Prepare per-row values lists
+    for rouge_n in ['rouge1', 'rouge2', 'rougeL']:
+        df_gold[f"{pred_col}_{rouge_n}_precision"] = 0.0
+        df_gold[f"{pred_col}_{rouge_n}_recall"] = 0.0
+        df_gold[f"{pred_col}_{rouge_n}_f1"] = 0.0
+    # Iterate and calculate per-row
+    refs = df_gold[gold_col].fillna("").astype(str).tolist()
+    preds = predicted_df[pred_col].fillna("").astype(str).tolist()
+    for idx, (ref, pred) in enumerate(zip(refs, preds)):
+        scores = scorer.score(ref, pred)
+        for rouge_n in ['rouge1', 'rouge2', 'rougeL']:
+            df_gold.at[idx, f"{pred_col}_{rouge_n}_precision"] = scores[rouge_n].precision
+            df_gold.at[idx, f"{pred_col}_{rouge_n}_recall"] = scores[rouge_n].recall
+            df_gold.at[idx, f"{pred_col}_{rouge_n}_f1"] = scores[rouge_n].fmeasure
+    # Optionally, compute means for summary
+    rouge_summary = {
+        f"{rouge_n}": {
+            "precision": df_gold[f"{pred_col}_{rouge_n}_precision"].mean(),
+            "recall":    df_gold[f"{pred_col}_{rouge_n}_recall"].mean(),
+            "f1":        df_gold[f"{pred_col}_{rouge_n}_f1"].mean()
+        }
+        for rouge_n in ['rouge1', 'rouge2', 'rougeL']
+    }
+    return df_gold, rouge_summary
+
+def evaluate_ner_model_partial_overlap(df_gold, ner_res_model, pico_cols,
+                                       summary_gold_col='summary_reference',
+                                       summary_pred_col='summary',
+                                       add_rouge=True):
     """
     For each PICO column, compares gold and predicted values row-by-row
     using substring-overlap matching, and adds per-row precision, recall, and F1 columns
-    to df_gold for detailed error analysis. Also returns a summary DataFrame of averages.
-
-    Args:
-        df_gold (pd.DataFrame): The DataFrame with gold-standard PICO values.
-        ner_res_model (pd.DataFrame): The DataFrame with predicted PICO values (must have same columns, matching order).
-        pico_cols (list of str): List of column names (e.g. ["intervention_extracted", ...])
-    
+    to df_gold for detailed error analysis. Also adds per-row ROUGE scores for summaries.
     Returns:
         tuple:
-            - pd.DataFrame: df_gold with new columns for each evaluated PICO field:
-                "{col}_partial_precision", "{col}_partial_recall", "{col}_partial_f1"
-            - pd.DataFrame: summary table with mean precision, recall, and F1 for each field.
+            - pd.DataFrame: df_gold with new columns for each evaluated field
+            - pd.DataFrame: summary table with mean precision, recall, and F1 for each field
     """
+    # Partial overlap for PICO columns
     for col in pico_cols:
         partial_precisions, partial_recalls, partial_f1s = [], [], []
         if col not in ner_res_model.columns:
@@ -122,16 +175,47 @@ def add_partial_overlap_cols(df_gold, ner_res_model, pico_cols):
         df_gold[f"{col}_partial_recall"] = partial_recalls
         df_gold[f"{col}_partial_f1"] = partial_f1s
 
-    evaluation_table = pd.DataFrame(
-        {
-            "precision":   [df_gold[f"{col}_partial_precision"].mean() for col in pico_cols],
-            "recall":      [df_gold[f"{col}_partial_recall"].mean()    for col in pico_cols],
-            "f1":          [df_gold[f"{col}_partial_f1"].mean()        for col in pico_cols]
-        },
-        index=[col.replace("_extracted", "") for col in pico_cols]
-    )
-    
-    return df_gold, evaluation_table
+    # Per-row ROUGE metrics for summary
+    if add_rouge and summary_gold_col in df_gold.columns and summary_pred_col in ner_res_model.columns:
+        scorer = rouge_scorer.RougeScorer(['rouge1', 'rouge2', 'rougeL'], use_stemmer=True)
+        # Initialize columns
+        for rn in ['rouge1', 'rouge2', 'rougeL']:
+            df_gold[f"{summary_pred_col}_{rn}_precision"] = 0.0
+            df_gold[f"{summary_pred_col}_{rn}_recall"] = 0.0
+            df_gold[f"{summary_pred_col}_{rn}_f1"] = 0.0
+        # Compute per-row scores
+        refs = df_gold[summary_gold_col].fillna("").astype(str).tolist()
+        preds = ner_res_model[summary_pred_col].fillna("").astype(str).tolist()
+        for idx, (ref, pred) in enumerate(zip(refs, preds)):
+            scores = scorer.score(ref, pred)
+            for rn in ['rouge1', 'rouge2', 'rougeL']:
+                df_gold.at[idx, f"{summary_pred_col}_{rn}_precision"] = scores[rn].precision
+                df_gold.at[idx, f"{summary_pred_col}_{rn}_recall"] = scores[rn].recall
+                df_gold.at[idx, f"{summary_pred_col}_{rn}_f1"] = scores[rn].fmeasure
+
+    # Summary table
+    rows = []
+    # Add PICO metrics summary
+    for col in pico_cols:
+        rows.append({
+            "element": col.replace("_extracted", ""),
+            "precision": df_gold[f"{col}_partial_precision"].mean(),
+            "recall":    df_gold[f"{col}_partial_recall"].mean(),
+            "f1":        df_gold[f"{col}_partial_f1"].mean()
+        })
+    # Add ROUGE metrics summary if available
+    if add_rouge:
+        for rn, rn_name in zip(['rouge1', 'rouge2', 'rougeL'], ["SUMMARY_ROUGE-1", "SUMMARY_ROUGE-2", "SUMMARY_ROUGE-L"]):
+            rows.append({
+                "element": rn_name,
+                "precision": df_gold[f"{summary_pred_col}_{rn}_precision"].mean(),
+                "recall":    df_gold[f"{summary_pred_col}_{rn}_recall"].mean(),
+                "f1":        df_gold[f"{summary_pred_col}_{rn}_f1"].mean()
+            })
+    # Format summary table
+    summary_table = pd.DataFrame(rows).set_index("element")
+
+    return df_gold, summary_table
 
 if __name__ == "__main__":
     # Get the PROJECT ROOT (biomed-extractor/)
@@ -166,6 +250,13 @@ if __name__ == "__main__":
     
     # evaluate results
     pico_cols = ["population", "intervention", "comparator", "outcome"]
-    df_gold_with_partial, evaluation_table = add_partial_overlap_cols(df_gold.copy(), ner_res_model, pico_cols)
+    #df_gold_with_partial, evaluation_table = evaluate_ner_model_partial_overlap(df_gold.copy(), ner_res_model, pico_cols)
+    df_gold_with_partial, evaluation_table = evaluate_ner_model_partial_overlap(df_gold.copy(), 
+                                                                                ner_res_model, 
+                                                                                pico_cols, 
+                                                                                summary_gold_col='summary', 
+                                                                                summary_pred_col='summary', 
+                                                                                add_rouge=True)
     print(evaluation_table)
+    print(df_gold_with_partial.head())
     

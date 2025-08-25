@@ -1,6 +1,7 @@
 [
   {
     "doc_id": "NCT06424236",
+    "summary": ["The purpose of this study is to assess the safety, tolerability, biomarker, cognitive and clinical efficacy of investigational products in participants with an Alzheimer's disease-causing mutation by determining if treatment with the study drug slows the rate of progression of cognitive/clinical impairment or improves disease-related biomarkers."],
     "population": ["participants with an Alzheimer's disease-causing mutation"],
     "intervention": ["gantenerumab"],
     "comparator": ["placebo", "solanezumab", "gantenerumab"],
@@ -8,6 +9,7 @@
   },
   {
     "doc_id": "NCT03131453",
+    "summary": ["The purpose of this study is to determine the effects of CNP520 on cognition, global clinical status, and underlying AD pathology, as well as the safety of CNP520, in people at risk for the onset of clinical symptoms of AD based on their age, APOE genotype and elevated amyloid."],
     "population": ["cognitively unimpaired participants aged 60 to 75 years, with at least one apolipoprotein E allele (APOE4), (homozygotes (HMs) or heterozygotes (HTs)) and, if HTs, with evidence of elevated brain amyloid"],
     "intervention": ["CNP520 50 mg", "CNP520 15 mg"],
     "comparator": ["placebo"],
@@ -15,6 +17,7 @@
   },
   {
     "doc_id": "NCT05256134",
+    "summary": ["A study to evaluate the efficacy and safety of gantenerumab in amyloid-positive, cognitively unimpaired participants at risk for or at the earliest stages of AD. The planned number of participants for this study is approximately 1200 participants randomized in a 1:1 ratio to receive either gantenerumab or placebo (600 participants randomized to gantenerumab and 600 participants randomized to placebo)."],
     "population": ["amyloid-positive, cognitively unimpaired participants at risk for or at the earliest stages of AD"],
     "intervention": ["gantenerumab"],
     "comparator": ["placebo"],
@@ -22,6 +25,7 @@
   },
   {
     "doc_id": "NCT02565511",
+    "summary": ["The purpose of this study was to test whether two investigational drugs called CAD106 and CNP520, administered separately, could slow down the onset and progression of clinical symptoms associated with Alzheimer's disease (AD) in participants at the risk to develop clinical symptoms based on their age and genotype."],
     "population": ["cognitively unimpaired APOE4 homozygotes (HMs) aged 60 to 75 years"],
     "intervention": ["CAD106 Immunotherapy","CNP520","Alum"],
     "comparator": ["placebo"],
@@ -29,6 +33,7 @@
   },
   {
     "doc_id": "NCT04408755",
+    "summary": ["This study was conducted to evaluate the efficacy, safety, and tolerability of AVP-786 (deudextromethorphan hydrobromide quinidine sulfate) compared to placebo for the treatment of agitation in participants with dementia of the Alzheimer's type."],
     "population": ["participants with a diagnosis of probable Alzheimer's disease (AD) and had clinically significant, moderate/severe agitation secondary to AD"],
     "intervention": ["AVP-786"],
     "comparator": ["placebo"],
@@ -36,6 +41,7 @@
   },
   {
     "doc_id": "NCT04464564",
+    "summary": ["This study was conducted to evaluate the efficacy, safety, and tolerability of AVP-786 (deudextromethorphan hydrobromide quinidine sulfate) compared to placebo for the treatment of agitation in participants with dementia of the Alzheimer's type."],
     "population": ["participants for this study had a diagnosis of probable Alzheimer's disease (AD) and had clinically significant, moderate/severe agitation secondary to AD"],
     "intervention": ["AVP-786"],
     "comparator": ["placebo"],
@@ -43,6 +49,7 @@
   },
   {
     "doc_id": "NCT03814382",
+    "summary": ["The purpose of this study is to investigate the influence of acupuncture on heart rate variability, skin conductance (sweating), and rated behavioral expression of agitation, irritability, and anxiety and mood in qualifying adults with a diagnosis of cognitively unimpaired, or probable Alzheimer's Disease, Frontotemporal Dementia or Dementia with Lewy Bodies. Study subjects will all receive one real acupuncture treatment"],
     "population": ["adults with a diagnosis of cognitively unimpaired, or probable Alzheimer's Disease, Frontotemporal Dementia or Dementia with Lewy Bodies"],
     "intervention": ["Acupuncture"],
     "comparator": [],
@@ -50,6 +57,7 @@
   },
   {
     "doc_id": "NCT02769000",
+    "summary": ["Evaluate safety and toxicity/adverse events associated with delivery of low dose whole brain irradiation in patients with early Alzheimer's dementia according to the National Institute of Neurological and Communicative Disorders and Stroke and the Alzheimer's Disease and Related Disorders Association (NINCDS-ADRDA) criteria.. As a secondary goal it will establish whether or not the intervention with low dose whole brain irradiation stabilizes or decreases cerebral amyloid deposits and whether these correlate with the recognized progression of Alzheimer's dementia. The investigators will also collect information from the FDG and AmyvidÂ® PET Scans to determine if there is any correlation between neurocognitive/quality of life scores and changes in amyloid plaque size, number and location."],
     "population": ["patients with early Alzheimer's dementia"],
     "intervention": ["Radiation: 10 GY", "Radiation: 20 GY"],
     "comparator": [],
@@ -57,6 +65,7 @@
   },
   {
     "doc_id": "NCT06677203",
+    "summary": ["The main purpose of this study is to evaluate the safety, tolerability, and effect on biomarkers of disease pathophysiology and pathology, pharmacokinetics (PK), and preliminary effects on measures of clinical efficacy of multiple doses of ASN51 in adult participants with early Alzheimer's disease (AD)."],
     "population": ["adult participants with early Alzheimer's disease"],
     "intervention": ["ASN51"],
     "comparator": ["placebo"],
@@ -64,6 +73,7 @@
   },
   {
     "doc_id": "NCT02791191",
+    "summary": ["The main purpose of this study is to evaluate the safety and the effect on brain tau of the study drug LY3202626 in participants with mild Alzheimer's disease (AD) dementia."],
     "population": ["participants with mild Alzheimer's disease (AD) dementia"],
     "intervention": ["LY3202626"],
     "comparator": ["placebo"],
@@ -71,6 +81,7 @@
   },
   {
     "doc_id": "NCT02972658",
+    "summary": ["This study is an extension of study I8D-MC-AZES (NCT02245737), the AMARANTH study. The purpose of this study is to evaluate the effectiveness of the study drug lanabecestat in participants with early Alzheimer's disease dementia at the time of entry into study I8D-MC-AZES."],
     "population": ["participants with early Alzheimer's disease dementia"],
     "intervention": ["Lanabecestat"],
     "comparator": [],
@@ -78,6 +89,7 @@
   },
   {
     "doc_id": "NCT00676143",
+    "summary": ["This is a study to evaluate the efficacy and safety of multiple doses of bapineuzumab in patients with mild to moderate Alzheimer Disease. Patients will receive either bapineuzumab or placebo. Each patient's participation will last approximately 1.5 years."],
     "population": ["patients with mild to moderate Alzheimer Disease"],
     "intervention": ["bapineuzumab"],
     "comparator": ["placebo"],
@@ -85,6 +97,7 @@
   },
   {
     "doc_id": "NCT00667810",
+    "summary": ["This is a study to evaluate the efficacy and safety of multiple doses of bapineuzumab in patients with mild to moderate Alzheimer Disease. Patients will receive either bapineuzumab or placebo. Each patient's participation will last approximately 1.5 years."],
     "population": ["patients with mild to moderate Alzheimer Disease"],
     "intervention": ["bapineuzumab"],
     "comparator": ["placebo"],
@@ -92,6 +105,7 @@
   },
   {
     "doc_id": "NCT01561430",
+    "summary": ["The purpose of this Phase 1/Phase 2 study is to evaluate how the body handles the drug and the drug's effect on the body of participants with mild cognitive impairment (MCI) due to Alzheimer's Disease (AD) or mild AD and who test positive for amyloid plaque."],
     "population": ["participants with mild cognitive impairment (MCI) due to Alzheimer's Disease (AD) or mild AD and who test positive for amyloid plaque"],
     "intervention": ["LY2886721"],
     "comparator": ["Placebo"],
@@ -99,6 +113,7 @@
   },
   {
     "doc_id": "NCT02783573",
+    "summary": ["The main purpose of this study is to evaluate the efficacy of the study drug known as lanabecestat in participants with mild Alzheimer's disease (AD) dementia."],
     "population": ["participants with mild Alzheimer's disease (AD) dementia"],
     "intervention": ["Lanabecestat"],
     "comparator": ["Placebo"],
@@ -106,6 +121,7 @@
   },
   {
     "doc_id": "NCT02884492",
+    "summary": ["This study is being done to learn about tau tangles in Alzheimer's disease. A type of PET scan is used to measure the abnormal accumulation of protein called tau in the brain. These are thought to be involved in Alzheimer's disease. The investigators will also perform brain MRI and to tests to measure the participant's memory and thinking."],
     "population": ["elderly subjects with different clinical and biomarker profiles of Alzheimer's disease (AD)"],
     "intervention": ["18F-THK-5351"],
     "comparator": [],
@@ -113,6 +129,7 @@
   },
   {
     "doc_id": "NCT05602727",
+    "summary": ["The main purpose of this study was to assess the safety and efficacy of MK-1942 as adjunctive therapy in participants with mild to moderate Alzheimer's Disease (AD) dementia."],
     "population": ["participants with mild to moderate Alzheimer's Disease (AD) dementia"],
     "intervention": ["MK-1942"],
     "comparator": ["Placebo"],
@@ -120,6 +137,7 @@
   },
   {
     "doc_id": "NCT03289143",
+    "summary": ["This was a phase II, randomized, placebo-controlled, double-blind study to evaluate the efficacy and safety of Semorinemab in participants with prodromal to mild Alzheimer's disease. An optional 96-week open-label extension period was available to participants who completed the double-blind treatment period and who, in the judgment of the investigator, would potentially benefit from open-label Semorinemab treatment."],
     "population": ["participants with prodromal to mild Alzheimer's disease"],
     "intervention": ["Semorinemab", "[18F]GTP1"],
     "comparator": ["Placebo"],
@@ -127,6 +145,7 @@
   },
   {
     "doc_id": "NCT03491150",
+    "summary": ["In the BN40031 OLE study, a dose of crenezumab of 60 mg/kg intravenous (IV) every 4 weeks (Q4W) will be offered to all participants who complete Study BN29552 or BN29553 and who meet eligibility criteria in order to evaluate safety in participants on long-term crenezumab treatment and to investigate the effect of crenezumab on the underlying disease process and disease course as an exploratory efficacy objective."],
     "population": ["participants who complete Study BN29552 or BN29553"],
     "intervention": ["Crenezumab"],
     "comparator": [],
@@ -134,6 +153,7 @@
   },
   {
     "doc_id": "NCT01900665",
+    "summary": ["To test the idea that solanezumab will slow the cognitive decline of Alzheimer's Disease (AD) as compared with placebo in participants with mild AD."],
     "population": ["participants with mild AD"],
     "intervention": ["Solanezumab"],
     "comparator": ["Placebo"],
