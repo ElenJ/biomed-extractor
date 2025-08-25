@@ -1,6 +1,6 @@
 import pandas as pd
 
-from app.nlp.evaluate_model import elements_from_cell, substring_partial_overlap, add_partial_overlap_cols
+from app.nlp.evaluate_model import elements_from_cell, substring_partial_overlap, evaluate_ner_model_partial_overlap, evaluate_summary_rouge_score
 from app.nlp.utils import (
     compose_trial_text, chunk_text_by_chars, run_ner_on_long_text, clean_population_entities,
     merge_entities, extract_pico_from_merged_entities, normalize_intervention, is_substring_duplicate,
@@ -55,8 +55,7 @@ def test_substring_partial_overlap_empty():
     assert substring_partial_overlap({"a"}, set()) == (0, 0, 0)
     assert substring_partial_overlap(set(), {"a"}) == (0, 0, 0)
 
-def test_add_partial_overlap_cols_smoke():
-    # Minimal two-dataframe test
+def test_evaluate_ner_model_partial_overlap_smoke():
     df_gold = pd.DataFrame({
         'intervention_extracted': ["Lanabecestat; placebo", "Drug B"],
         'population_extracted': ["men; adults", "patients"]
@@ -66,12 +65,77 @@ def test_add_partial_overlap_cols_smoke():
         'population_extracted': ["adult males", "patients"]
     })
     pico = ["intervention_extracted", "population_extracted"]
-    df_eval, summary = add_partial_overlap_cols(df_gold.copy(), df_model, pico)
-    # Columns created
+    df_eval, summary = evaluate_ner_model_partial_overlap(df_gold.copy(), df_model, pico, add_rouge=False)
+    # Only PICO partial columns
     for col in pico:
-        assert f"{col}_partial_precision" in df_eval.columns
-        assert f"{col}_partial_recall" in df_eval.columns
-        assert f"{col}_partial_f1" in df_eval.columns
-    # Summary is dataframe with correct index
-    assert set(summary.index) == {"intervention", "population"}
-    assert all(0.0 <= val <= 1.0 for val in summary["precision"])
+        for metric in ["partial_precision", "partial_recall", "partial_f1"]:
+            assert f"{col}_{metric}" in df_eval.columns
+    # Do NOT check for ROUGE columns here, since no summary columns present!
+
+def test_evaluate_ner_model_partial_overlap_with_summary():
+    # Example reference and model summaries
+    df_gold = pd.DataFrame({
+        'short_description': [
+            "Lanabecestat reduces amyloid-beta in adults with Alzheimer's.",
+            "Drug B trial in patients."
+        ],
+        'intervention_extracted': ["Lanabecestat", "Drug B"],
+        'population_extracted': ["adults", "patients"]
+    })
+    df_model = pd.DataFrame({
+        'summary': [
+            "Lanabecestat helps adults with Alzheimer's.",
+            "Drug B used in trial patients."
+        ],
+        'intervention_extracted': ["Lanabecestat", "Drug B"],
+        'population_extracted': ["adults", "patients"]
+    })
+    pico = ["intervention_extracted", "population_extracted"]
+    # Run with summary columns specified and add_rouge=True
+    df_eval, summary = evaluate_ner_model_partial_overlap(
+        df_gold.copy(), df_model, pico,
+        summary_gold_col='short_description',
+        summary_pred_col='summary',
+        add_rouge=True
+    )
+    # Check that ROUGE rows are present and within [0,1]
+    for metric in ["SUMMARY_ROUGE-1", "SUMMARY_ROUGE-2", "SUMMARY_ROUGE-L"]:
+        assert metric in summary.index
+        for k in ["precision", "recall", "f1"]:
+            v = summary.loc[metric, k]
+            assert 0 <= v <= 1, f"{metric} {k} out of range: {v}"
+
+def test_evaluate_ner_model_partial_overlap_with_rouge():
+    df_gold = pd.DataFrame({
+        'summary_reference': [
+            "DrugA reduces symptoms in adults.",
+            "DrugB trial in male patients."
+        ],
+        'intervention_extracted': ["DrugA", "DrugB"],
+        'population_extracted': ["adults", "male patients"]
+    })
+    df_model = pd.DataFrame({
+        'summary': [
+            "DrugA helps adults with symptoms.",
+            "DrugB used in male patients."
+        ],
+        'intervention_extracted': ["DrugA", "DrugB"],
+        'population_extracted': ["adults", "male patients"]
+    })
+    pico = ["intervention_extracted", "population_extracted"]
+    df_eval, summary = evaluate_ner_model_partial_overlap(
+        df_gold.copy(), df_model, pico,
+        summary_gold_col='summary_reference', summary_pred_col='summary'
+    )
+    # Now check for ROUGE columns as well!
+    for rn in ['rouge1', 'rouge2', 'rougeL']:
+        for metric in ["precision", "recall", "f1"]:
+            colname = f"summary_{rn}_{metric}"
+            assert colname in df_eval.columns
+            assert df_eval[colname].between(0, 1).all()
+    # Check metrics table includes ROUGE rows
+    for rn_name in ["SUMMARY_ROUGE-1", "SUMMARY_ROUGE-2", "SUMMARY_ROUGE-L"]:
+        assert rn_name in summary.index
+        for metric in ["precision", "recall", "f1"]:
+            val = summary.loc[rn_name, metric]
+            assert 0 <= val <= 1

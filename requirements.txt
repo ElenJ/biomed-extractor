@@ -6,3 +6,4 @@ transformers
 scikit-learn
 pytest
 sumy
+rouge-score
