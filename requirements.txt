@@ -7,3 +7,4 @@ scikit-learn
 pytest
 sumy
 rouge-score
+altair<5
