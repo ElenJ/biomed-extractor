@@ -15,6 +15,11 @@ def load_trials_csv(filepath, filename):
         raise FileNotFoundError(f"File not found: {path}")
     df = pd.read_csv(path)
     print(f"Loaded {len(df)} records from {filename}")
+    process_df = extract_from_clinicaltrials_csv(df)
+    return process_df
+
+def extract_from_clinicaltrials_csv(df):
+    
     df_csv_focused = df[['NCT Number', 'Brief Summary','Interventions', 'Primary Outcome Measures']].copy()
     required = ['detailedDescription', 'inclusion_criteria', 'exclusion_criteria']
     df_csv_focused = ensure_columns(df_csv_focused, required)
