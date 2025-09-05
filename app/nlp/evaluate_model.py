@@ -218,7 +218,7 @@ def evaluate_ner_model_partial_overlap(df_gold, ner_res_model, pico_cols,
 
 if __name__ == "__main__":
     # Get the PROJECT ROOT (biomed-extractor/)
-    PROJECT_ROOT = 'c:\\Users\\USER\\Documents\\github\\biomed_extractor'
+    PROJECT_ROOT = os.path.expanduser('~/Documents/github/biomed_extractor')
     # Data directory at top level
     DATA_DIR = os.path.join(PROJECT_ROOT, 'data\\annotated')
     # load data to extract info from
@@ -239,7 +239,8 @@ if __name__ == "__main__":
     # process test file for PICO elements
     #ner_pipeline = load_ner_pipeline_huggingface("kamalkraj/BioELECTRA-PICO")
     # for self-trained model
-    ner_pipeline = load_ner_trained_pipeline("app/model/nlpie_bio-mobilebert_PICO")
+    ner_pipeline = load_ner_trained_pipeline("app/model/nlpie_compact_biobert_PICO")
+    #dmis-lab_biobert-v1.1
     ner_res_model = process_trials_for_PICO(mydf_manual_annotation, ner_pipeline)
     ner_res_model.sort_values(by=['nctId'], inplace=True)
     # rename columns to match gold standard
@@ -260,5 +261,5 @@ if __name__ == "__main__":
                                                                                 add_rouge=True)
     print(evaluation_table)
     print(df_gold_with_partial.head())
-    df_gold_with_partial.to_csv("data/results_mobilebert.csv", index=False)
+    df_gold_with_partial.to_csv("data/results_compact_biobert_PICO_PICO.csv", index=False)
     

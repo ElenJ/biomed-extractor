@@ -43,7 +43,7 @@ def load_ner_trained_pipeline(model_dir="output_model"):
 
 if __name__ == "__main__":
     # Get the PROJECT ROOT (biomed-extractor/)
-    PROJECT_ROOT = 'c:\\Users\\USER\\Documents\\github\\biomed_extractor'
+    PROJECT_ROOT = os.path.expanduser('~/Documents/github/biomed_extractor')
     # Data directory at top level
     DATA_DIR = os.path.join(PROJECT_ROOT, 'data')
     df_json = load_trials_json(filepath = DATA_DIR, filename ='example_trials.json')

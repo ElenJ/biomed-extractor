@@ -365,7 +365,7 @@ def main(args=None):
         parsed_args = parser.parse_args()
 
     if parsed_args.use_hardcoded_paths:
-        PROJECT_ROOT = r'c:\Users\USER\Documents\github\biomed_extractor\data\pico_dataset_for_training'
+        PROJECT_ROOT = os.path.expanduser('~/Documents/github/biomed_extractor')
         parsed_args.train = os.path.join(PROJECT_ROOT, 'PICO_merged_train.txt')
         parsed_args.test = os.path.join(PROJECT_ROOT, 'PICO_merged_test.txt')
         parsed_args.dev = os.path.join(PROJECT_ROOT, 'PICO_merged_dev.txt')
