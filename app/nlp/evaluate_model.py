@@ -9,7 +9,7 @@ if PROJECT_ROOT not in sys.path:
     sys.path.insert(0, PROJECT_ROOT)
 # load functions for import of clinicaltrials.gov data written previously
 from app.data.loader import load_trials_json, extract_from_clinicaltrials
-from app.nlp.pipelines import load_ner_pipeline, load_ner_trained_pipeline
+from app.nlp.pipelines import load_ner_pipeline_huggingface, load_ner_trained_pipeline
 from app.nlp.utils import (
     compose_trial_text, chunk_text_by_chars, run_ner_on_long_text, clean_population_entities,
     merge_entities, extract_pico_from_merged_entities, normalize_intervention, is_substring_duplicate,
@@ -237,7 +237,7 @@ if __name__ == "__main__":
     df_gold["intervention"] = df_gold["intervention"].apply(normalize_intervention)
 
     # process test file for PICO elements
-    #ner_pipeline = load_ner_pipeline("kamalkraj/BioELECTRA-PICO")
+    #ner_pipeline = load_ner_pipeline_huggingface("kamalkraj/BioELECTRA-PICO")
     # for self-trained model
     ner_pipeline = load_ner_trained_pipeline("app/model/nlpie_bio-mobilebert_PICO")
     ner_res_model = process_trials_for_PICO(mydf_manual_annotation, ner_pipeline)
