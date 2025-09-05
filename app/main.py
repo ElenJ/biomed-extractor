@@ -2,7 +2,7 @@ import streamlit as st
 # load functions for import of clinicaltrials.gov data written previously
 from data.loader import extract_from_clinicaltrials, extract_from_clinicaltrials_csv
 import pandas as pd
-from nlp.pipelines import load_ner_pipeline
+from nlp.pipelines import load_ner_pipeline_huggingface, load_ner_trained_pipeline
 from nlp.utils import * # import all utils
 import altair as alt
 
@@ -11,7 +11,8 @@ import altair as alt
 @st.cache_data
 def process_clinicaltrials(df):
     # process file for PICO elements
-    ner_pipeline = load_ner_pipeline()
+    ner_pipeline = load_ner_pipeline_huggingface("kamalkraj/BioELECTRA-PICO")
+    #ner_pipeline = load_ner_trained_pipeline("app/model/nlpie_bio-mobilebert_PICO")
     ner_res_model = process_trials_for_PICO(df, ner_pipeline)
     # get extracted columns only
     clinicaltrials_pico = ner_res_model[["nctId", "summary_extracted", "intervention_extracted", "comparator_extracted", "outcome_extracted", "population_extracted"]]

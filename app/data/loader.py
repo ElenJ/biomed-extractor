@@ -4,7 +4,7 @@ import re
 import unicodedata
 
 # Get the PROJECT ROOT (biomed-extractor/)
-PROJECT_ROOT = 'c:\\Users\\elena.jolkver\\Documents\\github\\biomed_extractor'
+PROJECT_ROOT = 'c:\\Users\\USER\\Documents\\github\\biomed_extractor'
 
 # Data directory at top level
 DATA_DIR = os.path.join(PROJECT_ROOT, 'data')
@@ -196,7 +196,7 @@ def extract_from_clinicaltrials(df):
 
 if __name__ == "__main__":
     # Get the PROJECT ROOT (biomed-extractor/)
-    PROJECT_ROOT = 'c:\\Users\\elena.jolkver\\Documents\\github\\biomed_extractor'
+    PROJECT_ROOT = 'c:\\Users\\USER\\Documents\\github\\biomed_extractor'
 
     # Data directory at top level
     DATA_DIR = os.path.join(PROJECT_ROOT, 'data')
@@ -214,7 +214,7 @@ if __name__ == "__main__":
 
     #load single file
     # Get the PROJECT ROOT (biomed-extractor/)
-    PROJECT_ROOT = 'c:\\Users\\elena.jolkver\\Documents\\github\\biomed_extractor'
+    PROJECT_ROOT = 'c:\\Users\\USER\\Documents\\github\\biomed_extractor'
 
     # Data directory at top level
     DATA_DIR_SINGLE_CSV = os.path.join(PROJECT_ROOT, 'data\\annotated\\ctg-studies_for_gold_individual_csv')

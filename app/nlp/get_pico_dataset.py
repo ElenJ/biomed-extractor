@@ -3,10 +3,10 @@ import os
 
 
 if __name__ == "__main__":
-    PROJECT_ROOT1 = 'c:\\Users\\elena.jolkver\\Documents\\github\\section_specific_annotation_of_PICO-main\\data\\AD'
-    PROJECT_ROOT2 = 'c:\\Users\\elena.jolkver\\Documents\\github\\section_specific_annotation_of_PICO-main\\data\\EBM-NLPmod'
+    PROJECT_ROOT1 = 'c:\\Users\\USER\\Documents\\github\\section_specific_annotation_of_PICO-main\\data\\AD'
+    PROJECT_ROOT2 = 'c:\\Users\\USER\\Documents\\github\\section_specific_annotation_of_PICO-main\\data\\EBM-NLPmod'
     PROJECT_ROOTS = [PROJECT_ROOT1, PROJECT_ROOT2]
-    OUTPUT_FOLDER = 'c:\\Users\\elena.jolkver\\Documents\\github\\biomed_extractor\\data\\pico_dataset_for_training'
+    OUTPUT_FOLDER = 'c:\\Users\\USER\\Documents\\github\\biomed_extractor\\data\\pico_dataset_for_training'
     # Data directory at top level
     for PROJECT_ROOT in PROJECT_ROOTS:
         folders = os.listdir(PROJECT_ROOT)

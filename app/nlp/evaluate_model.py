@@ -9,14 +9,13 @@ if PROJECT_ROOT not in sys.path:
     sys.path.insert(0, PROJECT_ROOT)
 # load functions for import of clinicaltrials.gov data written previously
 from app.data.loader import load_trials_json, extract_from_clinicaltrials
-from app.nlp.pipelines import load_ner_pipeline
+from app.nlp.pipelines import load_ner_pipeline, load_ner_trained_pipeline
 from app.nlp.utils import (
     compose_trial_text, chunk_text_by_chars, run_ner_on_long_text, clean_population_entities,
     merge_entities, extract_pico_from_merged_entities, normalize_intervention, is_substring_duplicate,
     deduplicate_intervention_entities, summarize_textRank, extract_comparator, remove_comparator_terms,
     clean_outcomes, process_trials_for_PICO
 )
-
 
 def elements_from_cell(cell):
     """
@@ -219,7 +218,7 @@ def evaluate_ner_model_partial_overlap(df_gold, ner_res_model, pico_cols,
 
 if __name__ == "__main__":
     # Get the PROJECT ROOT (biomed-extractor/)
-    PROJECT_ROOT = 'c:\\Users\\elena.jolkver\\Documents\\github\\biomed_extractor'
+    PROJECT_ROOT = 'c:\\Users\\USER\\Documents\\github\\biomed_extractor'
     # Data directory at top level
     DATA_DIR = os.path.join(PROJECT_ROOT, 'data\\annotated')
     # load data to extract info from
@@ -238,7 +237,9 @@ if __name__ == "__main__":
     df_gold["intervention"] = df_gold["intervention"].apply(normalize_intervention)
 
     # process test file for PICO elements
-    ner_pipeline = load_ner_pipeline()
+    #ner_pipeline = load_ner_pipeline("kamalkraj/BioELECTRA-PICO")
+    # for self-trained model
+    ner_pipeline = load_ner_trained_pipeline("app/model/nlpie_bio-mobilebert_PICO")
     ner_res_model = process_trials_for_PICO(mydf_manual_annotation, ner_pipeline)
     ner_res_model.sort_values(by=['nctId'], inplace=True)
     # rename columns to match gold standard
@@ -259,4 +260,5 @@ if __name__ == "__main__":
                                                                                 add_rouge=True)
     print(evaluation_table)
     print(df_gold_with_partial.head())
+    df_gold_with_partial.to_csv("data/results_mobilebert.csv", index=False)
     

@@ -8,3 +8,4 @@ pytest
 sumy
 rouge-score
 altair<5
+seqeval

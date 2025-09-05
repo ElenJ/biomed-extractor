@@ -20,6 +20,12 @@ docker run -p 8501:8501 biomed-extractor
 
 ## Project structure
 
+Files used for development of the nlp pipeline: xx.py
+
+Files used for demo purposes: xx.ipynb
+
+Use main.py in app/ to run the finalized app.
+
 ```
 biomed-extractor/
 ├── .github/
@@ -33,19 +39,30 @@ biomed-extractor/
 │   │   ├── utils.py         # Utility functions for data processing and model inference
 │   │   ├── evaluate_model.py # Evaluation logic for model outputs
 │   │   ├── demo_inference.ipynb    # Jupyter notebook showing model inference and evaluation
-│   │   └── development_inference.ipynb # Jupyter notebook used to develop PICO extraction
+│   │   ├── training_PICO_model.ipynb # Jupyter notebook used to develop model training
+│   │   ├── training_PICO_model_on_colab.ipynb # Jupyter notebook used to fine-tune a pretrained transformer model on PICO NER task on Google COLAB (for GPU usage)
+│   │   └── train_model.py # Script to fine-tune a pretrained transformer model on PICO NER task
 │   ├── data/                # Data loading and ClinicalTrials.gov API code
 │   │   ├── __init__.py
 │   │   ├── data_cleaning.ipynb # Jupyter notebook demonstrating data cleaning
 │   │   └── loader.py
+│   ├── model/                # Trained models
+│   │   ├── nlpie_bio-mobilebert_PICO/ # mobilebert finetuned for PICO
+│   │   ├── nlpie_compact_biobert_PICO/ # compact-biobert finetuned for PICO
+│   │   └── dmis-lab_biobert-v1.1/ # biobert finetuned for PICO
 │   └── config.py            # Central (editable) config
 ├── tests/                   # Unit/integration tests
 │   ├── __init__.py
 │   ├── test_pipelines.py
 │   └── test_loader.py
 ├── data/                    # Sample input data
+│   ├── annotated/                 # NLP/model logic: data processing, inference
+│   │   ├── gold_standard.json # human-extracted PICO elements from a subset of trials (ctg-studies_for_gold)
+│   │   ├── ctg-studies_for_gold.json/.csv # studies used to generate gold_standard.json
+│   │   ├── ctg-studies_for_gold_individual/ # folder with gold-standard studies, stored individually
 │   ├── example_trials.csv # Example ClinicalTrials.gov CSV data
-│   └── example_trials.json # Example ClinicalTrials.gov data
+│   ├── example_trials.json # Example ClinicalTrials.gov data
+│   └── pico_dataset_for_training/ # PICO dataset used for training from https://github.com/BIDS-Xu-Lab/section_specific_annotation_of_PICO/
 ├── docs/
 │   ├── goals_and_use_cases.docx # Document outlining project goals, use cases, and target audience
 │   ├── goals_and_use_cases.pdf # PDF version of the goals and use cases document
@@ -84,6 +101,12 @@ biomed-extractor/
 ├── .gitignore
 └── setup.py                 # (Optional) For pip-installable packaging
 ```
+## Workflow for adaptation
+
+1. Fine-tune your foundation model of choice with the PICO dataset (train_model.py)
+2. Evaluate your model with evaluate_model.py
+3. Adjust the app (main.py) to use your model of choice 
+
 ## Project Plan
 
 This plan assumes you’ll spend about 10–15 hours a week on the project and can be adjusted based on your pace and resources. The goal is to have a working prototype by the end of 8–10 weeks, with clear milestones and check-ins to keep you on track.
