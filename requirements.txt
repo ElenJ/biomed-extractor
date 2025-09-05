@@ -4,6 +4,7 @@ numpy
 requests
 transformers
 datasets
+torch
 scikit-learn
 pytest
 sumy

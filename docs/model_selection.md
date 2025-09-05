@@ -85,12 +85,37 @@ Overall comparison of current biomedical models is benchmarked [here](https://mi
   - High performer for general biomedical NER and other tasks (RE, **QA**).
   - Moderate requirements, broad entity extraction capability, suitable for use cases beyond just PICO.
 
+- **BioBERT-Base**
+  - classical bio-model
+  - in training on PICO dataset, received high F1 score 
+
+  
+Epoch	Training Loss	Validation Loss	F1
+1	0.236000	0.042140	0.915711
+2	0.028500	0.007056	0.980917
+3	0.005900	0.002192	0.995387
+
+
 **Lightweight/Constrained Hardware Option:**
 
 - BioMobileBERT or CompactBioBERT
   - Quantized/distilled versions for inference on lower-memory hardware
   - minor relative performance drop.
  
+After training: nlpie/compact-biobert yielded higher F1 on validation dataset (prefer to BioMobileBERT)
+
+CompactBiobert
+Epoch	Training Loss	Validation Loss	F1
+1	0.284500	0.064327	0.882915
+2	0.045900	0.011879	0.970512
+3	0.012500	0.005575	0.986721
+
+BioMobileBERT
+Epoch	Training Loss	Validation Loss	F1
+1	0.323100	0.099416	0.790831
+2	0.068300	0.022163	0.946324
+3	0.021400	0.008656	0.979878
+
 
 
 ### 4.2 Summarization
