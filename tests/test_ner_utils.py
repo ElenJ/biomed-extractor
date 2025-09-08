@@ -66,7 +66,7 @@ def test_extract_pico_from_merged_entities():
         {'entity_group': 'intervention', 'word': 'drugA', 'start': 9, 'end': 14},
         {'entity_group': 'outcome', 'word': 'improved', 'start': 15, 'end': 23}
     ]
-    pico = extract_pico_from_merged_entities(entities)
+    pico = extract_pico_from_merged_entities(entities, own_trained_model = False)
     assert pico['participants'] == 'patients'
     assert pico['intervention'] == 'drugA'
     assert pico['outcome'] == 'improved'
