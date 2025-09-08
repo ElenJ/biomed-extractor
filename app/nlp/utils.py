@@ -139,8 +139,36 @@ def merge_entities(entities):
         merged.append(current)
     return merged
 
+def reassemble_entities(ner_output):
+    """
+    Merge subword tokens and reconstruct full entity strings from Huggingface NER output.
+    Args:
+        ner_output (list): List of dicts from NER pipeline.
+    Returns:
+        List of dicts with merged entities.
+    """
+    merged = []
+    current = None
+    for item in ner_output:
+        if current is None:
+            current = item.copy()
+            current['word'] = item['word'].replace('##', '')
+        else:
+            # If same entity group and consecutive, merge
+            if item['entity_group'] == current['entity_group'] and item['start'] == current['end']:
+                # Remove '##' and concatenate
+                current['word'] += item['word'].replace('##', '')
+                current['end'] = item['end']
+                current['score'] = max(current['score'], item['score'])  # or average, if you prefer
+            else:
+                merged.append(current)
+                current = item.copy()
+                current['word'] = item['word'].replace('##', '')
+    if current:
+        merged.append(current)
+    return merged
 
-def extract_pico_from_merged_entities(entities):
+def extract_pico_from_merged_entities(entities, own_trained_model = True):
     """
     Group entities by PICO type and collect their text.
 
@@ -152,7 +180,10 @@ def extract_pico_from_merged_entities(entities):
         dict: For each PICO group ("participants", "intervention", "comparator", "outcome"),
             a semicolon-separated string of unique phrases.
     """
-    pico_dict = {"participants": [], "intervention": [], "comparator": [], "outcome": []}
+    if own_trained_model:
+        pico_dict = {"p": [], "i": [], "c": [], "o": []}
+    else: # huggingface models have PICO groups encoded differently
+        pico_dict = {"participants": [], "intervention": [], "comparator": [], "outcome": []} # these were pretrained models
     for ent in entities:
         group = ent['entity_group'].lower()
         if group in pico_dict:
@@ -322,14 +353,15 @@ def process_trials_for_PICO(df, ner_pipeline):
             'outcome_extracted', 'comparator_extracted', 'summary_extracted'].
     """
     pop, intervention, outcome, summary = [], [], [], []
+    df_copy = df.copy()
     for _, row in df.iterrows():
         main_text = compose_trial_text(row)
         inclusion_text = row.get("inclusion_criteria", "")
         # Apply NER and merge for main and inclusion text
         main_entities = merge_entities(run_ner_on_long_text(main_text, ner_pipeline))
         inclusion_entities = merge_entities(run_ner_on_long_text(str(inclusion_text), ner_pipeline))
-        pico_main = extract_pico_from_merged_entities(main_entities)
-        pico_inc = extract_pico_from_merged_entities(inclusion_entities)
+        pico_main = extract_pico_from_merged_entities(main_entities, own_trained_model = False)
+        pico_inc = extract_pico_from_merged_entities(inclusion_entities , own_trained_model = False)
         # Population: use inclusion, Intervention/Outcome: use main text
         cleaned_population = clean_population_entities(pico_inc["participants"].split(";")) if pico_inc["participants"] else ""
         pop.append(cleaned_population)
@@ -339,13 +371,55 @@ def process_trials_for_PICO(df, ner_pipeline):
         outcome.append(pico_main["outcome"])
         summary2sent = summarize_textRank(main_text)
         summary.append(summary2sent)
-    df["population_extracted"] = pop
-    df["intervention_extracted"] = intervention
-    df["outcome_extracted"] = outcome
+    df_copy["population_extracted"] = pop
+    df_copy["intervention_extracted"] = intervention
+    df_copy["outcome_extracted"] = outcome
 
     # Final post-processing/cleaning
-    df['outcome_extracted'] = df['outcome_extracted'].apply(clean_outcomes)
-    df['comparator_extracted'] = df['intervention_extracted'].apply(extract_comparator)
-    df['intervention_extracted'] = df['intervention_extracted'].apply(remove_comparator_terms)
-    df["summary_extracted"] = summary
-    return df
+    df_copy['outcome_extracted'] = df_copy['outcome_extracted'].apply(clean_outcomes)
+    df_copy['comparator_extracted'] = df_copy['intervention_extracted'].apply(extract_comparator)
+    df_copy['intervention_extracted'] = df_copy['intervention_extracted'].apply(remove_comparator_terms)
+    df_copy["summary_extracted"] = summary
+    return df_copy
+
+def process_trials_for_retrained_PICO(df, ner_pipeline):
+    """
+    Main function to extract and clean PICO elements and summaries from a DataFrame of clinical trials.
+
+    Applies NER, merging, extraction, and cleaning for each record.
+    Adds new columns to the DataFrame with extracted/cleaned PICO elements.
+
+    Args:
+        df (pd.DataFrame): DataFrame containing trial records ('briefSummary', 'detailedDescription', 'inclusion_criteria').
+        ner_pipeline (callable): NER pipeline for entity extraction.
+
+    Returns:
+        pd.DataFrame: The input DataFrame with new columns:
+            ['population_extracted', 'intervention_extracted', 
+            'outcome_extracted', 'comparator_extracted', 'summary_extracted'].
+    """
+    pop, intervention, outcome, summary = [], [], [], []
+    df_copy = df.copy()
+    for _, row in df.iterrows():
+        main_text = compose_trial_text(row)
+        # Apply NER and merge for main text
+        mt = reassemble_entities(run_ner_on_long_text(main_text, ner_pipeline))
+        pico_main = extract_pico_from_merged_entities(mt)
+        cleaned_population = clean_population_entities(pico_main["p"].split(";")) if pico_main["p"] else ""
+        pop.append(cleaned_population)
+        raw_interventions = pico_main["i"].split(";") if pico_main["i"] else []
+        cleaned_intervention = deduplicate_intervention_entities(raw_interventions)
+        intervention.append(cleaned_intervention)
+        outcome.append(pico_main["o"])
+        summary2sent = summarize_textRank(main_text)
+        summary.append(summary2sent)
+    df_copy["population_extracted"] = pop
+    df_copy["intervention_extracted"] = intervention
+    df_copy["outcome_extracted"] = outcome
+
+    # Final post-processing/cleaning
+    df_copy['outcome_extracted'] = df_copy['outcomes_name'].apply(clean_outcomes)
+    df_copy['comparator_extracted'] = df_copy['intervention_name_clean'].apply(extract_comparator) # self-trained model does not recognize placebo as an intervention
+    df_copy['intervention_extracted'] = df_copy['intervention_extracted'].apply(remove_comparator_terms)
+    df_copy["summary_extracted"] = summary
+    return df_copy

@@ -14,7 +14,7 @@ from app.nlp.utils import (
     compose_trial_text, chunk_text_by_chars, run_ner_on_long_text, clean_population_entities,
     merge_entities, extract_pico_from_merged_entities, normalize_intervention, is_substring_duplicate,
     deduplicate_intervention_entities, summarize_textRank, extract_comparator, remove_comparator_terms,
-    clean_outcomes, process_trials_for_PICO
+    clean_outcomes, process_trials_for_PICO, process_trials_for_retrained_PICO
 )
 
 def elements_from_cell(cell):
@@ -237,11 +237,12 @@ if __name__ == "__main__":
     df_gold["intervention"] = df_gold["intervention"].apply(normalize_intervention)
 
     # process test file for PICO elements
-    #ner_pipeline = load_ner_pipeline_huggingface("kamalkraj/BioELECTRA-PICO")
+    ner_pipeline = load_ner_pipeline_huggingface("kamalkraj/BioELECTRA-PICO")
     # for self-trained model
-    ner_pipeline = load_ner_trained_pipeline("app/model/nlpie_compact_biobert_PICO")
+    #ner_pipeline = load_ner_trained_pipeline("app/model/nlpie_compact_biobert_PICO")
     #dmis-lab_biobert-v1.1
     ner_res_model = process_trials_for_PICO(mydf_manual_annotation, ner_pipeline)
+    #ner_res_model = process_trials_for_retrained_PICO(mydf_manual_annotation, ner_pipeline)
     ner_res_model.sort_values(by=['nctId'], inplace=True)
     # rename columns to match gold standard
     ner_res_model.rename(columns={'population_extracted': 'population',
