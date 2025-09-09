@@ -1,11 +1,9 @@
-TODO: check document once some programming is done
-
 # **Testing Strategy and Test Cases**
 
 **Project:** Biomedical LLM Information Extraction Tool**  
 **Version:** 0.1  
-**Author:** [Your Name]  
-**Date:** [Date]
+**Author:** Elena Jolkver
+**Date:** 25.09.2025
 
 
 ## **1. Introduction**
@@ -32,10 +30,11 @@ This document outlines the testing strategy, types of tests, test automation set
 ### **2.2. Testing Tools**
 
 - **Framework:** `pytest`
-- **Mocking:** `unittest.mock`, `pytest-mock`
-- **Test Data:** Located under `/tests/test_data/`
-- **Code Coverage:** `pytest-cov`
-- **CI:** GitHub Actions runs all tests on each push and pull request
+- **Mocking:** not used
+- **Test Data:** inline data
+- **Code Coverage:** `pytest-cov` pytest --cov=app --cov-report=term-missing  
+                                  pytest --cov=app --cov-report=xml
+- **CI:** GitHub Actions runs all tests on each push and pull request, defined in ci.yaml
 
 
 
@@ -46,51 +45,85 @@ This document outlines the testing strategy, types of tests, test automation set
 - Code coverage targets are monitored (aim for >80% where practical).
 
 
+### **4. Test File Overview**
+
+- `test_loader.py`: Tests data loading and parsing from ClinicalTrials.gov files.
+- `test_ner_utils.py`: Tests text preprocessing and NER utility functions.
+- `test_evaluate_model.py`: Tests model evaluation and metrics calculation.
+- `test_training.py`: Tests training routines and model saving/loading.
+
 ## **4. Example Test Cases**
 
 ### **4.1. Unit Tests**
 
-**Test:** Data Loader parses valid ClinicalTrials.gov XML  
-- **Given:** A well-formed example XML file  
-- **When:** The loader parses the file  
-- **Then:** All expected fields (NCT ID, title, population, etc.) are present and correctly populated
+Representative test cases:
 
-**Test:** Text Preprocessing removes HTML tags, normalizes whitespace  
-- **Given:** Text with markup and irregular spaces  
-- **When:** Preprocess function is applied  
-- **Then:** Output is clean, plain text
+- **Test:** Data Loader parses valid ClinicalTrials.gov file  
+  - **Given:** A well-formed example JSON or CSV file  
+  - **When:** The loader function is called  
+  - **Then:** The returned DataFrame contains all expected fields (e.g., NCT ID, title, population, interventions, outcomes) with correct values
+
+- **Test:** Text Preprocessing removes HTML tags and normalizes whitespace  
+  - **Given:** Text containing HTML markup and irregular spacing  
+  - **When:** The preprocessing function is applied  
+  - **Then:** The output is clean, plain text with no HTML tags and normalized spaces
+
+- **Test:** Entity Deduplication removes duplicates and substrings  
+  - **Given:** A list of intervention entities with duplicates and overlapping substrings  
+  - **When:** The deduplication function is called  
+  - **Then:** The output contains only unique, non-overlapping entities
 
 
 
 ### **4.2. Integration Tests**
 
-**Test:** Information Extraction Pipeline  
-- **Given:** Sample annotated ClinicalTrials.gov file  
-- **When:** Run through full extraction pipeline  
-- **Then:** Extracted PICO elements match expected ground truth
+Representative test cases:
 
-**Test:** Summarization  
-- **Given:** Example study description  
-- **When:** Summarization model runs  
-- **Then:** Output is non-empty, concise, and contains main study points (qualitative review)
+- **Test:** Full Information Extraction Pipeline  
+  - **Given:** A sample annotated ClinicalTrials.gov file  
+  - **When:** The file is processed through the extraction pipeline  
+  - **Then:** The extracted PICO elements (Population, Intervention, Comparator, Outcome) match the expected ground truth
+
+- **Test:** Summarization Pipeline  
+  - **Given:** A study description with multiple sentences  
+  - **When:** The summarization function is run  
+  - **Then:** The output summary is concise, relevant, and contains the main study points
+
+- **Test:** Model Evaluation Metrics Calculation  
+  - **Given:** Gold standard and predicted outputs for PICO elements  
+  - **When:** The evaluation function is called  
+  - **Then:** Precision, recall, and F1 scores are correctly calculated and reported
+
 
 
 
 ### **4.3. End-to-End (E2E) Tests**
 
-**Test:** User uploads file via Streamlit and downloads results  
-- **Given:** Application is running locally  
-- **When:** User uploads an example file, triggers extraction, then downloads results  
-- **Then:** Result file is created and contains correctly structured data without errors
+Representative test cases, performed manually prior to release of new version:
 
+- **Test:** User uploads file and downloads results via Streamlit  
+  - **Given:** The application is running locally  
+  - **When:** The user uploads a valid file, selects a model, triggers extraction, and downloads the results  
+  - **Then:** The result file is created, contains correctly structured data, and no errors occur during the workflow
+
+- **Test:** UI Error Handling  
+  - **Given:** The user uploads an unsupported file type or leaves required fields empty  
+  - **When:** The extraction is triggered  
+  - **Then:** The application displays appropriate error messages and does not crash
 
 ### **4.4. Regression Tests**
 
-**Test:** Regression on previously fixed annotation bug  
-- **Given:** Known edge-case file that triggered a bug in the past  
-- **When:** Extraction pipeline is run  
-- **Then:** Previous bug should not occur; extraction is correct
+Representative test cases:
 
+- **Test:** Regression on previously fixed annotation bug  
+  - **Given:** A known edge-case file that previously triggered a bug (e.g., missing population field, malformed intervention data)  
+  - **When:** The extraction pipeline is run  
+  - **Then:** The previous bug does not reoccur; extraction results are correct and robust
+
+- **Test:** Regression on summary generation for complex descriptions  
+  - **Given:** A study description that previously caused incorrect or empty summaries  
+  - **When:** The summarization function is applied  
+  - **Then:** The output summary is non-empty and relevant, confirming the bug is fixed
 
 ### **4.5. Performance Tests**
 
@@ -112,7 +145,7 @@ This document outlines the testing strategy, types of tests, test automation set
 
 ## **6. Quality Assurance and Maintenance**
 
-- Expand test coverage with all new features and bug-fixes
+- Expand test coverage with all new features and bug-fixes (Regression Tests)
 - Code reviews and peer testing for all pull requests
 - Regularly review automated test results and resolve any red (failing) tests before release
 - Update `/tests/` with any new edge-case files encountered during user feedback

@@ -3,7 +3,7 @@
 **Project:** Biomedical LLM Information Extraction Tool  
 **Version:** 0.1  
 **Author:** Elena Jolkver
-**Date:** 25.07.2025
+**Date:** 25.09.2025
 
 
 ## **1. Technology Stack**
@@ -36,16 +36,19 @@ Structure all application logic (data loading, NLP processing, extraction, summa
 ### **1.3 Use of Pre-trained NLP Models (LLMs)**
 
 **Decision:**  
-Leverage Huggingface Transformers library for NLP tasks, starting with domain-adapted models (e.g., BioBERT/T5).
+Leverage Huggingface Transformers library for NLP tasks, starting with domain-adapted models (e.g., BioBERT). Fine-tune bio-adapted models on PICO task. Compare model performance and use best fine-tuned model along with huggingface option. Use TextRank for extractive summarization.
 
 **Rationale:**  
 - Pre-trained models significantly reduce time-to-solution while delivering strong performance on clinical/biomedical text.
 - Huggingface ecosystem provides standard APIs, extensive documentation, and ongoing security/usability enhancements.
 - Domain-specific models improve extraction and summarization fidelity compared to generic LLMs.
+- PICO task is very specific and available NER-models might lack specificity
+- Availability of trial summary made the summarization task obsolete at the initial project stage. A quick algorithmic implementation was preferred for its simlplicity and resource sparcity, speeding up app execution.
 
 **Alternatives Considered:**  
 - Rule-based methods (limited accuracy and scalability).
 - Training custom models from scratch (unrealistic resource and data requirements at this stage).
+- LLM-model for summarization
 
 
 ### **1.4 Data Input and Processing**
@@ -61,7 +64,7 @@ Support upload of standard ClinicalTrials.gov documents (XML or text) via the UI
 ### **1.5 Output and Reporting**
 
 **Decision:**  
-Display extracted elements and generated summaries in both tabular and human-readable form, with options to download results.
+Display extracted elements and generated summaries in form of a tabular result and overview diagrams, with options to download results. 
 
 **Rationale:**  
 - Target users must quickly interpret and reuse outputs in external tools (Excel, R, downstream analysis).

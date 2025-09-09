@@ -1,13 +1,9 @@
-TODO: this is a basic template for a model selection document. Please fill in the details as per your project requirements and once you have finalized the model selection process.
-
-
-
 # Model Selection Process and Rationale
 
 **Project:** Biomedical LLM Information Extraction Tool  
 **Version:** 0.1  
-**Author:** [Your Name]  
-**Date:** [Date]
+**Author:** Elena Jolkver
+**Date:** 25.09.2025
 
 
 
@@ -153,8 +149,8 @@ Despite the research upfront of the project, the selected models were not usable
 
 ## 6. Model Deployment Considerations
 
-- All selected models can be loaded and run within a self-contained Docker image, with no external API dependency for inference.
-- Model weights are downloaded on first build/deployment if not included in the image.
+- Self-finetuned models can be loaded and run within a self-contained Docker image, with no external API dependency for inference.
+- Model weights are downloaded from huggingface on first build/deployment if not included in the image.
 - Distilled variants considered for edge cases (low-resource deployment).
 
 
@@ -164,6 +160,7 @@ Despite the research upfront of the project, the selected models were not usable
 - Explore BioELECTRA-large and BioLinkBERT-large as resources permit.
 - Provide user-selectable model options in the interface for specialized use cases.
 - Continuously monitor the biomedical NLP literature to update models as standards evolve.
+- Develop summarization model
 
 
 

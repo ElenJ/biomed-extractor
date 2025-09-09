@@ -8,15 +8,19 @@ import altair as alt
 
 
 # define functions
-@st.cache_data
-def process_clinicaltrials(df):
+#@st.cache_data
+#def process_clinicaltrials(df):
     # process file for PICO elements
-    ner_pipeline = load_ner_pipeline_huggingface("kamalkraj/BioELECTRA-PICO")
-    #ner_pipeline = load_ner_trained_pipeline("app/model/nlpie_bio-mobilebert_PICO")
-    ner_res_model = process_trials_for_PICO(df, ner_pipeline)
+#    if  model_selected =="bio-mobilebert":
+#        ner_pipeline = load_ner_trained_pipeline("app/model/nlpie_bio-mobilebert_PICO") 
+#       ner_res_model = process_trials_for_retrained_PICO(df, ner_pipeline)
+#    elif model_selected =="BioELECTRA":
+#       ner_pipeline = load_ner_pipeline_huggingface("kamalkraj/BioELECTRA-PICO")
+#       ner_res_model = process_trials_for_PICO(df, ner_pipeline) # use this function for huggingface models
+ 
     # get extracted columns only
-    clinicaltrials_pico = ner_res_model[["nctId", "summary_extracted", "intervention_extracted", "comparator_extracted", "outcome_extracted", "population_extracted"]]
-    return clinicaltrials_pico
+#    clinicaltrials_pico = ner_res_model[["nctId", "summary_extracted", "intervention_extracted", "comparator_extracted", "outcome_extracted", "population_extracted"]]
+#    return clinicaltrials_pico
 
 @st.cache_data
 def process_extracted_data(df):
@@ -74,6 +78,8 @@ def plot_top_entities(
         .configure_axis(labelAngle=-90)
     )
     st.altair_chart(chart, use_container_width=True)
+
+###########################
 # The actual app
 st.title("Biomed Extractor")
 st.header("Extract biomedical entities from clinicaltrials.gov", divider="rainbow")
@@ -82,10 +88,20 @@ with st.sidebar:
     st.header("Control elements", divider="rainbow")
     st.markdown("Select files and control elements here")
     uploaded_file = st.file_uploader("Choose a csv or json file exported from clinicaltrials.gov")
+    model_selected = st.selectbox(
+    "Which model to use?",
+    ("bio-mobilebert", "BioELECTRA"),
+    index=None,
+    placeholder="Select PICO model...",
+    key="model_select"
+)
+    st.write("You selected:", model_selected)
+
 
 
 st.markdown("## File upload")
-if uploaded_file is not None:
+# Only process if both file and model are selected
+if uploaded_file is not None and model_selected is not None:
     # find out file extension (json or csv)
     st.write("Filename: ", uploaded_file.name)
     file_extension = uploaded_file.name.split('.')[-1]
@@ -100,8 +116,17 @@ if uploaded_file is not None:
         st.error("Unsupported file type. Please upload a JSON or CSV file.")
         mydf_manual_annotation = pd.DataFrame()
 
+
+    # Recalculate predictions when model changes
+    if model_selected == "bio-mobilebert":
+        ner_pipeline = load_ner_trained_pipeline("app/model/nlpie_bio-mobilebert_PICO")
+        ner_res_model = process_trials_for_retrained_PICO(mydf_manual_annotation, ner_pipeline)
+    elif model_selected == "BioELECTRA":
+        ner_pipeline = load_ner_pipeline_huggingface("kamalkraj/BioELECTRA-PICO")
+        ner_res_model = process_trials_for_PICO(mydf_manual_annotation, ner_pipeline)
+
     # display dataframe
-    clinicaltrials_pico = process_clinicaltrials(mydf_manual_annotation)
+    clinicaltrials_pico = ner_res_model[["nctId", "summary_extracted", "intervention_extracted", "comparator_extracted", "outcome_extracted", "population_extracted"]]
     st.write("Processed trials with extracted PICO elements:")
     processed_table = st.data_editor(clinicaltrials_pico, hide_index=True)
 
@@ -117,4 +142,4 @@ if uploaded_file is not None:
     
 
 else:
-    st.info("Please upload a file to see analysis!")   
+    st.info("Please upload a file and select a model to see analysis!")   

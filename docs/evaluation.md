@@ -56,8 +56,7 @@ This document describes the evaluation strategy for the Biomedical LLM Informati
   Longest common subsequence metric; closer to human summary structure.
 - **BLEU Score:**  
   Evaluates precision of n-grams, less commonly used but informative for concise outputs.
-- **Human Evaluation:**  
-  Domain experts rate the generated summaries for relevance, accuracy, completeness, and readability (e.g., on a 1–5 Likert scale).
+
 
 
 
@@ -104,9 +103,9 @@ This document describes the evaluation strategy for the Biomedical LLM Informati
 
 ## **5. Acceptance Criteria**
 
-- Extraction F1-score ≥ [Set Target, e.g., 0.85] on reference set.
-- Summarization ROUGE-L ≥ [Set Target, e.g., 0.5] on reference summaries.
-- Median processing time per document ≤ [Set Target, e.g., 30 seconds/document].
+- Extraction F1-score ≥ 0.85 on reference set.
+- Summarization ROUGE-L ≥ 0.5 on reference summaries.
+- Median processing time per document ≤ 30 seconds/document.
 - ≥ 80% user task success rate and satisfaction score ≥ 4/5 in pilot tests.
 
 

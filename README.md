@@ -7,7 +7,7 @@ Automatically extract PICO elements & structured summaries from ClinicalTrials.g
 ## Features
 - Upload clinical trial data
 - Extract population/intervention/outcome
-- Summarize key findings via LLM
+- Summarize trial
 - Web-based interface (Streamlit)
 - Ready for Docker deployment
 
@@ -36,16 +36,19 @@ biomed-extractor/
 │   ├── nlp/                 # NLP/model logic: data processing, inference
 │   │   ├── __init__.py
 │   │   ├── pipelines.py    # Huggingface pipelines for NER/summarization
+│   │   ├── train_model.py # Script to fine-tune a pretrained transformer model on PICO NER task
+│   │   ├── training_PICO_model_on_colab.ipynb # Jupyter notebook used to fine-tune a pretrained transformer model on PICO NER task on Google COLAB (for GPU usage)
 │   │   ├── utils.py         # Utility functions for data processing and model inference
 │   │   ├── evaluate_model.py # Evaluation logic for model outputs
+│   │   ├── compare_model_performance.ipynb # Comparison of self-finetuned models and model selection for app
 │   │   ├── demo_inference.ipynb    # Jupyter notebook showing model inference and evaluation
-│   │   ├── training_PICO_model.ipynb # Jupyter notebook used to develop model training
-│   │   ├── training_PICO_model_on_colab.ipynb # Jupyter notebook used to fine-tune a pretrained transformer model on PICO NER task on Google COLAB (for GPU usage)
-│   │   └── train_model.py # Script to fine-tune a pretrained transformer model on PICO NER task
+│   │   ├── training_PICO_model_development.ipynb # Jupyter notebook used to develop model training
+│   │   └── development_inference.ipynb # notebook used to develop bulk of the functions and the pipeline
 │   ├── data/                # Data loading and ClinicalTrials.gov API code
 │   │   ├── __init__.py
+│   │   ├── get_pico_dataset.py # merging of foreign datasets for PICO training
 │   │   ├── data_cleaning.ipynb # Jupyter notebook demonstrating data cleaning
-│   │   └── loader.py
+│   │   └── loader.py # script to load clinicaltrials data
 │   ├── model/                # Trained models
 │   │   ├── nlpie_bio-mobilebert_PICO/ # mobilebert finetuned for PICO
 │   │   ├── nlpie_compact_biobert_PICO/ # compact-biobert finetuned for PICO
@@ -53,13 +56,15 @@ biomed-extractor/
 │   └── config.py            # Central (editable) config
 ├── tests/                   # Unit/integration tests
 │   ├── __init__.py
-│   ├── test_pipelines.py
-│   └── test_loader.py
+│   ├── test_evaluate_model.py # tests for functions in nlp/evaluate_model
+│   ├── test_training.py # tests for functions collected in nlp/train_model.py
+│   ├── test_ner_utils.py # tests for functions collected in nlp/utils.py (for inference)
+│   └── test_loader.py # tests for functions in data/loader.py
 ├── data/                    # Sample input data
 │   ├── annotated/                 # NLP/model logic: data processing, inference
 │   │   ├── gold_standard.json # human-extracted PICO elements from a subset of trials (ctg-studies_for_gold)
 │   │   ├── ctg-studies_for_gold.json/.csv # studies used to generate gold_standard.json
-│   │   ├── ctg-studies_for_gold_individual/ # folder with gold-standard studies, stored individually
+│   │   └── ctg-studies_for_gold_individual/ # folder with gold-standard studies, stored individually
 │   ├── example_trials.csv # Example ClinicalTrials.gov CSV data
 │   ├── example_trials.json # Example ClinicalTrials.gov data
 │   └── pico_dataset_for_training/ # PICO dataset used for training from https://github.com/BIDS-Xu-Lab/section_specific_annotation_of_PICO/
@@ -88,8 +93,7 @@ biomed-extractor/
 │   ├── testing_strategy.png   # Visual representation of the testing strategy
 │   ├── user_manual_screenshots/ # Screenshots for the user manual
 │   │   ├── upload_screen.png  # Screenshot of the upload screen
-│   │   ├── results_screen.png # Screenshot of the results screen
-│   │   └── settings_screen.png # Screenshot of the settings screen
+│   │   └── results_screen.png # Screenshot of the results screen
 │   ├── troubleshooting_examples/ # Examples of common issues and solutions
 │   │   ├── issue_1.md         # Example of a common issue and its solution
 │   │   ├── issue_2.md         # Another common issue and its solution
@@ -106,6 +110,16 @@ biomed-extractor/
 1. Fine-tune your foundation model of choice with the PICO dataset (train_model.py)
 2. Evaluate your model with evaluate_model.py
 3. Adjust the app (main.py) to use your model of choice 
+
+## Run app
+
+```bash
+streamlit run app/main.py
+```
+
+Demo app with file data/example_trials.json
+
+Stop execution with Ctrl+C
 
 ## Project Plan
 

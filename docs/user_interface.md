@@ -45,19 +45,20 @@ The user interface (UI) is implemented using Streamlit, designed to enable domai
 
 ### **3.3. Extraction Trigger**
 
-- Prominent “Run Extraction” button initiates processing.
+- Processing is initislized once data is provided and model is selected
+- prominent “Run Extraction” button initiates processing.
 - Loading spinner and progress bar reassure users during processing.
 - If multiple files, show progress as a percentage or per-document ticker.
 
 ### **3.4. Results Display**
 
-- Extracted information presented in an interactive, scrollable table (e.g., one row per file, with columns for Population, Intervention, Comparator, Outcomes, Summary).
+- Extracted information presented in an interactive, scrollable table (e.g., one row per study, with columns for Population, Intervention, Comparator, Outcomes, Summary).
 - Option to expand/collapse summary details for each file.
 - Color highlights or icons to flag missing data or extraction errors.
 
 ### **3.5. Download**
 
-- Results downloadable in CSV, Excel, or JSON format via clearly labeled download buttons.
+- Results downloadable in CSV format via clearly labeled download buttons.
 - Download buttons are deactivated/greyed-out until extraction is complete.
 
 ### **3.6. Error Handling and Help**

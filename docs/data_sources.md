@@ -9,7 +9,7 @@
 
 ## **1. Primary Data Source**
 
-### ClinicalTrials.gov
+### 1.1 ClinicalTrials.gov
 
 - **Overview:**  
   ClinicalTrials.gov is a globally recognized, publicly accessible registry of clinical studies conducted around the world. It contains protocols, results summaries, and structured metadata for studies involving human participants.
@@ -36,12 +36,32 @@
   - Users manually download XML files (single or bulk download from ClinicalTrials.gov) and upload them via the tool's interface.
   - (Future roadmap: Incorporate automated data fetching from ClinicalTrials.gov APIs.)
 
+### 1.2 Training data
+
+- **Overview:**  
+  BIDS-Xu-Lab provide training files for PICO task. The associated publication "Towards precise PICO extraction from abstracts of randomized controlled trials using a section-specific learning approach" (Bioinformatics 2023 Sep 5;39(9)) is [here](10.1093/bioinformatics/btad542)
+
+- **URL:**  
+  [https://github.com/BIDS-Xu-Lab/section_specific_annotation_of_PICO/](https://github.com/BIDS-Xu-Lab/section_specific_annotation_of_PICO/)
+
+
+- **Data Content:**  
+
+This resource contains annotated abstracts from randomized controlled trials for PICO extraction tasks, including disease-specific corpora for Alzheimer's Disease and COVID-19, as well as a re-annotated subset from the EBM-NLP corpus.
+
+The repo is also accessible as python PICO package. 
+
+
+- **Access Method in Tool:**  
+
+  - Used for model training only
 
 
 ## **2. Data Licensing and Compliance**
 
 - Data from ClinicalTrials.gov is in the public domain, freely available for use, research, and redistribution without restriction.
 - Users should ensure compliance with local privacy or ethical considerations when combining ClinicalTrials.gov data with proprietary datasets.
+- Data from BIDS-Xu-Lab contains no info on licensing, but it is open source and published.
 
 
 
@@ -56,11 +76,10 @@
 ## **4. APIs and External Services**
 
 - **Current Version:**  
-  - No external APIs are called by default. All data processing is performed locally on uploaded files to maximize privacy and reduce security risks.
+  - No external APIs are called by default. All data processing is performed locally on uploaded files to maximize privacy and reduce security risks. User can select huggingface models, which are fetched from the huggingface repo.
 
 - **Planned Enhancements:**  
   - Option to fetch and update study data directly from ClinicalTrials.gov via their REST API or FTP bulk download endpoints.
-  - Potential integration with Huggingface Model Hub (for on-demand model fetching).
   - Updates to permit secure, institution-limited use of cloud-based LLM APIs, fully controlled by user opt-in.
 
 
