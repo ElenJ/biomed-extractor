@@ -26,7 +26,7 @@ To choose the appropriate models, the following criteria were considered:
 
 
 
-## 3. MoBiomedical/Clinical Pre-trained Modelsdels Considered
+## 3. Biomedical/Clinical Pre-trained Models Considered
 
 
 | Focus on      | Model                       | Availability In Huggingface                                                                             | Model Size | Parameters      | Training -   ResourceRequirementsRAMVRAMDockerCompatibility                                                                                                                                              | Inference -   ResourceRequirementsRAMVRAMDockerCompatibility                                           | SupportForLocalOfflineBatchInference | LicensingConsiderations                              | Reference                                                                | Notes                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | Decision Support*                                                                       |
@@ -143,7 +143,9 @@ Despite the research upfront of the project, the selected models were not usable
 - Conducted small-scale comparative tests on sample ClinicalTrials.gov documents.
 - Benchmarked for extraction quality (precision, recall of PICO elements) and summarization coherence/readability.
 - Considered ease of integration, compatibility with Streamlit/fast batch inference, and Dockerization.
-- Documented performance metrics and qualitative feedback from test users (see `evaluation.md` for details).
+- Documented performance metrics (see `evaluation.md` for details):
+
+![Model results comparison](pics/model_comparison.png)
 
 
 

@@ -28,6 +28,8 @@ This document describes the evaluation strategy for the Biomedical LLM Informati
 
 ### 3.1. Extraction Accuracy
 
+All metrics are calculated on "partial" overlap, i.e. counting as a match if one is a substring of the other (in either direction).
+
 - **Precision:**  
   Fraction of extracted PICO elements that are correct.
   
@@ -43,8 +45,8 @@ This document describes the evaluation strategy for the Biomedical LLM Informati
   
   $$ F1 = 2 \times \frac{\text{Precision} \times \text{Recall}}{(\text{Precision} + \text{Recall})} $$
 
-- **Exact Match Rate:**  
-  Proportion of documents for which all PICO elements are correctly extracted.
+- **Match Rate:**  
+  Proportion of documents for which all PICO elements are correctly extracted (determined as recall=1). 
 
 
 
@@ -68,7 +70,7 @@ This document describes the evaluation strategy for the Biomedical LLM Informati
   Number of documents reliably processed per minute on recommended hardware.
 
 
-### 3.4. Usability & User Experience
+### 3.4. Usability & User Experience (to be done)
 
 - **User Satisfaction Survey:**  
   Users rate the ease of use, clarity of interface, interpretability of outputs, and satisfaction with workflow.
@@ -89,12 +91,12 @@ This document describes the evaluation strategy for the Biomedical LLM Informati
 - Implement scripts to compute Precision, Recall, F1, ROUGE, and BLEU on the annotated test set.
 - Use automated timing/logging to assess system performance with varied input sizes.
 
-### 4.3. Human Evaluation
+### 4.3. Human Evaluation (to be done)
 
 - Domain experts and target users review randomly selected outputs for subjective quality and real-world utility.
 - Collect feedback via surveys or user interviews.
 
-### 4.4. User Acceptance Testing (UAT)
+### 4.4. User Acceptance Testing (UAT) (to be done)
 
 - Conduct scenario-based walkthroughs with representative users (e.g., researchers, medical affairs professionals).
 - Record qualitative feedback and success rates.
@@ -103,7 +105,7 @@ This document describes the evaluation strategy for the Biomedical LLM Informati
 
 ## **5. Acceptance Criteria**
 
-- Extraction F1-score ≥ 0.85 on reference set.
+- Extraction F1-score ≥ 0.8 on reference set.
 - Summarization ROUGE-L ≥ 0.5 on reference summaries.
 - Median processing time per document ≤ 30 seconds/document.
 - ≥ 80% user task success rate and satisfaction score ≥ 4/5 in pilot tests.

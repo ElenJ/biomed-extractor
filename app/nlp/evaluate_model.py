@@ -17,6 +17,11 @@ from app.nlp.utils import (
     clean_outcomes, process_trials_for_PICO, process_trials_for_retrained_PICO
 )
 
+from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction # for BLEU
+import time
+
+
+
 def elements_from_cell(cell):
     """
     Convert a DataFrame cell to a set of clean, lowercased elements.
@@ -145,11 +150,13 @@ def add_per_row_rouge(df_gold, predicted_df, gold_col='short_description', pred_
 def evaluate_ner_model_partial_overlap(df_gold, ner_res_model, pico_cols,
                                        summary_gold_col='summary_reference',
                                        summary_pred_col='summary',
-                                       add_rouge=True):
+                                       add_rouge=True,
+                                       processing_time=None,
+                                       batch_throughput=None):
     """
     For each PICO column, compares gold and predicted values row-by-row
     using substring-overlap matching, and adds per-row precision, recall, and F1 columns
-    to df_gold for detailed error analysis. Also adds per-row ROUGE scores for summaries.
+    to df_gold for detailed error analysis. Also adds per-row ROUGE and BLEU scores for summaries.
     Returns:
         tuple:
             - pd.DataFrame: df_gold with new columns for each evaluated field
@@ -177,6 +184,8 @@ def evaluate_ner_model_partial_overlap(df_gold, ner_res_model, pico_cols,
     # Per-row ROUGE metrics for summary
     if add_rouge and summary_gold_col in df_gold.columns and summary_pred_col in ner_res_model.columns:
         scorer = rouge_scorer.RougeScorer(['rouge1', 'rouge2', 'rougeL'], use_stemmer=True)
+        smoothie = SmoothingFunction().method4
+        bleu_scores = []
         # Initialize columns
         for rn in ['rouge1', 'rouge2', 'rougeL']:
             df_gold[f"{summary_pred_col}_{rn}_precision"] = 0.0
@@ -191,6 +200,26 @@ def evaluate_ner_model_partial_overlap(df_gold, ner_res_model, pico_cols,
                 df_gold.at[idx, f"{summary_pred_col}_{rn}_precision"] = scores[rn].precision
                 df_gold.at[idx, f"{summary_pred_col}_{rn}_recall"] = scores[rn].recall
                 df_gold.at[idx, f"{summary_pred_col}_{rn}_f1"] = scores[rn].fmeasure
+            # BLEU
+            ref_tokens = [ref.split()]
+            pred_tokens = pred.split()
+            bleu = sentence_bleu(ref_tokens, pred_tokens, smoothing_function=smoothie)
+            bleu_scores.append(bleu)
+        df_gold[f"{summary_pred_col}_bleu"] = bleu_scores
+
+    # Calculate proportion of documents with all PICO elements partially correct
+    all_partial_correct = []
+    for idx, row in df_gold.iterrows():
+        is_correct = True
+        for col in pico_cols:
+            # Use partial recall as indicator (can adjust threshold if needed)
+            recall = row.get(f"{col}_partial_recall", 0.0)
+            # Consider "correct" if recall == 1.0 (all gold standard items are retrieved)
+            if recall < 1.0:
+                is_correct = False
+                break
+        all_partial_correct.append(is_correct)
+    proportion_partial_correct = sum(all_partial_correct) / len(all_partial_correct) if all_partial_correct else 0.0
 
     # Summary table
     rows = []
@@ -211,10 +240,103 @@ def evaluate_ner_model_partial_overlap(df_gold, ner_res_model, pico_cols,
                 "recall":    df_gold[f"{summary_pred_col}_{rn}_recall"].mean(),
                 "f1":        df_gold[f"{summary_pred_col}_{rn}_f1"].mean()
             })
+        # Add BLEU score summary
+        rows.append({
+            "element": "SUMMARY_BLEU",
+            "precision": None,
+            "recall": None,
+            "f1": None,
+            "bleu": sum(bleu_scores) / len(bleu_scores)
+        })
+    
+    # Add proportion of fully partially correct rows
+    rows.append({
+        "element": "PROPORTION_ALL_PICO_PARTIAL_CORRECT",
+        "precision": None,
+        "recall": None,
+        "f1": None,
+        "bleu": None,
+        "proportion": proportion_partial_correct
+    })
+
+    # Add processing time and throughput if provided
+    if processing_time is not None and batch_throughput is not None:
+        rows.append({
+            "element": "PROCESSING_TIME",
+            "precision": None,
+            "recall": None,
+            "f1": None,
+            "bleu": None,
+            "proportion": None,
+            "total_seconds": processing_time[0],
+            "avg_seconds_per_doc": processing_time[1],
+            "median_seconds_per_doc": processing_time[2]
+        })
+        rows.append({
+            "element": "BATCH_THROUGHPUT",
+            "precision": None,
+            "recall": None,
+            "f1": None,
+            "bleu": None,
+            "proportion": None,
+            "docs_per_minute": batch_throughput
+        })
     # Format summary table
     summary_table = pd.DataFrame(rows).set_index("element")
 
     return df_gold, summary_table
+
+
+def proportion_all_pico_correct(df_gold, ner_res_model, pico_cols, id_col='doc_id'):
+    """
+    Returns the proportion of documents for which all PICO elements are perfectly matched.
+    """
+    correct = []
+    for idx, row in df_gold.iterrows():
+        all_correct = True
+        for col in pico_cols:
+            gold_elems = elements_from_cell(row[col])
+            pred_elems = elements_from_cell(ner_res_model.loc[idx, col])
+            # Require exact match for all elements
+            if gold_elems != pred_elems:
+                all_correct = False
+                break
+        correct.append(all_correct)
+    proportion = sum(correct) / len(correct) if correct else 0.0
+    return proportion
+
+def measure_processing_time(process_func, *args, **kwargs):
+    """
+    Measures the time taken to process a batch of documents.
+    Returns total time, average time per document, and median time per document.
+    """
+    start = time.time()
+    result = process_func(*args, **kwargs)
+    end = time.time()
+    total_time = end - start
+    num_docs = len(args[0]) if hasattr(args[0], '__len__') else 1
+    avg_time = total_time / num_docs if num_docs else 0
+    # For median, measure per-row if possible
+    if hasattr(result, '__len__') and num_docs > 1:
+        per_row_times = []
+        for i in range(num_docs):
+            row_start = time.time()
+            _ = process_func(args[0].iloc[[i]], *args[1:], **kwargs)
+            row_end = time.time()
+            per_row_times.append(row_end - row_start)
+        median_time = sorted(per_row_times)[num_docs // 2]
+    else:
+        median_time = avg_time
+    return total_time, avg_time, median_time
+
+def calculate_batch_throughput(total_time, num_docs):
+    """
+    Calculates batch throughput: number of documents processed per minute.
+    """
+    if total_time == 0:
+        return float('inf')
+    throughput = num_docs / (total_time / 60)
+    return throughput
 
 if __name__ == "__main__":
     # Get the PROJECT ROOT (biomed-extractor/)
@@ -237,12 +359,16 @@ if __name__ == "__main__":
     df_gold["intervention"] = df_gold["intervention"].apply(normalize_intervention)
 
     # process test file for PICO elements
-    ner_pipeline = load_ner_pipeline_huggingface("kamalkraj/BioELECTRA-PICO")
+    #mymodel = "kamalkraj/BioELECTRA-PICO"
+    #ner_pipeline = load_ner_pipeline_huggingface(mymodel)
+    #ner_res_model = process_trials_for_PICO(mydf_manual_annotation, ner_pipeline)
     # for self-trained model
-    #ner_pipeline = load_ner_trained_pipeline("app/model/nlpie_compact_biobert_PICO")
-    #dmis-lab_biobert-v1.1
-    ner_res_model = process_trials_for_PICO(mydf_manual_annotation, ner_pipeline)
-    #ner_res_model = process_trials_for_retrained_PICO(mydf_manual_annotation, ner_pipeline)
+    #mymodel = "app/model/nlpie_compact_biobert_PICO"
+    #mymodel = "app/model/nlpie_bio-mobilebert_PICO"
+    mymodel = "app/model/dmis-lab_biobert-v1.1"
+    ner_pipeline = load_ner_trained_pipeline(mymodel)
+    ner_res_model = process_trials_for_retrained_PICO(mydf_manual_annotation, ner_pipeline)
+
     ner_res_model.sort_values(by=['nctId'], inplace=True)
     # rename columns to match gold standard
     ner_res_model.rename(columns={'population_extracted': 'population',
@@ -253,14 +379,31 @@ if __name__ == "__main__":
     
     # evaluate results
     pico_cols = ["population", "intervention", "comparator", "outcome"]
+    # Measure processing time and throughput for extraction
+    total_time_load, avg_time_load, median_time_load = measure_processing_time(load_ner_trained_pipeline, mymodel)
+    print("loading model time: ", total_time_load)
+    total_time, avg_time, median_time = measure_processing_time(process_trials_for_retrained_PICO, mydf_manual_annotation, ner_pipeline)
+    throughput = calculate_batch_throughput(total_time, len(mydf_manual_annotation))
     #df_gold_with_partial, evaluation_table = evaluate_ner_model_partial_overlap(df_gold.copy(), ner_res_model, pico_cols)
     df_gold_with_partial, evaluation_table = evaluate_ner_model_partial_overlap(df_gold.copy(), 
                                                                                 ner_res_model, 
                                                                                 pico_cols, 
                                                                                 summary_gold_col='summary', 
                                                                                 summary_pred_col='summary', 
-                                                                                add_rouge=True)
+                                                                                add_rouge=True,
+                                                                                processing_time=(total_time, avg_time, median_time),
+                                                                                batch_throughput=throughput)
     print(evaluation_table)
     print(df_gold_with_partial.head())
-    df_gold_with_partial.to_csv("data/results_compact_biobert_PICO_PICO.csv", index=False)
+#    df_gold_with_partial.to_csv("data/results_BioELECTRA.csv", index=False)
+#    evaluation_table.to_csv("data/results_BioELECTRA_summary.csv", index=True)
+   # df_gold_with_partial.to_csv("data/results_compact_biobert_PICO.csv", index=False)
+   # evaluation_table.to_csv("data/results_compact_biobert_PICO_summary.csv", index=True)
+   # df_gold_with_partial.to_csv("data/results_bio-mobilebert_PICO.csv", index=False)
+   # evaluation_table.to_csv("data/results_bio-mobilebert_PICO_summary.csv", index=True)
+    df_gold_with_partial.to_csv("data/results_biobert_PICO.csv", index=False)
+    evaluation_table.to_csv("data/results_biobert_PICO_summary.csv", index=True)
+    prop_all_pico = proportion_all_pico_correct(df_gold, ner_res_model, pico_cols, id_col='doc_id')
+    print(f"Proportion of documents with all PICO elements correct: {prop_all_pico:.3f}")
+  
     
