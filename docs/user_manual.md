@@ -84,7 +84,7 @@ Ask your system administrator or provider for the tool URL and open it in your b
 - If you see an error message:
   - Check file format and ensure the documents conform to ClinicalTrials.gov standards.
   - Large documents or batches may take longer; verify your system meets minimum specifications.
-  - For persistent issues, see the [Troubleshooting Guide](docs/troubleshooting.md) or contact your administrator.
+  - For persistent issues, see the [Troubleshooting Guide](troubleshooting.md) or contact your administrator.
 
 
 

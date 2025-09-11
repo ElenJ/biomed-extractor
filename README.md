@@ -109,7 +109,7 @@ Stop execution with Ctrl+C
 
 ## Technical background
 
-Model selection and finetuning for PICO task as well as model performance is outlined in [model_selection.md](docs\model_selection.md). 
+Model selection and finetuning for PICO task as well as model performance is outlined in [model_selection.md](docs/model_selection.md). 
 
 ### PICO extraction
 
