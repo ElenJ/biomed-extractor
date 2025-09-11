@@ -102,8 +102,8 @@ with st.sidebar:
     st.markdown("[Troubleshooting Guide](https://github.com/ElenJ/biomed-extractor/blob/main/docs/troubleshooting.md)")
     st.markdown("[Contact Support](https://github.com/ElenJ/biomed-extractor/issues)")
 
-    #with open("docs/user_manual.pdf", "rb") as f:
-     #   st.download_button("Download manual", f, file_name="BIOMED_EXTRACTOR_user_manual.pdf")
+    with open("docs/user_manual.pdf", "rb") as f:
+        st.download_button("Download manual", f, file_name="BIOMED_EXTRACTOR_user_manual.pdf")
 
 
 
