@@ -113,17 +113,9 @@ Representative test cases, performed manually prior to release of new version:
 
 ### **4.4. Regression Tests**
 
-Representative test cases:
+Regression on fixed annotation bug (when identified)
+A known edge-case file that previously triggered a bug (e.g., missing population field, malformed intervention data)  
 
-- **Test:** Regression on previously fixed annotation bug  
-  - **Given:** A known edge-case file that previously triggered a bug (e.g., missing population field, malformed intervention data)  
-  - **When:** The extraction pipeline is run  
-  - **Then:** The previous bug does not reoccur; extraction results are correct and robust
-
-- **Test:** Regression on summary generation for complex descriptions  
-  - **Given:** A study description that previously caused incorrect or empty summaries  
-  - **When:** The summarization function is applied  
-  - **Then:** The output summary is non-empty and relevant, confirming the bug is fixed
 
 ### **4.5. Performance Tests**
 

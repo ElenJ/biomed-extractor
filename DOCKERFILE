@@ -1,15 +1,18 @@
-FROM python:3.12
+FROM python:3.11
 
-WORKDIR /code
+WORKDIR /app
 
+# Copy and install dependencies
 COPY requirements.txt .
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
-RUN python -m nltk.downloader punkt # this is only needed if summarizer is based on textrank
+# Set NLTK data path and download 'punkt'
+ENV NLTK_DATA=/usr/share/nltk_data
+RUN mkdir -p /usr/share/nltk_data
+RUN python -c "import nltk; nltk.download('punkt_tab', download_dir='/usr/share/nltk_data')"
+
 
 COPY app app
-COPY main.py .
-COPY data data
 
-CMD ["streamlit", "run", "main.py"]
+CMD ["streamlit", "run", "app/main.py"]

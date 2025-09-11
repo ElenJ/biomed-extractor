@@ -6,7 +6,7 @@ Automatically extract PICO elements & structured summaries from ClinicalTrials.g
 
 ## Features
 - Upload clinical trial data
-- Extract population/intervention/outcome
+- Extract population/intervention/comparator/outcome
 - Summarize trial
 - Web-based interface (Streamlit)
 - Ready for Docker deployment
