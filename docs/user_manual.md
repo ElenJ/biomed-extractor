@@ -1,11 +1,9 @@
-TODO: check document once tool programming is done
-
 # **User Manual**
 
 **Biomedical LLM Information Extraction Tool**  
 **Version:** 0.1  
-**Author:** [Your Name]  
-**Date:** [Date]
+**Author:** Elena Jolkver
+**Date:** 11.09.2025
 
 
 
@@ -45,41 +43,38 @@ Ask your system administrator or provider for the tool URL and open it in your b
 
 ## **4. Uploading Files**
 
-1. On the main screen, find the **“Upload Documents”** section.
+1. On the main screen, find the **“Control elements”** section.
 2. Click the **“Browse files”** button.
-3. Select one or more ClinicalTrials.gov files (XML or plain text).
+3. Select a ClinicalTrials.gov files (json or csv). The file might contain one or more trials. You can use biomed_extractor\data\example_trials.json as an example
     - Only supported formats will be accepted.
     - Drag and drop is also supported.
-4. Uploaded files will appear in a list below the uploader.
+4. Uploaded file name will appear below the uploader.
 
 
 
 ## **5. Configuring Extraction (Optional)**
 
-- You can choose extraction options (such as which PICO elements to extract, or which AI model to use) if available on the sidebar or main page.
-- Default settings will cover standard use cases.
-
+- You can choose extraction options (which AI model to use) in the sidebar.
 
 
 ## **6. Running Extraction**
 
 1. After uploading files, click the **"Run Extraction"** button.
 2. The tool will process the documents. Progress and status will be shown.
-3. Wait for completion—processing time depends on document size/number.
+3. Wait for completion—processing time depends on model selected and document size/number.
 
 
 
 ## **7. Viewing Results**
 
 - Extracted information and AI-generated summaries will be displayed in a table on the results screen.
-- Click or hover over table cells to view longer summaries or detailed notes.
-- Colored highlights indicate missing or possibly ambiguous content.
+- Top 5 Interventions, comparators and outcomes are displayed in bar charts.
 
 
 
 ## **8. Downloading Results**
 
-- Use the **"Download"** button to obtain results in your preferred format (CSV, Excel, or JSON).
+- Use the **"Download"** button to obtain results as a tab-separated csv file.
 - The download will include all extraction results and summaries for your uploaded files.
 
 
@@ -89,36 +84,34 @@ Ask your system administrator or provider for the tool URL and open it in your b
 - If you see an error message:
   - Check file format and ensure the documents conform to ClinicalTrials.gov standards.
   - Large documents or batches may take longer; verify your system meets minimum specifications.
-  - For persistent issues, see the [Troubleshooting Guide](troubleshooting.md) or contact your administrator.
+  - For persistent issues, see the [Troubleshooting Guide](docs/troubleshooting.md) or contact your administrator.
 
 
 
 ## **10. User Privacy and Security**
 
 - All processing is local to your system unless otherwise specified.
-- Your uploaded data is **not sent to external servers** unless you explicitly enable external model usage.
+- Your uploaded data is **not sent to external servers**.
 - For private/publication-sensitive data, deploy the tool only on secure, authorized machines.
 
 
 ## **11. Frequently Asked Questions (FAQ)**
 
 **Q: What document formats are supported?**  
-A: ClinicalTrials.gov XML and plain text files. For other formats, convert to supported types before uploading.
+A: ClinicalTrials.gov json and plain text csv files. For other formats, convert to supported types before uploading.
 
-**Q: Can I process more than one document at a time?**  
-A: Yes, batch uploads are supported and recommended for reviews.
 
 **Q: How do I select a different AI model?**  
-A: If enabled, model selection options will be in the sidebar or advanced options section.
+A: Model selection options are in the dropdown menu in the sidebar.
 
 **Q: Where can I get help?**  
-A: See the [Troubleshooting Guide](troubleshooting.md) or contact your deployment administrator.
+A: See the help links in the sidebar.
 
 
 
 ## **12. Support and Feedback**
 
-- Contact [Your Contact Email] or submit an issue via the project’s GitHub repository for questions, suggestions, or reporting a bug.
+- Submit an issue via the project’s [GitHub repository](https://github.com/ElenJ/biomed-extractor) for questions, suggestions, or reporting a bug.
 - User feedback is encouraged to improve future versions of the tool!
 
 

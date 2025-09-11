@@ -1,11 +1,9 @@
-TODO: check the conmtent of this file once I make up my mind on this. Check also the hyperlinks!
-
 # **Evaluation Metrics and Methods**
 
 **Project:** Biomedical LLM Information Extraction Tool  
 **Version:** 0.1  
-**Author:** [Your Name]  
-**Date:** [Date]
+**Author:** Elena Jolkver
+**Date:** 11.09.2025
 
 
 

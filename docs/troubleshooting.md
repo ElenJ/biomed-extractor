@@ -1,11 +1,9 @@
-TODO: this document is LLM generated. Check it once the tool programming is done.
-
 # Troubleshooting Guide
 
 **Biomedical LLM Information Extraction Tool**  
 **Version:** 0.1  
-**Author:** [Your Name]  
-**Date:** [Date]
+**Author:** Elena Jolkver
+**Date:** 11.09.2025
 
 
 This guide lists common issues users may encounter and suggested steps to resolve them.
@@ -37,7 +35,7 @@ This guide lists common issues users may encounter and suggested steps to resolv
 
 **Possible Causes & Solutions:**
 - **Wrong File Format:**  
-  Only ClinicalTrials.gov XML and plain text files are supported. Double-check file type.
+  Only ClinicalTrials.gov json and csv plain text files are supported. Double-check file type.
 - **File Size Limits:**  
   File too large for browser upload limit (~200MB default). Try splitting data or using smaller batches.
 - **Browser Compatibility:**  
@@ -140,6 +138,6 @@ This guide lists common issues users may encounter and suggested steps to resolv
 If your issue is not resolved above:
 
 - Review [user_manual.md](user_manual.md) and [requirements.md](requirements.md)
-- Search for your error message in the [project repository issues](https://github.com/your_username/biomed-extractor/issues)
+- Search for your error message in the [project repository issues](https://github.com/ElenaJ/biomed-extractor/issues)
 - Contact the deployment administrator or project maintainer.
 

@@ -3,7 +3,7 @@
 **Project:** Biomedical LLM Information Extraction Tool  
 **Version:** 0.1  
 **Author:** Elena Jolkver
-**Date:** 25.09.2025
+**Date:** 11.09.2025
 
 
 ## **1. Technology Stack**

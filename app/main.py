@@ -7,21 +7,8 @@ from nlp.utils import * # import all utils
 import altair as alt
 
 
-# define functions
-#@st.cache_data
-#def process_clinicaltrials(df):
-    # process file for PICO elements
-#    if  model_selected =="bio-mobilebert":
-#        ner_pipeline = load_ner_trained_pipeline("app/model/nlpie_bio-mobilebert_PICO") 
-#       ner_res_model = process_trials_for_retrained_PICO(df, ner_pipeline)
-#    elif model_selected =="BioELECTRA":
-#       ner_pipeline = load_ner_pipeline_huggingface("kamalkraj/BioELECTRA-PICO")
-#       ner_res_model = process_trials_for_PICO(df, ner_pipeline) # use this function for huggingface models
- 
-    # get extracted columns only
-#    clinicaltrials_pico = ner_res_model[["nctId", "summary_extracted", "intervention_extracted", "comparator_extracted", "outcome_extracted", "population_extracted"]]
-#    return clinicaltrials_pico
 
+# define functions
 @st.cache_data
 def process_extracted_data(df):
     # first, split strings into lists
@@ -34,6 +21,19 @@ def process_extracted_data(df):
     for col in ['intervention_extracted', 'comparator_extracted', 'outcome_extracted']:
         df = df.explode(col)
     return df
+
+@st.cache_data
+def run_extraction(mydf_manual_annotation, model_selected):
+    if model_selected == "bio-mobilebert":
+        ner_pipeline = load_ner_trained_pipeline("app/model/nlpie_bio-mobilebert_PICO")
+        ner_res_model = process_trials_for_retrained_PICO(mydf_manual_annotation, ner_pipeline)
+    elif model_selected == "BioELECTRA":
+        ner_pipeline = load_ner_pipeline_huggingface("kamalkraj/BioELECTRA-PICO")
+        ner_res_model = process_trials_for_PICO(mydf_manual_annotation, ner_pipeline)
+    else:
+        ner_res_model = pd.DataFrame()
+    clinicaltrials_pico = ner_res_model[["nctId", "summary_extracted", "intervention_extracted", "comparator_extracted", "outcome_extracted", "population_extracted"]]
+    return clinicaltrials_pico
 
 def plot_top_entities(
     df,
@@ -94,20 +94,28 @@ with st.sidebar:
     index=None,
     placeholder="Select PICO model...",
     key="model_select"
-)
+    )
     st.write("You selected:", model_selected)
+
+    st.header("Help and self-help", divider="rainbow")
+    st.markdown("[User Documentation](https://github.com/ElenJ/biomed-extractor/blob/main/docs/user_manual.md)") 
+    st.markdown("[Troubleshooting Guide](https://github.com/ElenJ/biomed-extractor/blob/main/docs/troubleshooting.md)")
+    st.markdown("[Contact Support](https://github.com/ElenJ/biomed-extractor/issues)")
+
+    #with open("docs/user_manual.pdf", "rb") as f:
+     #   st.download_button("Download manual", f, file_name="BIOMED_EXTRACTOR_user_manual.pdf")
+
+
 
 
 
 st.markdown("## File upload")
 # Only process if both file and model are selected
 if uploaded_file is not None and model_selected is not None:
-    # find out file extension (json or csv)
     st.write("Filename: ", uploaded_file.name)
     file_extension = uploaded_file.name.split('.')[-1]
     if file_extension == 'json':
-        # load data to extract info from
-        df_json = pd.read_json(uploaded_file) 
+        df_json = pd.read_json(uploaded_file)
         mydf_manual_annotation = extract_from_clinicaltrials(df_json)
     elif file_extension == 'csv':
         df_csv = pd.read_csv(uploaded_file)
@@ -116,30 +124,36 @@ if uploaded_file is not None and model_selected is not None:
         st.error("Unsupported file type. Please upload a JSON or CSV file.")
         mydf_manual_annotation = pd.DataFrame()
 
+    # Extraction trigger
+    if st.button("Run Extraction"):
+        with st.spinner("Extracting entities..."):
+            clinicaltrials_pico = run_extraction(mydf_manual_annotation, model_selected)
+            st.session_state['clinicaltrials_pico'] = clinicaltrials_pico
 
-    # Recalculate predictions when model changes
-    if model_selected == "bio-mobilebert":
-        ner_pipeline = load_ner_trained_pipeline("app/model/nlpie_bio-mobilebert_PICO")
-        ner_res_model = process_trials_for_retrained_PICO(mydf_manual_annotation, ner_pipeline)
-    elif model_selected == "BioELECTRA":
-        ner_pipeline = load_ner_pipeline_huggingface("kamalkraj/BioELECTRA-PICO")
-        ner_res_model = process_trials_for_PICO(mydf_manual_annotation, ner_pipeline)
+    # Only show results if extraction has been run
+    if 'clinicaltrials_pico' in st.session_state:
+        clinicaltrials_pico = st.session_state['clinicaltrials_pico']
+        st.header("Results", divider="rainbow")
+        st.write("Processed trials with extracted PICO elements:")
+        processed_table = st.data_editor(clinicaltrials_pico, hide_index=True)
 
-    # display dataframe
-    clinicaltrials_pico = ner_res_model[["nctId", "summary_extracted", "intervention_extracted", "comparator_extracted", "outcome_extracted", "population_extracted"]]
-    st.write("Processed trials with extracted PICO elements:")
-    processed_table = st.data_editor(clinicaltrials_pico, hide_index=True)
+        st.markdown("## Overview")
+        clinicaltrials_processed = process_extracted_data(clinicaltrials_pico)
+        col1, col2, col3 = st.columns(3)
+        with col1:
+            plot_top_entities(clinicaltrials_processed, 'intervention_extracted', 'Intervention', slider_key='interv')
+        with col2:
+            plot_top_entities(clinicaltrials_processed, 'comparator_extracted', 'Comparator', slider_key='comp')
+        with col3:
+            plot_top_entities(clinicaltrials_processed, 'outcome_extracted', 'Outcome', slider_key='outc')
 
-    st.markdown("## Overview")
-    clinicaltrials_processed = process_extracted_data(clinicaltrials_pico)
-    col1, col2, col3 = st.columns(3)
-    with col1:
-        plot_top_entities(clinicaltrials_processed, 'intervention_extracted', 'Intervention', slider_key='interv')
-    with col2:
-        plot_top_entities(clinicaltrials_processed, 'comparator_extracted', 'Comparator', slider_key='comp')
-    with col3:
-        plot_top_entities(clinicaltrials_processed, 'outcome_extracted', 'Outcome', slider_key='outc')
-    
+        st.download_button(
+            label="Download Results as tab-separated CSV",
+            data=clinicaltrials_pico.to_csv(index=False, sep='\t').encode('utf-8'),
+            file_name="extracted_trials.csv",
+            mime="text/csv"
+        )
+
 
 else:
-    st.info("Please upload a file and select a model to see analysis!")   
+    st.info("Please upload a file and select a model to see analysis!") 

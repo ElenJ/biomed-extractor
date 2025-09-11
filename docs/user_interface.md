@@ -3,7 +3,7 @@
 **Project:** Biomedical LLM Information Extraction Tool  
 **Version:** 0.1  
 **Author:** Elena Jolkver
-**Date:** 25.07.2025
+**Date:** 11.09.2025
 
 
 ## **1. Overview**
@@ -35,33 +35,27 @@ The user interface (UI) is implemented using Streamlit, designed to enable domai
 
 ### **3.1. File Upload**
 
-- Users upload one or multiple ClinicalTrials.gov files (XML or text) via a File Uploader component at the top of the page.
+- Users upload one ClinicalTrials.gov files (json or cst) via a File Uploader component at the top of the page.
 - Only supported file types are accepted; unsupported formats are blocked with clear error messaging.
 
-### **3.2. Configuration Options**
 
-- Optional: Model selection dropdown, batch size limits, extraction options (e.g., select which PICO elements to extract).
-- Tooltips and documentation links provided for all advanced configuration fields.
-
-### **3.3. Extraction Trigger**
+### **3.2. Extraction Trigger**
 
 - Processing is initislized once data is provided and model is selected
 - prominent “Run Extraction” button initiates processing.
 - Loading spinner and progress bar reassure users during processing.
-- If multiple files, show progress as a percentage or per-document ticker.
 
-### **3.4. Results Display**
+
+### **3.3. Results Display**
 
 - Extracted information presented in an interactive, scrollable table (e.g., one row per study, with columns for Population, Intervention, Comparator, Outcomes, Summary).
-- Option to expand/collapse summary details for each file.
-- Color highlights or icons to flag missing data or extraction errors.
+- Quick overview on most common I/C/O elements displayed graphically
 
-### **3.5. Download**
+### **3.4. Download**
 
 - Results downloadable in CSV format via clearly labeled download buttons.
-- Download buttons are deactivated/greyed-out until extraction is complete.
 
-### **3.6. Error Handling and Help**
+### **3.5. Error Handling and Help**
 
 - User-friendly error messages for common issues (e.g., no file uploaded, wrong format, processing failures).
 - Link to user documentation and troubleshooting guide.
@@ -97,15 +91,12 @@ The user interface (UI) is implemented using Streamlit, designed to enable domai
 
 ## **7. Example Screenshots/Wireframes**
 
-TODO: Include PNG or draw.io wireframes here `design_diagram.png`. 
+![User interface](pics/upload_screen.png)
 
 
 ## **8. Future UI Enhancements**
 
-- Wizard-like stepper for multi-stage workflows.
 - Inline correction/annotation (user can edit extracted elements before download).
-- User-customizable color themes and layouts.
-- Keyboard navigation and more comprehensive a11y support.
 - Activity log/history for auditing.
 
 ## **9. References**
