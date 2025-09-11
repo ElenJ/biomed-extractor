@@ -91,9 +91,10 @@ biomed-extractor/
 │   ├── evaluation_metrics.png # Visual representation of evaluation metrics
 │   ├── deployment_diagram.png # Diagram showing deployment architecture
 │   ├── testing_strategy.png   # Visual representation of the testing strategy
-│   ├── user_manual_screenshots/ # Screenshots for the user manual
+│   ├── pics/ # Screenshots for md files
+│   │   ├── architecture_diagram.png  # Overvieew on app architecture
 │   │   ├── upload_screen.png  # Screenshot of the upload screen
-│   │   └── results_screen.png # Screenshot of the results screen
+│   │   └── results_screen1.png # Screenshot of the results screen (upper part)
 │   ├── troubleshooting_examples/ # Examples of common issues and solutions
 │   │   ├── issue_1.md         # Example of a common issue and its solution
 │   │   ├── issue_2.md         # Another common issue and its solution
@@ -102,8 +103,8 @@ biomed-extractor/
 ├── requirements.txt         # Python dependencies
 ├── README.md                # Main documentation with setup, usage, and background
 ├── LICENSE
-├── .gitignore
-└── setup.py                 # (Optional) For pip-installable packaging
+└── .gitignore
+
 ```
 ## Workflow for adaptation
 
@@ -117,7 +118,7 @@ biomed-extractor/
 streamlit run app/main.py
 ```
 
-Demo app with file data/example_trials.json
+Demo app with file data/example_trials.json or data/example_trials.csv
 
 Stop execution with Ctrl+C
 

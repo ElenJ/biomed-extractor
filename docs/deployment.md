@@ -4,14 +4,14 @@ TODO: check document, once DOCKER deployment is done
 
 **Project:** Biomedical LLM Information Extraction Tool  
 **Version:** 0.1  
-**Author:** [Your Name]  
-**Date:** [Date]
+**Author:** Elena Jolkver
+**Date:** 11.09.2025
 
 
 
 ## 1. Overview
 
-This document describes the recommended methods for deploying the Biomedical LLM Information Extraction Tool in local, on-premise, and (optionally) cloud environments. The default method uses Docker for containerized, reproducible deployment that ensures consistency across systems.
+This document describes the recommended methods for deploying the Biomedical LLM Information Extraction Tool in local environments. The default method uses Docker for containerized, reproducible deployment that ensures consistency across systems.
 
 
 
@@ -41,19 +41,10 @@ docker run -p 8501:8501 biomed-extractor
 ```
 - The application will be accessible at [http://localhost:8501](http://localhost:8501) in your web browser.
 
-### 3.3. Using Data/Model Volumes (Optional)
-
-To persist uploads/results or use custom models/data:
-```bash
-docker run -p 8501:8501 \
-    -v /your/local/dir:/code/data \
-    biomed-extractor
-```
-
 
 ## 4. Environment Variables and Configuration
 
-- **Model Selection:** Edit `app/config.py` or set environment variables as needed for alternate model choices.
+
 - **Resource Limits:** Adjust Docker runtime settings (`--cpus`, `--memory`) for larger workloads.
 - **GPU Support:**  
     - Use [`nvidia-docker`](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html) for GPU acceleration.
