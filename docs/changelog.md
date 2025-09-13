@@ -7,8 +7,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 ### Ideas
+- extract interventions from interventions field
+- test models on another disease, which was not coveed in the training documents
 - Support for alternative input sources (e.g., PubMed articles, CSV uploads).
-- Option for user-selectable NLP/LLM models and on-the-fly model updates.
 - Advanced summarization capabilities (multi-document summarization, custom summary lengths).
 - User-driven annotation and manual correction interface for extracted elements.
 - Integrated Q&A (Question Answering) functionality over uploaded texts.

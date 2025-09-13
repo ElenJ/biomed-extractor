@@ -4,6 +4,7 @@ app/model/dmis-lab_biobert-v1.1
 app/model/nlpie_compact_biobert_PICO
 app/model/nlpie_bio-mobilebert_PICO/surplus_files_not_to_store_on_github
 actualTODO.md
+blogpost summary.docx
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
