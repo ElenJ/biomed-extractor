@@ -1,0 +1,186 @@
+import requests
+import json
+import csv
+from typing import List, Dict, Union
+from loader import load_trials_json, extract_from_clinicaltrials
+import os
+import pandas as pd
+
+class ClinicalTrialsAPI:
+    """
+    For interacting with the ClinicalTrials.gov API.
+    """
+
+    BASE_URL = "https://clinicaltrials.gov/api/v2"
+
+
+
+    @staticmethod
+    def fetch_study_details(nct_ids: List[str]) -> List[Dict[str, Union[Dict, str]]]:
+        """
+        Fetch only the protocolSection for a list of NCT IDs.
+        Handles JSON decode errors, request exceptions, and missing protocolSection.
+        Returns a list of dictionaries, each containing a 'protocolSection' key.
+        """
+        protocol_sections = []
+
+        for nct_id in nct_ids:
+            url = f"{ClinicalTrialsAPI.BASE_URL}/studies/{nct_id}?format=json"
+            try:
+                response = requests.get(url, allow_redirects=True)
+                response.raise_for_status()
+                try:
+                    data = response.json()
+                    if 'protocolSection' in data:
+                        protocol_sections.append({"protocolSection": data['protocolSection']})
+                    else:
+                        protocol_sections.append({"protocolSection": f"Error: 'protocolSection' not found for {nct_id}"})
+                except json.JSONDecodeError:
+                    protocol_sections.append({"protocolSection": f"Error: Response not in JSON format for {nct_id}"})
+            except requests.RequestException as e:
+                protocol_sections.append({"protocolSection": f"Request failed for {nct_id}: {str(e)}"})
+
+        return protocol_sections
+
+
+    @staticmethod
+    def fetch_study_details1(nct_ids: List[str]) -> Dict[str, Union[Dict, str]]:
+        """
+        Fetch only the protocolSection for a list of NCT IDs.
+        Handles JSON decode errors, request exceptions, and missing fields.
+        """
+        study_details = {}
+        for nct_id in nct_ids:
+            url = f"{ClinicalTrialsAPI.BASE_URL}/studies/{nct_id}?format=json"
+            try:
+                response = requests.get(url, allow_redirects=True)
+                response.raise_for_status()
+                try:
+                    data = response.json()
+                    if 'protocolSection' in data:
+                        study_details[nct_id] = {'protocolSection': data['protocolSection']}
+                    else:
+                        study_details[nct_id] = "Error: 'protocolSection' not found in response"
+                except json.JSONDecodeError:
+                    study_details[nct_id] = "Error: Response not in JSON format"
+            except requests.RequestException as e:
+                study_details[nct_id] = f"Request failed: {str(e)}"
+        return study_details
+
+
+    @staticmethod
+    def fetch_study_details2(nct_ids: List[str]) -> Dict[str, Union[Dict, str]]:
+        """
+        Fetch detailed study information for a list of NCT IDs.
+        """
+        study_details = {}
+        for nct_id in nct_ids:
+            url = f"{ClinicalTrialsAPI.BASE_URL}/studies/{nct_id}?format=json"
+            try:
+                response = requests.get(url)
+                response.raise_for_status()
+                try:
+                    study_details[nct_id] = response.json()
+                except json.JSONDecodeError:
+                    study_details[nct_id] = "Error: Response not in JSON format"
+            except requests.RequestException as e:
+                study_details[nct_id] = f"Request failed: {str(e)}"
+        return study_details
+
+    @staticmethod
+    def fetch_protocol_sections(nct_ids: List[str]) -> List[Dict[str, Union[Dict, str]]]:
+        """
+        Fetch the 'protocolSection' for each NCT ID from ClinicalTrials.gov API.
+        Returns a list of dictionaries in the format:
+        [{"protocolSection": {...}}, ...]
+        Includes error handling for request failures and JSON decoding issues.
+        """
+        base_url = "https://clinicaltrials.gov/data-api/api/studies"
+        results = []
+
+        for nct_id in nct_ids:
+            url = f"{base_url}/{nct_id}?format=json"
+            try:
+                response = requests.get(url)
+                response.raise_for_status()
+                try:
+                    data = response.json()
+                    if 'protocolSection' in data:
+                        results.append({"protocolSection": data['protocolSection']})
+                    else:
+                        results.append({"protocolSection": f"Error: 'protocolSection' not found for {nct_id}"})
+                except json.JSONDecodeError:
+                    results.append({"protocolSection": f"Error: Response not in JSON format for {nct_id}"})
+            except requests.RequestException as e:
+                results.append({"protocolSection": f"Request failed for {nct_id}: {str(e)}"})
+
+        return results
+
+    @staticmethod
+    def save_to_json(data: Dict, filename: str) -> None:
+        """
+        Save data to a JSON file.
+        """
+        with open(filename, 'w') as f:
+            json.dump(data, f, indent=4)
+
+    @staticmethod
+    def save_to_csv(data: Dict, filename: str) -> None:
+        """
+        Save study fields data to a CSV file.
+        """
+        if "StudyFields" not in data or "StudyFields" not in data["StudyFieldsResponse"]:
+            raise ValueError("Invalid data format for CSV export")
+
+        fields = data["StudyFieldsResponse"]["Fields"]
+        studies = data["StudyFieldsResponse"]["StudyFields"]
+
+        with open(filename, 'w', newline='', encoding='utf-8') as f:
+            writer = csv.writer(f)
+            writer.writerow(fields)
+            for study in studies:
+                writer.writerow([", ".join(item) if isinstance(item, list) else item for item in study])
+
+
+PROJECT_ROOT = os.path.expanduser('~/Documents/github/biomed_extractor')
+# Data directory at top level
+DATA_DIR = os.path.join(PROJECT_ROOT, 'data\\annotated')
+file = 'study_details_supergoldseet.json'
+output_path = os.path.join(DATA_DIR, file)
+# get my study list to get the info for
+processed_files = pd.read_excel(os.path.join(PROJECT_ROOT, 'data/annotated/Clinical trials in PICOS_supergoldset.xlsx'), skiprows=2)
+myIDs = processed_files['ID'].tolist()
+# call api
+api = ClinicalTrialsAPI()
+
+# Fetch details by NCT IDs
+details = api.fetch_study_details(myIDs)
+#print(details)
+api.save_to_json(details, output_path)
+
+
+df_json = load_trials_json(filepath = DATA_DIR, filename = file)
+#print(df_json.head())
+mydf_manual_annotation = extract_from_clinicaltrials(df_json)
+print(mydf_manual_annotation.head())
+
+# add summary from mydf_manual_annotation to processed_files
+df = processed_files.merge(mydf_manual_annotation, left_on="ID", right_on="nctId")
+# keep only relevant columns
+df = df[['nctId', 'briefSummary','P (indication)', 'P (age)','I (name)','C (name)' , 'O']].copy()
+df['P'] = df['P (indication)'] + ', ' + df['P (age)']
+df.rename(columns={"nctId": "doc_id", "briefSummary": "summary","P": "population",  
+                   "I (name)": "intervention","C (name)": "comparator","O": "outcome"}, errors="raise", inplace=True)
+df = df.drop(columns=['P (indication)', 'P (age)'])
+# Ensure columns that should be lists are lists (not strings)
+for col in ["summary", "population", "intervention", "comparator", "outcome"]:
+    df[col] = df[col].apply(lambda x: [x] if isinstance(x, list) else [x] if pd.notnull(x) else [])
+
+# Convert DataFrame to list of dicts
+records = df.to_dict(orient="records")
+
+file = 'supergoldset_standard.json'
+output_path = os.path.join(DATA_DIR, file)
+# Save to JSON file
+with open(output_path, "w", encoding="utf-8") as f:
+    json.dump(records, f, indent=2, ensure_ascii=False)

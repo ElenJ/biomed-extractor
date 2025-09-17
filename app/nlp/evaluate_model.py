@@ -170,13 +170,49 @@ def evaluate_ner_model_partial_overlap(df_gold, ner_res_model, pico_cols,
             df_gold[f"{col}_partial_recall"] = None
             df_gold[f"{col}_partial_f1"] = None
             continue
-        for gold_cell, pred_cell in zip(df_gold[col], ner_res_model[col]):
+
+        # Prepare an aligned list of predictions matching df_gold rows.
+        # If lengths match, use direct column. If not, try to align by common ID columns
+        # (e.g. df_gold['doc_id'] vs ner_res_model['nctId']). Otherwise pad or truncate.
+        if len(ner_res_model) == len(df_gold):
+            pred_iterable = ner_res_model[col].reset_index(drop=True).tolist()
+        else:
+            pred_iterable = None
+            # try to align using common id columns
+            if 'doc_id' in df_gold.columns and 'nctId' in ner_res_model.columns:
+                try:
+                    pred_series = ner_res_model.set_index('nctId')[col].reindex(df_gold['doc_id']).fillna('').tolist()
+                    pred_iterable = pred_series
+                except Exception:
+                    pred_iterable = None
+            # fallback: if same id column present in both
+            if pred_iterable is None:
+                for id_col in ['doc_id', 'nctId', 'nct_id', 'nctid']:
+                    if id_col in df_gold.columns and id_col in ner_res_model.columns:
+                        try:
+                            pred_series = ner_res_model.set_index(id_col)[col].reindex(df_gold[id_col]).fillna('').tolist()
+                            pred_iterable = pred_series
+                            break
+                        except Exception:
+                            pred_iterable = None
+            # final fallback: pad or truncate
+            if pred_iterable is None:
+                series = ner_res_model[col].reset_index(drop=True).astype(object).tolist()
+                if len(series) < len(df_gold):
+                    series = series + [''] * (len(df_gold) - len(series))
+                else:
+                    series = series[:len(df_gold)]
+                pred_iterable = series
+
+        for gold_cell, pred_cell in zip(df_gold[col], pred_iterable):
             gold_elems = elements_from_cell(gold_cell)
             pred_elems = elements_from_cell(pred_cell)
             p, r, f1 = substring_partial_overlap(gold_elems, pred_elems)
             partial_precisions.append(p)
             partial_recalls.append(r)
             partial_f1s.append(f1)
+
+        # Assign lists (should now match df_gold length)
         df_gold[f"{col}_partial_precision"] = partial_precisions
         df_gold[f"{col}_partial_recall"] = partial_recalls
         df_gold[f"{col}_partial_f1"] = partial_f1s
@@ -193,7 +229,32 @@ def evaluate_ner_model_partial_overlap(df_gold, ner_res_model, pico_cols,
             df_gold[f"{summary_pred_col}_{rn}_f1"] = 0.0
         # Compute per-row scores
         refs = df_gold[summary_gold_col].fillna("").astype(str).tolist()
-        preds = ner_res_model[summary_pred_col].fillna("").astype(str).tolist()
+        # Align predictions for summaries similar to PICO alignment above
+        if len(ner_res_model) == len(df_gold):
+            preds = ner_res_model[summary_pred_col].fillna("").astype(str).tolist()
+        else:
+            preds = None
+            if 'doc_id' in df_gold.columns and 'nctId' in ner_res_model.columns:
+                try:
+                    preds = ner_res_model.set_index('nctId')[summary_pred_col].reindex(df_gold['doc_id']).fillna("").astype(str).tolist()
+                except Exception:
+                    preds = None
+            if preds is None:
+                for id_col in ['doc_id', 'nctId', 'nct_id', 'nctid']:
+                    if id_col in df_gold.columns and id_col in ner_res_model.columns:
+                        try:
+                            preds = ner_res_model.set_index(id_col)[summary_pred_col].reindex(df_gold[id_col]).fillna("").astype(str).tolist()
+                            break
+                        except Exception:
+                            preds = None
+            if preds is None:
+                series = ner_res_model[summary_pred_col].reset_index(drop=True).astype(str).tolist()
+                if len(series) < len(df_gold):
+                    series = series + [""] * (len(df_gold) - len(series))
+                else:
+                    series = series[:len(df_gold)]
+                preds = series
+
         for idx, (ref, pred) in enumerate(zip(refs, preds)):
             scores = scorer.score(ref, pred)
             for rn in ['rouge1', 'rouge2', 'rougeL']:

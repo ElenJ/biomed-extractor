@@ -1,0 +1,3512 @@
+[
+  {
+    "doc_id": "NCT05987540",
+    "summary": [
+      "The purpose of this single arm study is to evaluate the feasibility and safety of treatments with a non-invasive neuromodulation device in adults diagnosed with mild/moderate Parkinson's disease dementia (PDD). A non-invasive device is a device that stays outside of the body and is not implanted and does not penetrate the skin.\n\nNeuromodulation means that the device stimulates activity in the brain."
+    ],
+    "intervention": [
+      "Non-invasive brainstem stimulation"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "MDS-UPDRS (Sum of Parts I, II & III), Feasibility of Neuromodulation Device Use in PD Population, Part 1 & 2"
+    ],
+    "population": [
+      "Parkinson, 50 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT05940077",
+    "summary": [
+      "Parkinson's disease (PD) affects approximately 1 million people in the United States and causes significant fall risks. This study aims to develop a community-based exercise program that reduces falls in persons with PD. By combining individualized balance activities with group boxing training, the study seeks to identify modifiable risk factors, improve balance dysfunction, and reduce falls. The findings will inform clinical practice, offering a community-based exercise model to address the urgent need for effective fall prevention interventions in PD."
+    ],
+    "intervention": [
+      "Community-based exercise involving non-contact boxing and individualized balance training"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Number of Falls Experienced During the Study Period as Reported by Self-report [Time Frame: Baseline and Post-Intervention at approximately 12 weeks]"
+    ],
+    "population": [
+      "Parkinson, 30 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT05756075",
+    "summary": [
+      "The aim of this study is to investigate whether a smartwatch can measure the physical capacity of patients with Parkinson's Disease and COPD in the physiotherapy practice and at home."
+    ],
+    "intervention": [
+      "Participants will follow a personalized aerobic exercise training program twice a week at the physiotherapist. The intensity of the program is based on the results of the 6MWT according to the most recent guidelines for physiotherapy for PD"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Mean Difference in Distance Walked During 6MWT"
+    ],
+    "population": [
+      "Parkinson, 18 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT05655377",
+    "summary": [
+      "The investigators will run an at-home usability study of a newly developed home exercise device (FitMi PD) for individuals with Parkinson's disease. FitMi PD uses embedded sensors that can track and record the user's direction and degree of movement while performing exercises described on a computer."
+    ],
+    "intervention": [
+      "Exercise using the motion sensing devices and a tablet computer"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Number of participants who were successfully able to use the device at home to exercise over 3 week period."
+    ],
+    "population": [
+      "Parkinson, 18 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT05635461",
+    "summary": [
+      "This is a Randomized, Open-Label, Single Oral Dose, Three-Way Cross-Over Trial to Evaluate the Relative Bioavailability of CVN424 Suspension and Tablet Formulations in Healthy Volunteers Under Fasted and Fed Conditions."
+    ],
+    "intervention": [
+      "CVN424"
+    ],
+    "comparator": [
+      "Suspension (fasted): 150 milligrams (mg) of CVN424 administered in a single dose of suspension formulation; Tablet (fed): 150 milligrams (mg) tablet of CVN424 administered in a single dose after ingestion of a standardized high-fat, high-calorie meal according to FDA Guidance for Industry; Tablet (fasted): 150 milligrams (mg) tablet of CVN424 administered in a single dose"
+    ],
+    "outcome": [
+      "Area Under the Concentration-time Curve From Time 0 to the Time of the Last Measured Non Zero Concentration (AUC0-t) of CVN424 Suspension Fasted and Tablet Fasted; Area Under the Plasma Concentration Time Curve From Time 0 to 96 Hours (AUC 0-96h) of CVN424 Suspension Fasted and Tablet Fasted; Maximum Observed Plasma Concentration (Cmax) of CVN424 Suspension Fasted and Tablet Fasted; Time to Reach Cmax (Tmax) of CVN424 Suspension and Tablet; Time Taken for Drug to Appear in Systemic Circulation Following Administration (Tlag) of CVN424 Suspension and Tablet"
+    ],
+    "population": [
+      "healthy, 18 - 55"
+    ]
+  },
+  {
+    "doc_id": "NCT05586490",
+    "summary": [
+      "The researchers have developed a multifunctional rehabilitation device that will be tested in this feasibility trial across three sub-studies: (i) dual session in-lab; (ii) multi-session in-lab and (iii) in the participant's home. A long-term outcome is to test possible benefits of this device (if accepted by the user Parkinson population) on motor and cognitive functions in a clinical trial in a future study. Participants who receive a device during the in-home trial will have the option to keep the device for up to two years in an open label extension. During this extension, participants can optionally provide feedback on their user experience such as discomfort."
+    ],
+    "intervention": [
+      "Multifunctional rehabilitation device to treat mobility and cognitive problems in PwP"
+    ],
+    "comparator": [
+      "existing standard rehabilitation device to be used for in-home comparison testing"
+    ],
+    "outcome": [
+      "1: Mean of User Acceptance Questionnaire part 1 (0-90 points, lower better); 2: Mean of User Acceptance Questionnaire part 2 (0-30 points, higher better); 3: Mean System Usability Scale (0-100, higher better); 4: Change in mean time to complete the Instrumented timed up and go test; 5: change in mean duration of balance during romberg test condition; 6: change in mean response time during the stroop stepping test; 7: change in mean of time taken to complete stroop color word interference test"
+    ],
+    "population": [
+      "Parkinson, 50 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT05487300",
+    "summary": [
+      "Levodopa is a precursor of dopamine and is the treatment of choice to treat the motor symptoms of Parkinson's disease (PD); however, the effect of levodopa on cardiovascular autonomic function in PD is poorly understood. Orthostatic hypotension has been documented as a potential side effect of levodopa. As a result, clinicians may be reluctant to prescribe levodopa in patients with PD with neurogenic orthostatic hypotension (PD+OH), which leads to suboptimal management of motor symptoms. On the other hand, other studies failed to show any clear relationship between levodopa and orthostatic hypotension in patients with PD. Important limitations of prior studies include the lack of detailed investigation of baroreflex cardiovagal and sympathetic noradrenergic functions and the fact that the same patients were not tested on and off levodopa.\n\nThe investigators propose to investigate the effects of levodopa on cardiovascular autonomic function in patients with PD+OH and PD without neurogenic orthostatic hypotension (PD-OH) by performing standardized autonomic testing in the same patients on and off levodopa."
+    ],
+    "intervention": [
+      "Autonomic testing on and off levodopa (Testing on-levodopa first, then off-levodopa)"
+    ],
+    "comparator": [
+      "Autonomic testing on and off levodopa (Testing off-levodopa, then on-levodopa)"
+    ],
+    "outcome": [
+      "Change in systolic blood pressure from supine to tilt at 3 minutes"
+    ],
+    "population": [
+      "Parkinson, 00 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT05418673",
+    "summary": [
+      "In this study, researchers will learn more about a study drug called BIIB122 in participants with early-stage Parkinson's disease (PD). The study will focus on participants with a specific genetic variant in their LRRK2 gene.\n\nThe main question researchers are trying to answer is if taking BIIB122 slows the worsening of PD more than placebo in the early stages of PD.\n\nTo help answer this question, researchers will use a questionnaire called the Movement Disorder Society-Unified Parkinson's Disease Rating Scale, also known as the MDS-UPDRS.\n\n* The MDS-UPDRS measures impairment and disability in people living with PD. It was created in the 1980s and is one of the most used rating scales for PD symptoms.\n* The MDS-UPDRS has 4 parts, and a higher score means more severe PD symptoms.\n* Part I assesses non-motor experiences of daily living, including but not limited to memory loss, problems sleeping, pain, depression, and anxiety.\n* Part II measures motor experiences of daily living.\n* Part III is the results of a motor symptoms exam by a medical professional.\n* Part IV records PD complications caused by motor symptoms.\n\nResearchers will also learn more about the safety of BIIB122.\n\nA description of how the study will be done is given below.\n\n* Participants will take BIIB122 or a placebo as tablets by mouth. A placebo looks like the study drug but contains no real medicine.\n* Participants will be in the study for 103 weeks to 187 weeks. This includes the screening and follow-up periods.\n* Participants will take BIIB122 or placebo 1 time a day for 96 to 180 weeks.\n* Participants can continue to take certain medications for PD. Participants must be on the same dose of medication for at least 90 days before the study begins.\n* Participants will visit the clinic less often as the study continues, ranging every 4 weeks to every 24 weeks."
+    ],
+    "intervention": [
+      "BIIB122"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Time to Confirmed Worsening in Movement Disorder Society Unified Parkinson's Disease Rating Scale (MDS-UPDRS) Parts II and III"
+    ],
+    "population": [
+      "Parkinson, 30 - 80"
+    ]
+  },
+  {
+    "doc_id": "NCT05357989",
+    "summary": [
+      "The purpose of this study is to measure safety and efficacy of buntanetap/posiphen capsules compared with placebo capsules in participants with early PD.\n\nStudy details include:\n\n* The study duration will be up to 7-8 months.\n* The double-blind treatment duration will be up to 6 months.\n* There will be 5 in-clinic visits and 7 phone calls"
+    ],
+    "intervention": [
+      "buntanetap/posiphen 10mg and 20mg"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Change From Baseline to Month 6 in MDS-UPDRS Part II (OFF-state)"
+    ],
+    "population": [
+      "Parkinson, 40 - 85"
+    ]
+  },
+  {
+    "doc_id": "NCT05318937",
+    "summary": [
+      "The primary purpose of this study is to evaluate the effect of SAGE-718 on cognitive performance in participants with Parkinson's disease mild cognitive impairment (PD-MCI)."
+    ],
+    "intervention": [
+      "SAGE-718"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Change From Baseline in the Wechsler Adult Intelligence Scale-IV (WAIS-IV) Coding Test Score"
+    ],
+    "population": [
+      "Parkinson and MCI in Parkinson, 50 - 75"
+    ]
+  },
+  {
+    "doc_id": "NCT05312632",
+    "summary": [
+      "The primary purpose of this study is to evaluate the change at the 18th week from baseline in daily \"off\" time measured by participant diary and Parkinson's Disease Questionnaire-39 (PDQ-39) in participants with Parkinson's Disease who are receiving levodopa."
+    ],
+    "intervention": [
+      "Safinamide Mesilate"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Change From Baseline in Daily \"OFF\" Time at Week 18; Change From Baseline in PDQ-39 Score at Week 18"
+    ],
+    "population": [
+      "Parkinson, 19 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT05160025",
+    "summary": [
+      "This study has three objectives about persons with Parkinson's Disease during bicycling:\n\n1. Determine the effect of visual feedback and competition during virtual bicycling on neuromuscular and cardiovascular intensity\n2. Determine the effect of visual-feedback and competition during virtual bicycling on the user experience of motivation, enjoyment \\& perception of exercise intensity\n3. Determine if attention differs during visual feedback compared to competition virtual bicycling"
+    ],
+    "intervention": [
+      "Virtual reality bicycling"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Neuromuscular Intensity (Bicycling Cadence, Revolutions Per Minute) - Feedback/Self-Competition/Other-Competition; Motivation (Intrinsic Motivation Inventory) - Feedback/Self-Competition/Other-Competition; Cardiovascular Intensity (Heart Rate, Beats Per Minute) - Feedback/Self-Competition/Other-Competition; Visual Attention (Infrared Eye-tracking Data Representing Gaze Positions in a 3D Coordinate Plane to be Used in Calculating Dwell Time in Regions of Interest in the Virtual Simulation) - Feedback /Self-competition/other competition"
+    ],
+    "population": [
+      "Parkinson, 45 - 80"
+    ]
+  },
+  {
+    "doc_id": "NCT05148884",
+    "summary": [
+      "This is a double-blind, randomized, placebo-controlled Phase 2a study evaluating the safety, tolerability, and preliminary efficacy of up to 2 mg/day (1 mg BID) of NLX-112 versus placebo in patients with moderate to severe L-DOPA induced dyskinesia (LID) in Parkinson's disease (PD). NLX-112 will be up-titrated to either 2 mg/day or to the highest well-tolerated dose less than 2 mg/day over 4 weeks, maintained at the well-tolerated dose for an additional 2 weeks, and then down-titrated over 2 weeks."
+    ],
+    "intervention": [
+      "NLX-112"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Number of Participants With Adverse Events (AEs); Number of Participants With Any Clinically Significant Changes From Baseline in Electrocardiogram (ECG); Number of Patients With Any Clinically Significant Changes From Baseline in Vital Signs; Number of Patients With Any Clinically Significant Changes From Baseline in Safety Laboratory Parameters; Number of Patients With Clinically Significant Abnormalities in Physical Examinations; Number of Patients With Suicidal Ideation/Behavior as Assessed by the Columbia Suicide Severity Rating Scale (C-SSRS)"
+    ],
+    "population": [
+      "Parkinson, 30 - 85"
+    ]
+  },
+  {
+    "doc_id": "NCT05104463",
+    "summary": [
+      "This is a Phase 2a, randomized, placebo-controlled, double-blind, crossover study to evaluate the effects CST-2032 administered with CST-107 on cognition in participants with Mild Cognitive Impairment (MCI) or mild dementia."
+    ],
+    "intervention": [
+      "CST-2032 (3mg)/CST-107 (3mg) to Placebo"
+    ],
+    "comparator": [
+      "Placebo to CST-2032 (3mg)/CST-107 (3mg)"
+    ],
+    "outcome": [
+      "Treatment-emergent Adverse Events; Vital Signs; Electrocardiograms (ECGs)"
+    ],
+    "population": [
+      "Parkinson, 50 - 85"
+    ]
+  },
+  {
+    "doc_id": "NCT05012579",
+    "summary": [
+      "Demonstrate safety and efficacy of TAPS delivered by a Cala device as a treatment for action tremor in subjects with Parkinson's disease hand tremor"
+    ],
+    "intervention": [
+      "Cala Device; transcutaneous afferent patterned stimulation (TAPS)"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Tremor Power"
+    ],
+    "population": [
+      "Parkinson, 22 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT04986982",
+    "summary": [
+      "The aim of this study is to investigate the efficacy of 50 mg opicapone when administered with the existing treatment of levodopa (L-dopa) plus a dopa decarboxylase inhibitor (DDCI), in Parkinson's disease (PD) patients with end-of-dose motor fluctuations and associated pain"
+    ],
+    "intervention": [
+      "Opicapone 50 mg"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Change From Baseline in Domain 3 (Fluctuation-related Pain) of KING's PARKINSON's DISEASE PAIN SCALE (KPPS)"
+    ],
+    "population": [
+      "Parkinson, 30 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT04928287",
+    "summary": [
+      "This is a randomized, double-blind, single center, phase 2 study to assess efficacy and safety of multiple HB-adMSCs vs Placebo for the treatment of Parkinson's disease.\n\nThe trial includes a screening period of up to 4 weeks, a 32-week treatment period, and a safety Follow-up period of 20 weeks after the last investigational product administration.\n\nThis clinical trial will be open to enroll 24 eligible participants diagnosed with Parkinson's disease. Patients' recruitment will be conducted by the study team, if eligible participants are identified based on eligibility criteria, a screening visit will be scheduled. Informed consent form will be given to the study participants and signed before any study procedures. Informed consent form will include information about the clinical trial and some aspects should be considered during this process."
+    ],
+    "intervention": [
+      "HB-adMSCs"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Change From Baseline in MDS-UPDRS Part II"
+    ],
+    "population": [
+      "Parkinson, 18 - 75"
+    ]
+  },
+  {
+    "doc_id": "NCT04831281",
+    "summary": [
+      "This study is designed to evaluate the safety and treatment effects of fosgonimeton (ATH-1017) in subjects with Parkinson's Disease Dementia or Dementia with Lewy Bodies, with a randomized treatment duration of 26 weeks."
+    ],
+    "intervention": [
+      "ATH-1017 40 mg / 70 mg"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Global Statistical Test (GST) Score at Baseline"
+    ],
+    "population": [
+      "Parkinson, 40 - 85"
+    ]
+  },
+  {
+    "doc_id": "NCT04797611",
+    "summary": [
+      "This is a double-blinded, controlled, and randomized clinical trial (RCT) to establish the safety and efficacy of a non-invasive neuromodulation device for treating symptoms associated with Parkinson's disease."
+    ],
+    "intervention": [
+      "TNM"
+    ],
+    "comparator": [
+      "TNM"
+    ],
+    "outcome": [
+      "Change in The International Parkinson and Movement Disorder Society Non-Motor Rating Scale (MDS-NMS) Total Score"
+    ],
+    "population": [
+      "Parkinson, 18 - 85"
+    ]
+  },
+  {
+    "doc_id": "NCT04764669",
+    "summary": [
+      "The purpose of study is to demonstrate the pharmacodynamic (PD) effects of E2027 on cerebrospinal fluid (CSF) cyclic guanosine monophosphate (cGMP) in participants with DLB and PDD with and without amyloid copathology after 9 weeks of treatment."
+    ],
+    "intervention": [
+      "E2027"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Percent Change From Baseline in Cerebrospinal Fluid (CSF) Cyclic Guanosine Monophosphate (cGMP) at Week 9"
+    ],
+    "population": [
+      "Parkinson / Dementia, 50 - 85"
+    ]
+  },
+  {
+    "doc_id": "NCT04739423",
+    "summary": [
+      "This is a Phase II, randomized, placebo-controlled, double-blind, crossover study on the CNS and pharmacodynamic effects of clenbuterol (CST-103) co-administered with nadolol (CST-107) in 4 subject populations with Neurodegenerative Disorders."
+    ],
+    "intervention": [
+      "first clenbuterol (CST-103), nadolol (CST-107), then matching placebo"
+    ],
+    "comparator": [
+      "first matching placebo, then clenbuterol (CST-103), nadolol (CST-107)"
+    ],
+    "outcome": [
+      "Change From Baseline in Negative Emotional Bias in the Facial Expression Recognition Task (FERT)"
+    ],
+    "population": [
+      "Parkinson / MCI / Dementia, 40 - 80"
+    ]
+  },
+  {
+    "doc_id": "NCT04726709",
+    "summary": [
+      "The purpose of the study is to develop, deliver, and test an online Alexander-based training program for people with Parkinson's disease and their care partners."
+    ],
+    "intervention": [
+      "Alexander-technique-based online course to increase embodied agency in people with Parkinson's disease and their care partners"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Motor Function - Objective, Balance - Objective, Balance: Self-report, Posture - Objective"
+    ],
+    "population": [
+      "Parkinson, 50 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT04649164",
+    "summary": [
+      "The investigators propose to adapt, improve, and implement a peer mentor support and caregiver education (PERSEVERE) program to improve LBD-specific caregiving mastery. Lewy body dementia (LBD) is the second most common dementia, comprising Parkinson's Disease (PD) dementia and Dementia with Lewy Bodies. LBD causes deterioration in multiple cognitive, motor, and neuropsychiatric domains, leading to heavy reliance on family caregivers. Patients with LBD are at a far greater risk of hospitalizations for falls, neuro-psychiatric symptoms, and infections, which are often preventable or treatable at home if recognized. Studies cite a crucial need for education and support of LBD caregivers, who face high rates of caregiver strain and adverse outcomes. Evidence from other chronic conditions supports peer mentoring as a potentially effective intervention to provide education and social support. PERSEVERE builds on our team's ongoing work of creating and testing a peer mentoring program for homebound PD patients' caregivers that has shown promising feasibility and acceptability. In the proposed project, the investigators will convene focus groups of former mentors and mentees, along with current caregivers, to provide formative information to shape the revised PERSEVERE curriculum that will include in-person mentor training and a comprehensive mentoring handbook. The curriculum will focus on key areas of LBD caregiving mastery, including: fall prevention, infections, neuropsychiatric symptoms (particularly hallucinations, delusions, anxiety, and depression), and advance directives. The investigators will enroll and train a new cohort of 36 LBD caregiver peer mentors who will be matched with 30 current LBD caregivers. Each pair will be instructed to speak on a weekly basis, using the 16-week structured curriculum as a framework. The study team will support the mentors with monthly conference calls and day-to-day availability for concerns. The investigators will assess the feasibility and fidelity of the intervention via online study diaries tracking the frequency, duration, and content of calls. During mentor training, the investigators will assess the change in mentors' caregiver mastery and LBD knowledge pre- and post-training. During the PERSEVERE intervention, the investigators will determine the change in mentees' caregiver mastery, LBD knowledge, and loneliness."
+    ],
+    "intervention": [
+      "Focus group to provide feedback on educational materials and mentoring program"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Mastery Scale"
+    ],
+    "population": [
+      "Dementia, 21 - 90"
+    ]
+  },
+  {
+    "doc_id": "NCT04648150",
+    "summary": [
+      "Idiopathic Parkinson's disease is a common neurodegenerative disease, with a prevalence of around 2% in people over 65 years of age in France.\n\nThis pathology affects the dopaminergic pathway but also other systems: cholinergic, noradrenergic and serotoninergic.\n\nThe symptoms of Parkinson's disease are motor but also non-motor with sleep, smell, cognitive, psychiatric, digestive, urinary, dysautonomic, painful disorders. The discomfort can be such that invasive and expensive solutions have been developed. Invasive or expensive techniques (deep brain stimulation, lesional microsurgery by gamma knife or ultrasound, duodopa or apokinon pumps) brought significant benefits to patients. Opportunities for clinical improvement using less expensive and lighter devices should be sought.\n\nThe Remedee endorphin band device is a device that emits millimeter-band electromagnetic waves on the wrist. The device stimulates subcutaneous nerve endings and activates a physiological response leading to the release of endorphins in the brain. Endorphins are involved in several physiological processes, including pain control.\n\nMu-opioid receptor (MOR) agonists do not only relieve pain, but have effects related to mesolimbic dopaminergic pathways. Indeed, the opioid and dopaminergic systems are closely linked at the cellular level. Endorphins, through inhibition of the release of the neurotransmitter GABA upon binding to the μ receptor, are also linked to an increase in dopamine."
+    ],
+    "intervention": [
+      "VERUM\nAn active wave emission bracelet for a period of 2 months. Then delivery of a second active medical device for a period of 4 months"
+    ],
+    "comparator": [
+      "Sham Comparator: SHAM\nAn inactive wave emission bracelet for a period of 2 months of use then delivery of an active medical device from M2 to M6 after inclusion."
+    ],
+    "outcome": [
+      "Assessment of the Effectiveness of Two Months of Use of the Remedee Endorphin Band Medical Device in Improving Motor Disorders in Patients With Parkinson's Disease"
+    ],
+    "population": [
+      "Parkinson, 18 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT04634331",
+    "summary": [
+      "Activities of daily living (ADL) frequently involve the simultaneous performance of two or more tasks, such as crossing the street while holding a conversation, commonly referred to as dual tasking. The simultaneous performance of a motor and a cognitive task increases postural instability, gait dysfunction, and may increase fall rates in Parkinson's disease (PD). The goal of this project is to evaluate the effectiveness of utilizing a digital therapeutic, Dual-task Augmented Reality Treatment (DART) protocol, for the treatment of postural instability and gait dysfunction (PIGD) in individuals with PD. A randomized controlled trial will be conducted at the Main Campus of the Cleveland Clinic (Cleveland, OH). A total of 50 individuals with Parkinson's disease will be randomized into 1) a traditional multi-modal training group, or 2) multi-modal training administered via an augmented reality headset. Multi-modal therapy is where the participant practices performing two things at once (i.e. marching while answering math questions). Augmented reality is a type of head-worn technology that allows the individual to see the real world and places holograms in the space. Both groups will exercise 2x/week for a total of 8 weeks. Assessments involving walking, balancing, and turning will be completed to assess the efficacy of the treatment."
+    ],
+    "intervention": [
+      "Experimental: Augmented Reality Multi-Modal Training"
+    ],
+    "comparator": [
+      "Traditional Multi-Modal Training"
+    ],
+    "outcome": [
+      "Gait Velocity, MDS-UPDRS III Score, Fall Frequency"
+    ],
+    "population": [
+      "Parkinson, 18 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT04587193",
+    "summary": [
+      "The purpose of this study is to test the safety and efficacy of using of a portable exoskeleton for walking training in persons with Parkinson's disease that have gait mobility problems and/or postural instability."
+    ],
+    "intervention": [
+      "Robotic-assist gait training device"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Safety of the Portable Exoskeleton"
+    ],
+    "population": [
+      "Parkinson, 21 - 95"
+    ]
+  },
+  {
+    "doc_id": "NCT04584346",
+    "summary": [
+      "Background:\n\nThe ketogenic diet uses fats as a person's major energy source rather than carbohydrates. There is increasing interest in using this diet to treat neurodegenerative disorders like Parkinson's disease. Researchers want to learn more about the ketogenic diet before recommending this diet in clinical practice.\n\nObjective:\n\nTo study the effects of a ketogenic diet for someone with PD.\n\nEligibility:\n\nPeople over age 50 with mild to moderate PD.\n\nDesign:\n\nParticipants will be screened with surveys and a 10-foot walking test. They will have a medical history, physical exam, and blood test.\n\nParticipants will be contacted twice in a 1-week period to discuss what they ate over the last 24 hours. They will log data about their daily exercise and activities using an online fitness tracking app.\n\nParticipants will stay at NIH Clinical Center for 1 week. They will be put into 1 of 2 groups. One group will follow a ketogenic diet and take MCT oil. The other group will follow a low-fat diet. Their body measurements will be taken. They will meet with a physical therapist and nutritionist.\n\nParticipants will have daily respiratory and glucose monitoring. They will have cognitive tests and complete surveys. They will have walking, motor function, and reaction time/finger tapping tests. They will have heart and nerve function tests. They will have electrocardiograms and electroencephalograms. Blood will be taken twice daily.\n\nParticipants will follow the ketogenic diet at home for 2 weeks. They will log their activities using the fitness tracking app. Then they will have a follow-up visit at NIH.\n\nParticipation in the trial will last for 4 weeks."
+    ],
+    "intervention": [
+      "Liquigen MCT oil"
+    ],
+    "comparator": [
+      "Standard American Diet"
+    ],
+    "outcome": [
+      "retention, adherence, acceptability"
+    ],
+    "population": [
+      "Parkinson, 50 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT04577651",
+    "summary": [
+      "The purpose of the study is to document patient outcomes including effectiveness for Boston Scientific Corporation's Vercise Cartesia 16-contact Directional Lead(s) (X/HX) with Deep Brain Stimulation (DBS) systems for the treatment of Parkinson's Disease (PD)."
+    ],
+    "intervention": [
+      "Deep Brain Stimulation 16-contact Directional "
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Change in Motor Function"
+    ],
+    "population": [
+      "Parkinson, 18 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT04542499",
+    "summary": [
+      "The purpose of this study is to assess the effect of tavapadon on the change from baseline in total daily hours of \"on\" time without troublesome dyskinesia in L-Dopa-treated participants with Parkinson's Disease (PD) who are experiencing motor fluctuations."
+    ],
+    "intervention": [
+      "Tavapadon"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Change From Baseline in the Total \"On\" Time Without Troublesome Dyskinesia Based on the 2-day Average of the Self-completed Home Diary for Motor Function Status (Hauser Diary)"
+    ],
+    "population": [
+      "Parkinson, 40 - 80"
+    ]
+  },
+  {
+    "doc_id": "NCT04527146",
+    "summary": [
+      "The research study is being conducted to compare methods of virtual genetic counseling for people with Parkinson's disease."
+    ],
+    "intervention": [
+      "(1)IMAGINE-PD/Virtual, (2)IMAGINE-PD/Telephone, (3)Virtual/Virtual, and (4)Virtual/Telephone."
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Genetics Knowledge, Genetic Counseling Satisfaction, test-related distress"
+    ],
+    "population": [
+      "healthy, 21 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT04524351",
+    "summary": [
+      "Annovis is conducting a clinical study to investigate Posiphen in patients with Early Alzheimer's Disease (AD) and Early Parkinson's Disease (PD). Investigators are looking to recruit 68 patients in two parts of the study. In Part one of the study Investigators will recruit 14 AD and 14 PD patients who will either receive placebo (an inert pill which looks like the study drug) or the study drug Posiphen, both taken daily. In Part two of the study Investigators will recruit 40 PD patients who will receive different strengths of the study drug Posiphen taken daily. Patients will be required to come to the site for 3 face to face visits and have 4 phone calls, tests include but are not limited to, blood and CSF (spinal fluid) sampling, cognitive assessments, clinical examinations and laboratory safety tests. Primarily the Investigators are looking for the safety and tolerability of Posiphen, although Investigators will also evaluate the activity of Posiphen by a number of different biomarkers measuring pathway and target engagements."
+    ],
+    "intervention": [
+      "Posiphen"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Percentage of Participants With Treatment-Emergent Adverse Events"
+    ],
+    "population": [
+      "Parkinson, 45 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT04518917",
+    "summary": [
+      "Older adults, and particularly those with Parkinson disease (PD), may experience walking difficulties that negatively impact their daily function and quality of life. People that have PD plus dementia are also likely to experience walking difficulties. This project will examine the impact of music and mentally singing on walking performance, with a goal of understanding what types of rhythmic cues are most helpful. Pilot work from the investigators suggests that imagined, mental singing (i.e., singing in head) while while walking helps people walk faster with greater stability, whereas walking to music also helps people walk faster but with reduced stability.\n\nIn this study, the investigators will recruit people who have PD plus dementia. The investigators will compare walking while mentally singing and walking while listening to music, using personalized cues tailored to each person's walking performance. The investigators hypothesize temporal variability of gait will be lower in the mental singing and singing conditions compared to listening to music; and that mental singing, singing, and listening to music will elicit similar improvements in stride length."
+    ],
+    "intervention": [
+      "Mentally Singing"
+    ],
+    "comparator": [
+      "Listening to music"
+    ],
+    "outcome": [
+      "Velocity, Stride Length"
+    ],
+    "population": [
+      "Parkinson and dementia, 30 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT04510922",
+    "summary": [
+      "Orthostatic hypotension (OH), which consists in a significant reduction in blood pressure levels upon standing from a seated position, may affect approximately one in three patients with Parkinson's disease (PD). It usually presents as dizziness, lightheadedness, feeling faint, or feeling like you might black out while standing. This can significantly impact the quality of life (QoL) of PD patients, resulting in difficulties with balance, walking, and increased risk of falls. The main aim of this study is to evaluate whether the use of technological devices (a computerized system for analyzing abnormalities in walking in clinical settings and a wearable sensor to detect changes in postural unsteadiness in the home environment) may improve the detection of complications and the response to medical therapies for OH in patients with PD."
+    ],
+    "intervention": [
+      "Droxidopa 100 MG [Northera]"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Orthostatic Hypotension Questionnaire (OHQ) Score, Tinetti Score, PDQ-39 Score, Gait Analysis: Stride Length, single leg stance time, Gait velocity, Postural sway"
+    ],
+    "population": [
+      "Parkinson and orthostatic hypotension, 30 - 80"
+    ]
+  },
+  {
+    "doc_id": "NCT04483479",
+    "summary": [
+      "This study will be conducted as an open-label safety follow-on to a multi-center, double-blind, randomized study. All subjects who participated in the randomized study will be offered participation in this unblinded, single-arm, safety study. Approximately 50 subjects will be entered into the study and ENT-01 will be administered daily in escalating doses followed by a fixed dose for 12 weeks. Each subject will participate for approximately 20 weeks; dosing duration will be approximately 14 weeks."
+    ],
+    "intervention": [
+      "Active Investigational Treatment ENT-01"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Number of Participants With Treatment Related Adverse Events, Number of Participants With Treatment Related Recurrent Vomiting, Number of Participants With Treatment Related Recurrent Diarrhea, Number of Participants With Treatment Related Dizziness"
+    ],
+    "population": [
+      "Parkinson, 30 - 90"
+    ]
+  },
+  {
+    "doc_id": "NCT04476017",
+    "summary": [
+      "The primary purpose of this two-part study was to evaluate the safety and tolerability of SAGE-718 and its effects on cognitive, neuropsychiatric, and motor symptoms in participants with Parkinson's disease mild cognitive impairment (PD-MCI)."
+    ],
+    "intervention": [
+      "SAGE-718 (for 14 or 28 days)"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Percentage of Participants With at Least One Treatment-Emergent Adverse Event (TEAE) up to 28 / 42 days from first dose"
+    ],
+    "population": [
+      "Parkinson, 50 - 75"
+    ]
+  },
+  {
+    "doc_id": "NCT04435431",
+    "summary": [
+      "This is a Phase 2b study investigating the efficacy and safety of mesdopetam as adjunct therapy on daily ON-time without troublesome dyskinesia in patients with Parkinson disease. Mesdopetam is taken for 84 days."
+    ],
+    "intervention": [
+      "Mesdopetam (2.5 mg / 5 mg / 7.5 mg)"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Change in Average Daily Hours of ON-time Without Troublesome Dyskinesia With Mesdopetam Compared to Placebo as Assessed With 24-hour Patient Home Diaries From Baseline to End of Treatment."
+    ],
+    "population": [
+      "Parkinson, 30 - 79"
+    ]
+  },
+  {
+    "doc_id": "NCT04403399",
+    "summary": [
+      "With an appropriate oral dose of Varenicline (VCN) identified from experiments 1 \\& 2 of the study (see NCT02933372), the investigators will administer VCN to Parkinson Disease (PD) participants to determine if VCN improves walking speed and measures of balance. PD participants will receive VCN or a placebo (fake drug) for 3 weeks to assess the effects of VCN administration on gait speed and balance. Participants will undergo examinations to assess the intensity of their Parkinsonism and asked questions to assess their mood and thinking."
+    ],
+    "intervention": [
+      "Varenicline"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Gait Speed, JERK"
+    ],
+    "population": [
+      "Parkinson, 45 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT04387773",
+    "summary": [
+      "The purpose of the study is to learn about the effect of GOCOVRI (Amantadine extended release) on activity levels and measures of gait and balance quality in people with Parkinson's disease (PD) and levodopa induced dyskinesia (LID) during daily activities using body-worn sensors."
+    ],
+    "intervention": [
+      "GOCOVRI"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Number of Walking Bouts Per Hour, Number of Turns Per Hour, Total Number of Turns During the Day, Variability in the Turn Rate Per Step (CoV, Coefficient of Variation), Variability in Total Number of Steps During Turns (CoV, Coefficient of Variation)"
+    ],
+    "population": [
+      "Parkinson, 50 - 80"
+    ]
+  },
+  {
+    "doc_id": "NCT04383665",
+    "summary": [
+      "Rationale: Parkinson's disease patients with deep brain stimulation electrodes represent a unique opportunity to study the influence of basal ganglia on neurocognitive function.\n\nIntervention: Patients' deep brain stimulators will be turned off or on and the frequency will be changed to either theta or gamma.\n\nObjectives: To identify differences in higher cognitive functions with stimulation \"on\" and \"off\" and theta versus gamma frequency stimulation.\n\nStudy population: 12 patients who had previously undergone bilateral STN deep brain stimulation implantation.\n\nStudy methodology: Patients will undergo four sessions of neuropsychological testing (RNGT, verbal fluency, D-KEFS CWIT) at baseline, no stimulation, theta stimulation and gamma stimulation, in random order over one day.\n\nStudy outcomes: Test results of RNGT, verbal fluency, D-KEFS CWIT. Follow-up: none\n\nStatistics: Test results will be analyzed using within-subjects statistical tests."
+    ],
+    "intervention": [
+      "Deep Brain Stimulation: STN DBS 10Hz"
+    ],
+    "comparator": [
+      "STN DBS off / active comparator 130 Hz"
+    ],
+    "outcome": [
+      "Delis-Kaplan Executive Function System Verbal Fluency, Delis-Kaplan Executive Function System Color Word Interference Task, Random Number Generation"
+    ],
+    "population": [
+      "Parkinson, 18 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT04380142",
+    "summary": [
+      "Parkinson's disease (PD) is a neurological condition, which affects the brain. PD gets worse over time, but how quickly it progresses varies a lot from person to person. Some symptoms of PD are tremors, stiffness, and slowness of movement. This study measures the efficacy, safety, and tolerability of ABBV-951 versus oral Levodopa (LD)/Carbidopa (CD) \\[LD/CD\\] in advanced PD participants to achieve reduction in motor fluctuations.\n\nABBV-951 is an investigational (unapproved) drug containing Levodopa Phosphate/Carbidopa Phosphate (LDP/CDP) given subcutaneously (under the skin) for the treatment of Parkinson's Disease. Adult participants with advanced PD will be enrolled. Approximately 130 participants will be enrolled in the study in approximately 80 sites across the world.\n\nIn one arm, participants will receive ABBV-951 solution as a continuous infusion under the skin plus oral placebo capsules for LD/CD. In the second arm, participants will receive placebo solution for ABBV-951 as a continuous infusion under the skin plus oral capsules containing LD/CD tablets. The treatment duration is 12 weeks.\n\nThere may be higher treatment burden for participants in this trial compared to their standard of care. Participants will attend regular visits during the course of the study at a hospital or clinic. The effect of the treatment will be checked by medical assessments, blood tests, checking for side effects, and completing questionnaires."
+    ],
+    "intervention": [
+      "ABBV-951 / Drug: Levodopa/Carbidopa (LD/CD)"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Change From Baseline to Week 12 of the Double-Blind Treatment Period in Average Daily Normalized \"On\" Time Without Troublesome Dyskinesia"
+    ],
+    "population": [
+      "Parkinson, 30 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT04369430",
+    "summary": [
+      "This study will evaluate the efficacy and safety of AKST4290 in subjects with Parkinson's Disease who are currently on stable dopaminergic treatment."
+    ],
+    "intervention": [
+      "AKST4290"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Change in Motor Function During Levodopa Withdrawal"
+    ],
+    "population": [
+      "Parkinson, 50 - 80"
+    ]
+  },
+  {
+    "doc_id": "NCT04292223",
+    "summary": [
+      "To assess the effect of pimavanserin on the activities of daily living in subjects with Parkinson's Disease Psychosis"
+    ],
+    "intervention": [
+      "Pimavanserin"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Change From Baseline to Week 16 in Modified Functional Status Questionnaire (mFSQ) Total Score"
+    ],
+    "population": [
+      "Parkinson and psychotic symptoms, 40 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT04246476",
+    "summary": [
+      "Older adults, and particularly those with Parkinson disease (PD), may experience walking difficulties that negatively impact their daily function and quality of life. This project will examine the impact of music and mentally singing on walking performance, with a goal of understanding what types of rhythmic cues are most helpful. Our pilot work suggests that imagined, mental singing (i.e., singing in your head) while while walking helps people walk faster with greater stability, whereas walking to music also helps people walk faster but with reduced stability.\n\nIn Aim 1, the investigators will compare walking while mentally singing to walking while listening to music, using personalized cues tailored to each person's walking performance. The investigators hypothesize stride time variability will be less in the mental singing condition compared to listening to music; and that mental singing and listening to music will improve gait speed similarly as compared to the uncued condition. The investigators will also test whether finger tapping, a rhythmic task similar to walking in many ways, responds similarly while mentally singing and listening to music.\n\nIn Aim 2, the investigator will investigate the brain mechanisms underlying the enhancements in movement performance seen with mental signing or listening to music. The investigators will use magnetic resonance imaging (MRI) to measure brain activity during finger tapping with and without various cues to understand which areas of the brain are more or less responsive to the cues. The investigators hypothesize individuals with PD will exhibit lesser activation of putamen and greater activation of cortical motor areas and cerebellum compared to controls in all tapping conditions; and internal, mental singing during tapping will elicit greater activation of the putamen and lesser activation of cortical motor areas in both groups compared to uncued tapping and tapping while listening to music."
+    ],
+    "intervention": [
+      "Mentally singing"
+    ],
+    "comparator": [
+      "Listening to music"
+    ],
+    "outcome": [
+      "Gait Speed, Stride Length Variability"
+    ],
+    "population": [
+      "Parkinson and healthy, 30 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT04193527",
+    "summary": [
+      "This is a multicenter, open-label, non-controlled, non-randomized, phase 3 clinical study to compare the SPECT findings after a single IV administration of DaTSCAN™ ioflupane (123I) injection for patients with a clinical diagnosis of Parkinsonian syndrome (PS) involving striatal dopaminergic deficit (SDD; specifically, Parkinson's disease \\[PD\\] \\[SDD\\], multiple system atrophy \\[MSA\\] \\[SDD\\] or or progressive supranuclear palsy \\[PSP\\] \\[SDD\\]) as compared with patients with a clinical diagnosis of essential tremor (ET) (no SDD) and age-matched healthy controls."
+    ],
+    "intervention": [
+      "DaTSCAN™ Ioflupane (123I) Injection"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Sensitivity Analysis of the Blinded Independent Read of DaTSCAN™ SPECT Images"
+    ],
+    "population": [
+      "Parkinson and healthy, 40 - 80"
+    ]
+  },
+  {
+    "doc_id": "NCT04191577",
+    "summary": [
+      "This is a phase 2 study, randomized, double-blind, placebo-controlled, multicenter study of oral CVN424 at two dose levels (low-dose and high-dose) in Parkinson's disease (PD) patients with motor fluctuations."
+    ],
+    "intervention": [
+      "CVN424 Low Dose, Drug: CVN424 High Dose"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Percentage of Participants With Treatment-emergent Adverse Events (TEAEs) Related to Study Drug"
+    ],
+    "population": [
+      "Parkinson, 30 - 80"
+    ]
+  },
+  {
+    "doc_id": "NCT04184791",
+    "summary": [
+      "The objective of this study is to further the understanding and application of 60Hz subthalamic deep brain stimulation (STN-DBS) in Parkinson's patients with gait disorder. The investigators will achieve this through 2 study aims:\n\n1. Determine the impact of 60Hz subthalamic deep brain stimulation on gait kinematics using wearable sensors\n2. Develop machine learning models to predict optimal subthalamic deep brain stimulation frequency based on wearable sensors"
+    ],
+    "intervention": [
+      "Deep Brain Stimulation (ON and OFF medication)"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Gait Kinematic Response for 180 and 60Hz DBS, Accuracy of Discriminating STN-DBS (60hz vs. High Frequency) and Medication States With Machine Learning(ML)"
+    ],
+    "population": [
+      "Parkinson, 21 - 80"
+    ]
+  },
+  {
+    "doc_id": "NCT04164758",
+    "summary": [
+      "This is a pilot study to explore the effects of pimavanserin and low-dose quetiapine in subjects with Parkinson's disease with neuropsychiatric symptoms."
+    ],
+    "intervention": [
+      "Pimavanserin"
+    ],
+    "comparator": [
+      "Quetiapine"
+    ],
+    "outcome": [
+      "Treatment-emergent Adverse Events (TEAEs)"
+    ],
+    "population": [
+      "Parkinson, 50 - 85"
+    ]
+  },
+  {
+    "doc_id": "NCT04157621",
+    "summary": [
+      "The purpose of this study is to find out whether a non-invasive form of nerve stimulation called transcutaneous vagus nerve stimulation (taVNS) is safe and effective in people with Parkinson's Disease."
+    ],
+    "intervention": [
+      "Active taVNS"
+    ],
+    "comparator": [
+      "Sham Stimulation"
+    ],
+    "outcome": [
+      "Change in Motor Function Score as Assessed by Modified Movement Disorder Society Unified Parkinson's Disease Rating Scale (MDS-UPDRS) Part III"
+    ],
+    "population": [
+      "Parkinson, 40 - 79"
+    ]
+  },
+  {
+    "doc_id": "NCT04140708",
+    "summary": [
+      "This study is designed to measure the change in patients diagnosed with Parkinson's disease (PD) before, during and after a 12 week exercise program.The focus of this study is the glymphatic system. The glymphatic system is a recentlydiscovered novel waste clearance pathway, in patients with Parkinson's Disease (PD).The glymphatic system acts as a waste-clearance system in the brain of vertebrate animals.The glymphatic system has been proposed in which new clearance pathways involving communication between paravascular spaces, interstitial fluid, and ultimately meningeal and dural lymphatic vessels exists, and we have provided evidence that this system may be dysfunctional in patients with Parkinson's disease with cognitive disorders. Early research suggest glymphatic function increases following exercise, this response is believed to clear beta-amyloid in the brain and may mediate the neurobehavioral response to exercise in PD.\n\nThis study will use cognitive exams, neurological exams as well as specialized imaging to record data points and evaluate the glymphatic function after exercise."
+    ],
+    "intervention": [
+      "Exercise-Rock Steady Boxing class"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Change in Beta-Amyloid Levels, Change in Hopkins Verbal Learning Test (HVLT) Scores, Change in Movement Disorder Society--Unified Parkinson's Disease Rating Scale Part III (MDS-UPDRS), Mini-Balence Evaluation Systems Test (BESTest), Freezing of Gait Questionnaire (FOG-Q), Trail Making Test A&B (TMT), Letter Fluency (FAS), Simon Task, Patient Recorded Outcomes Measurement Information System-Sleep Disturbance (PROMIS-Sleep), Hospital Anxiety and Depression Scale (HADS), Stroop Interference Task"
+    ],
+    "population": [
+      "Parkinson, 55 - 80"
+    ]
+  },
+  {
+    "doc_id": "NCT04095793",
+    "summary": [
+      "A Phase 3, multi-center, open-label study to evaluate the safety and tolerability of ampreloxetine in subjects with primary autonomic failures (MSA, PD, and PAF) and symptomatic nOH over 182 weeks."
+    ],
+    "intervention": [
+      "ampreloxetine"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Number of Participants With Treatment-emergent Adverse Events (TEAEs)"
+    ],
+    "population": [
+      "Parkinson, 30 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT04082663",
+    "summary": [
+      "The investigators are evaluating the immediate effect of a dental mouthpiece on gait and balance among people with Parkinson disease as well as longer-term feasibility use and the effect of the mouthpiece on sleep and quality of life."
+    ],
+    "intervention": [
+      "Dental Mouthpiece"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Changes in Gait Velocity, Changes in Mini-Balance Evaluation Systems Test (Mini-BESTest)"
+    ],
+    "population": [
+      "Parkinson, 30 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT04075318",
+    "summary": [
+      "This is a 44-week, randomized, placebo-controlled, double-blind, single-center, phase 1 clinical trial consisting of a dose-escalation Part A study in healthy participants, followed by a Part B in participants with Parkinson's disease with a selected doses from Part A."
+    ],
+    "intervention": [
+      "UB-312"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Frequency of Adverse Events, Immunogenicity of UB-312 as Determined by Anti-aSyn Antibodies in Blood, Immunogenicity of UB-312 as Determined by Anti-aSyn Antibodies in CSF"
+    ],
+    "population": [
+      "Parkinson and healthy, 40 - 85"
+    ]
+  },
+  {
+    "doc_id": "NCT04064294",
+    "summary": [
+      "In this study, the investigators will examine the association of statin use and dyskinesia in a convenience sample Parkinson's disease patients in the Veterans Administration Health Care System."
+    ],
+    "intervention": [
+      "Intravenous Infusion of levodopa and use of statin before or after levodopa"
+    ],
+    "comparator": [
+      "infusion of only levodopa"
+    ],
+    "outcome": [
+      "Peak Unified Dyskinesia Rating Score (UDysRS)"
+    ],
+    "population": [
+      "Parkinson, 50 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT04046055",
+    "summary": [
+      "Parkinson's disease (PD) is the second most common neurodegenerative disorder and affects approximately 1 million people in the United States with total annual costs approaching 11 billion dollars. The most common symptoms of PD are tremor, stiffness, slowness, and trouble with balance/walking, which lead to severe impairments in performing activities of daily living. Current medical and surgical treatments for PD are either only mildly effective, expensive, or associated with a variety of side-effects. Therefore, the development of practical and effective add-ons to current therapeutic treatment approaches would have many benefits. Transcranial direct current stimulation (tDCS) is a non-invasive brain stimulation technique that can affect brain activity and can help make long-term brain changes to improve functions like walking and balance. While a few initial research studies and review articles involving tDCS have concluded that tDCS may improve PD walking and balance, many results are not meaningful in real life and several crucial issues still prevent tDCS from being a useful add-on intervention in PD. These include the selection of stimulation sites (brain regions stimulated) and tDCS electrode placement. Most studies have targeted the motor cortex (brain region that controls intentional movement), but there is evidence that the cerebellum - which helps control gait and balance, is connected to several other brain areas, and is easily stimulated with tDCS - may be a likely location to further optimize walking and balance in PD. There is also evidence that certain electrodes placements may be better than others. Thus, the purpose of this study is to determine the effects of cerebellar tDCS stimulation using two different placement strategies on walking and balance in PD.\n\nAdditionally, although many tDCS devices are capable of a range of stimulation intensities (for example, 0 mA - 5 mA), the intensities currently used in most tDCS research are less than 2 mA, which is sufficient to produce measurable improvements; but, these improvements may be expanded at higher intensities. In the beginning, when the safety of tDCS was still being established for human subjects, careful and moderate stimulation approaches were warranted. However, recent work using stimulation at higher intensities (for example, up to 4 mA) have been performed in different people and were found to have no additional negative side-effects. Now that the safety of tDCS at higher intensities is better established, studies exploring the differences in performance between moderate (i.e., 2 mA) and higher (i.e., 4 mA) intensities are necessary to determine if increasing the intensity increases the effectiveness of the desired outcome.\n\nProspective participants will include 10 people with mild-moderate PD that will be recruited to complete five randomly-ordered stimulation sessions, separated by at least 5 days each. Each session will involve one visit to the Integrative Neurophysiology Laboratory (INPL) and will last for approximately one hour. Data collection is expected to take 4-6 months. Each session will include walking and balance testing performed while wearing the tDCS device. Total tDCS stimulation time for each session will be 25 minutes."
+    ],
+    "intervention": [
+      "Transcranial direct current stimulation at 2 mA or 4 mA"
+    ],
+    "comparator": [
+      "Sham transcranial direct current stimulation"
+    ],
+    "outcome": [
+      "Speed Walked During 30 Meter Walk Test, Time to Complete the Timed Up and Go Test, Movement of the Center of Pressure (2D; Forward-backward, Left-right) While Standing on a Firm Surface (Force Platform) for 1 Minute, Movement of the Center of Pressure (2D; Forward-backward, Left-right) While Standing on a Foam Surface (6 cm Foam Pad Placed on Top of Force Platform) for 1 Minute"
+    ],
+    "population": [
+      "Parkinson, 50 - 90"
+    ]
+  },
+  {
+    "doc_id": "NCT03984305",
+    "summary": [
+      "The main objective of this study is to evaluate whether people whose PD symptoms are uncontrolled who are managed with the aid of objective measurement and use of target ranges have improved PD symptoms and outcomes as compared to individuals treated using only standard of care (medical history, neurological examination)."
+    ],
+    "intervention": [
+      "Personal KinetiGraph® (PKG®) Watch"
+    ],
+    "comparator": [
+      "Personal KinetiGraph® (PKG®) Report"
+    ],
+    "outcome": [
+      "Change in Patient Outcomes Using Movement Disorder Specialist - Unified Parkinson's Disease Rating Scale (MDS-UPDRS)"
+    ],
+    "population": [
+      "Parkinson, 46 - 83"
+    ]
+  },
+  {
+    "doc_id": "NCT03972969",
+    "summary": [
+      "This study will test the hypothesis that two highly challenging exercise programs, one based at the VA medical center and the other conducted remotely, will both significantly reduce overall fall rates in patients with Parkinson's disease."
+    ],
+    "intervention": [
+      "Facility-based structured exercise, Behavioral: Home-based structured exercise"
+    ],
+    "comparator": [
+      "Health education"
+    ],
+    "outcome": [
+      "Number of Falls Over 3 Month Period"
+    ],
+    "population": [
+      "Parkinson, 40 - 89"
+    ]
+  },
+  {
+    "doc_id": "NCT03971617",
+    "summary": [
+      "This study is a placebo-controlled, double-blind trial that will investigate the safety and tolerability of molecular hydrogen, a promising antioxidant agent, in patients with early-stage Parkinson's Disease. The medication will be administered orally as 8 ounces of hydrogen-enriched drinking water twice a day over the course of one year."
+    ],
+    "intervention": [
+      "Hydrogen"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Number of Treatment-emergent Adverse Events"
+    ],
+    "population": [
+      "Parkinson, 40 - 80"
+    ]
+  },
+  {
+    "doc_id": "NCT03944785",
+    "summary": [
+      "This is a Phase IV, prospective, observational, post-marketing study designed to obtain additional data on the effect of XADAGO on motor and non-motor symptoms in Parkinson's Disease patients newly prescribed XADAGO."
+    ],
+    "intervention": [
+      "safinamide (XADAGO)"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Change From Baseline in Movement Disorders Society -Unified Parkinson's Disease Rating Scale (MDS-UPDRS), Change From Baseline in Parkinson's Disease Questionnaire (PDQ-39) Scores, Change From Baseline in Montreal Cognitive Assessment (MoCA) Total Score, Treatment Satisfaction Questionnaire for Medication (TSQM-9) Scores, Clinical Global Impression of Change (CGI-C), Patient Global Impression of Change (PGI-C) "
+    ],
+    "population": [
+      "Parkinson, 30 - 80"
+    ]
+  },
+  {
+    "doc_id": "NCT03922711",
+    "summary": [
+      "This is a multicenter, randomized, three-arm, parallel-group, double-blind, placebo-controlled, study to evaluate the efficacy, safety and pharmacokinetics (PK) of pridopidine vs. placebo for the treatment of Levodopa Induced Dyskinesia (LID) in patients with Parkinson Disease."
+    ],
+    "intervention": [
+      "Pridopidine"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Change From Baseline in Levodopa-induced Dyskinesia as Measured by UDysRS Score"
+    ],
+    "population": [
+      "Parkinson, 30 - 85"
+    ]
+  },
+  {
+    "doc_id": "NCT03905811",
+    "summary": [
+      "The TZ-PD trial will be a 1:1 (active:placebo) randomized, double-blind, placebo-controlled Phase II trial to evaluate the safety and tolerability of terazosin for the treatment of PD."
+    ],
+    "intervention": [
+      "Terazosin 5 mg"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Incidence of Intervention-related Adverse Events Between Treatment Arms, Incidence of Falls Between Treatment Arms, Frequency of Drop-out From Study/Discontinuation of Study Intervention for Any Reason"
+    ],
+    "population": [
+      "Parkinson, 40 - 90"
+    ]
+  },
+  {
+    "doc_id": "NCT03888287",
+    "summary": [
+      "This study will focus on patients with Parkinson's Disease in the adult inpatient units of Hackensack University Medical Center. We are measuring the effect of a Parkinson's Disease Inpatient Clinical Knowledge and Management Program on adherence to Parkinson's Disease medication using a Parkinson's Disease Identification Wrist Band, smartwatch and medication schedule card"
+    ],
+    "intervention": [
+      "Watch Rx system"
+    ],
+    "comparator": [
+      "Parkinson's Disease Inpatient Clinical Knowledge and Management Program"
+    ],
+    "outcome": [
+      "Clinician's Parkinson's Disease Knowledge Assessment Survey Scores"
+    ],
+    "population": [
+      "Parkinson, 22 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT03882879",
+    "summary": [
+      "The benefits of exercise for general health and well-being in older adults are well-established. Balance exercises such as tai chi and yoga, along with resistance training, can improve or maintain physical function in older adults and enhance muscle strength. Furthermore, aerobic activity is critical for maintaining and improving cardiovascular and functional health. Non-contact boxing has recently seen a surge in popularity among individuals with Parkinson's Disease (PD), with components of both aerobic and balance exercise. While participants anecdotally note improvements in stress and physical function, this has only been minimally studied. Therefore, we conducted a 10-week long pilot study of a structured karate exercise program. Among 15 participants, our pilot data highlights improvements in quality of life and high enthusiasm for the karate classes. Based on these promising results from the pilot, we are recruiting a larger, randomized group for the second phase of the karate intervention. The aim of this study is to test whether and to what degree a community-based karate class tailored for individuals with early- to middle-stage Parkinson's Disease (PD) 1) is feasible; 2) improves objective outcomes such as mobility and balance; 3) improves patient-reported outcomes compared with individuals given a standard exercise prescription for PD."
+    ],
+    "intervention": [
+      "Karate Classes"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Change in Mobility as Measured by the Timed Up & Go (TUG)"
+    ],
+    "population": [
+      "Parkinson, 30 - 90"
+    ]
+  },
+  {
+    "doc_id": "NCT03881371",
+    "summary": [
+      "This is a Phase III, multicentre, randomised, double-blind, placebo-controlled study to evaluate the effects of 100 mg safinamide, administered orally once daily (OD), in Chinese Parkinson's disease (PD) patients, experiencing motor fluctuations while on stable doses of Levodopa (L-dopa) (alone or in combination with other anti-Parkinson drugs). Eligible patients are required to meet the United Kingdom PD Society Brain Bank Clinical Diagnostic Criteria. The study involves a placebo group. Placebo will be added to the standard stabilized treatment as a control of the safinamide group, hence patients on placebo will have benefit from other ongoing anti-PD medication. A total of 306 patients will be randomised into this study (153 in the safinamide and 153 in the placebo groups)."
+    ],
+    "intervention": [
+      "Safinamide"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Change From Baseline to Week 16 in the Mean Total Daily \"OFF\" Time"
+    ],
+    "population": [
+      "Parkinson, 18 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT03877510",
+    "summary": [
+      "The purpose of this study is to evaluate the long-term safety and clinical utility of IPX203 in the treatment of participants with advanced Parkinson's disease (PD) who have motor fluctuations."
+    ],
+    "intervention": [
+      "IPX203"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Number of Participants With Treatment-Emergent Adverse Events"
+    ],
+    "population": [
+      "Parkinson, 40 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT03857867",
+    "summary": [
+      "This is a study to evaluate peripheral vibrotactile coordinated reset stimulation for Parkinson's disease seeks to explore the safety and efficacy of an experimental non-invasive method to aid in the symptoms of Parkinson's disease. The purpose of the study is to verify the safety and tolerability of non-painful sensory (tactile) vibratory stimulation delivered to the fingertips of patients with Parkinson's disease."
+    ],
+    "intervention": [
+      "Tactile Stimulation Glove"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Movement Disorder Society-Unified Parkinson's Disease Rating Scale (MDS-UPDRS) Part III Score"
+    ],
+    "population": [
+      "Parkinson, 18 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT03848455",
+    "summary": [
+      "The research team used meta-analytical statistical methods to integrate the results of different research groups on Parkinson's disease, using meta-analysis to find key genes related to the pathogenesis and development of Parkinson's disease, and to make small clinical results. The verification of the sample, the internal mechanism of the pathogenesis of Parkinson's disease and provide guidance and reference for subsequent experimental research."
+    ],
+    "intervention": [
+      "genetic diagnosis"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Parkinson's Key Gene, Unified Parkinson's Disease Rating Scale 3.0（UPDRS 3.0)"
+    ],
+    "population": [
+      "Parkinson and healthy, 18 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT03841604",
+    "summary": [
+      "Primary objective:\n\n• To evaluate the potential efficacy of safinamide 100 mg once daily (OD), compared with placebo, as add-on therapy for PD-related chronic pain\n\nSecondary objectives:\n\n* Percentage of pain responders\n* Clinical Global Impression for pain\n* Patient Global Impression for pain\n* Reduction in use of pain drugs\n* Mood\n* Motor and non-motor symptoms\n\nSafety Objectives:\n\n• Safety and tolerability"
+    ],
+    "intervention": [
+      "Safinamide Methanesulfonate"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Change From Baseline to Week 16 in Pain Severity (NRS-11 Scale) - Full Analysis Set, Change From Baseline to Week 16 in Pain Severity (NRS-11 Scale) - Per Protocol Set"
+    ],
+    "population": [
+      "Parkinson, 30 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT03836963",
+    "summary": [
+      "This study will examine the feasibility of an at-home cognitive training program that incorporates both memory training and online computerized cognitive training (CCT) software. Data will also be collected to determine if this program improves thinking and memory as well as everyday function. The hypothesis is that memory and cognitive training combined , compared to memory training alone or will lead to greater improvements in cognitive performance and daily function."
+    ],
+    "intervention": [
+      "cognitive training and memory strategy training"
+    ],
+    "comparator": [
+      "cognitive training"
+    ],
+    "outcome": [
+      "Change in NIH Sponsored Executive Abilities: Measures and Instruments for Neurobehavioral Evaluation and Research (NIH-EXAMINER) Executive Composite Score"
+    ],
+    "population": [
+      "Parkinson, 50 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT03829657",
+    "summary": [
+      "A Phase 3, 22-week, Multi-center, Randomized Withdrawal Study of ampreloxetine in Treating Symptomatic Neurogenic Orthostatic Hypotension in Subjects with Primary Autonomic Failure"
+    ],
+    "intervention": [
+      "ampreloxetine"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Proportion of Participants With Treatment Failure at Week 6 of RW Treatment Period"
+    ],
+    "population": [
+      "Parkinson, 30 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT03815916",
+    "summary": [
+      "REPAIR-PD is a single-center open label pilot, sequential group, investigator and patient blinded study to assess the CNS metabolic effects, safety, pharmacokinetics, and pharmacodynamics of CNM-Au8 in patients who have been diagnosed with Parkinson's Disease (PD) within three (3) years of Screening. The primary endpoint is the ratio of the oxidized to reduced form of nicotinamide adenine dinucleotide (NAD+:NADH) measured non-invasively by 31phosphorous magnetic resonance spectroscopy (31P-MRS)."
+    ],
+    "intervention": [
+      "Gold Nanocrystals 7.5 / 15 / 30 / 60 mg"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "31P-MRS Redox Ratio"
+    ],
+    "population": [
+      "Parkinson, 30 - 80"
+    ]
+  },
+  {
+    "doc_id": "NCT03808961",
+    "summary": [
+      "(1) To examine the blood, urine and spinal fluid of persons with Parkinson's to look for evidence of inflammation and; (2) whether 18 months of vitamin B3(niacin or niacinamide) supplementation may reduce the inflammation and/or improve PD motor and non-motor symptoms."
+    ],
+    "intervention": [
+      "Niacin, Niacinamide"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Unified Parkinson's Disease Rating Scale (UPDRS) Change, Mini-Mental State Examination (MMSE) Change"
+    ],
+    "population": [
+      "Parkinson, 35 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT03799614",
+    "summary": [
+      "The primary purpose of this study is to test the safety, tolerability and efficacy of vibration (delivered by an experimental device called RMBand that is worn on the subject's arm) on parkinsonian tremor. The RMBand was developed by Resonate Forward, LLC (RF). This RMBand is designed to administer a vibration to the wearer to decrease or stop tremor in persons with Parkinson's disease (PD)."
+    ],
+    "intervention": [
+      "RMBand lower dose / higher dose"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Movement Disorder Society Unified Parkinson Disease Rating Scale (MDS-UPDRS), Clinical Rating for Tremor, Objective Measurement of Tremor Frequency (Hz), Objective Measurement of Tremor Amplitude (mm)"
+    ],
+    "population": [
+      "Parkinson, 21 - 95"
+    ]
+  },
+  {
+    "doc_id": "NCT03794661",
+    "summary": [
+      "The objective of this clinical investigation is to characterize the clinical performance of Abbott's Clinician Programmer Electrode Screening Mode tool (InformityTM tool) in programming InfinityTM deep brain stimulation (DBS) systems for patients with Parkinson's disease (PD) or essential tremor (ET)."
+    ],
+    "intervention": [
+      "Clinician programmer electrode screening mode tool"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Change in Therapeutic Window Size With Selected Contact at the Informity Programming Visit Compared to Baseline, Change in Therapeutic Window Size With Best Contact at the Informity Programming Visit Compared to Baseline, Change in Therapeutic Electrical Energy Delivered (TEED) With Selected Contact at the Informity Programming Visit Compared to Baseline, Change in Therapeutic Electrical Energy Delivered (TEED) With Best Contact at the Informity Programming Visit Compared to Baseline"
+    ],
+    "population": [
+      "Parkinson, 18 - 80"
+    ]
+  },
+  {
+    "doc_id": "NCT03781791",
+    "summary": [
+      "This study will be conducted as a multi-center, randomized, double-blind, placebo-controlled study. Approximately 72 patients will be randomized 3:1 to treatment or placebo, with approximately 54 patients allocated to receive the active investigational product and approximately 18 patients allocated to receive placebo.\n\n\\- Study Update-\n\nAmendment 3 - In this amendment, an additional 80 patients (approximately) will be randomized 1:1 to treatment or placebo (double-blind) with approximately 40 subjects allocated to each group."
+    ],
+    "intervention": [
+      "Active Investigational Treatment ENT-01"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "The Number of Participants Who Experience Treatment Related Adverse Events-Safety Endpoint, The Number of Participants Who Experience Dose Limiting Toxicity Adverse Events, Change in Baseline Weekly CSBM-Primary Efficacy Endpoint"
+    ],
+    "population": [
+      "Parkinson, 30 - 90"
+    ]
+  },
+  {
+    "doc_id": "NCT03781167",
+    "summary": [
+      "The purpose of this study was to assess the safety and tolerability of ABBV-951 (Foslevodopa/Foscarbidopa) in participants with Parkinson's disease (PD).\n\nThis was a single-arm study with preplanned analyses conducted by dose subgroup (Low Dose or High Dose) based on the modal total daily dose (most frequent dose) over the treatment period."
+    ],
+    "intervention": [
+      "ABBV-951 low / high dose"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Number of Participants With Adverse Events, Number of Participants With Adverse Events of Special Interest, Number of Participants With Numeric Grade Equal to or Higher Than 5 and With Letter Grade Equal to or Higher Than D on the Infusion Site Evaluation Scale"
+    ],
+    "population": [
+      "Parkinson, 30 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT03773796",
+    "summary": [
+      "This is an open-label extension study for participants of the randomized placebo-controlled, double-blind, parallel-group, enriched enrolment randomized withdrawal NMS-Nab Study, assessing the long-term safety and efficacy of nabilone for non-motor symptoms in patients with Parkinson´s Disease (PD). Nabilone is an analogue of tetrahydrocannabinol (THC), the psychoactive component of cannabis. Nabilone acts as a partial agonist on both Cannabinoid 1 (CB1) and Cannabinoid 2 (CB2) receptor in humans and therefore mimics the effect of THC but with more predictable side effects and less euphoria.\n\nEligible patients will be re-tapered in an open-label nabilone dose optimization phase followed by an open-label period of 6 months on a stable nabilone dose."
+    ],
+    "intervention": [
+      "Nabilone 0.25 mg"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "AEs in PD Patients Taking Nabilone, Between V 1 and V 3, Number of Subjects (%) Who Discontinue the Study Due to an AE Between V 1 and V 3, Number of Subjects (%) Who Discontinue the Study Due to Other Reasons Than an AE Between V 1 and V 3, Suicidality in PD Patients Taking Nabilone Between V 1 and V 3 Using the Columbia-Suicide Severity Rating Scale, Hallucinations in PD Patients Taking Nabilone Between V 1 and V 3, Day-time Sleepiness in PD Patients Taking Nabilone Between V 1 and V 3, Orthostatic Hypotension in PD Patients Taking Nabilone Between V 1 and V 3, Subject Compliance in PD Patients Taking Nabilone., Changes in Supine and Standing Blood Pressure Measurements (mmHg) in PD Patients Taking Nabilone Between V 1 and V 3"
+    ],
+    "population": [
+      "Parkinson, 30 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT03769896",
+    "summary": [
+      "This is a randomized placebo-controlled, double-blind, parallel-group, enriched enrollment randomized withdrawal study assessing the efficacy and safety of nabilone for non-motor symptoms in patients with Parkinson´s Disease. Nabilone is an analogue of tetrahydrocannabinol (THC), the psychoactive component of cannabis. Nabilone acts as a partial agonist on both Cannabinoid 1 (CB1) and Cannabinoid 2 (CB2) receptor in humans and therefore mimics the effect of THC but with more predictable side effects and less euphoria.\n\nPart 1 is an open-label dose adjustment phase of the study. In eligible patients, a screening period is followed by an open-label nabilone dose optimization phase and a stable phase for at least 1 week. Treatment responders will be included in Part 2 of the study (randomized placebo-controlled, double-blind, parallel-grouped).\n\nPart 2 is the placebo-controlled, double-blind, parallel-group randomized withdrawal phase of the study."
+    ],
+    "intervention": [
+      "Nabilone 0.25 mg"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Changes of Non-motor Symptoms"
+    ],
+    "population": [
+      "Parkinson, 30 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT03751371",
+    "summary": [
+      "This Phase II randomized controlled trial proposes to examine the impact of long-term use of a novel light-weight and wearable assistive robotic device, called the Honda Walking Assist (HWA) device, to improve mobility in the home and community in individuals with mild to moderate Parkinson's disease (PD). Specific aims of the project are to: 1) determine the short-term impact of mechanical gait assistance on efficiency and ease of walking in individuals with PD, and 2) determine the effect of long-term HWA device usage on the ease and ability to walk unassisted in the home and community in individuals with PD."
+    ],
+    "intervention": [
+      "Training with HWA device"
+    ],
+    "comparator": [
+      "Usual Care"
+    ],
+    "outcome": [
+      "Gait Velocity "
+    ],
+    "population": [
+      "Parkinson, 50 - 80"
+    ]
+  },
+  {
+    "doc_id": "NCT03750552",
+    "summary": [
+      "A Phase 3 study to evaluate efficacy, safety, and tolerability of ampreloxetine (TD-9855) in subjects with primary autonomic failures (MSA, PD, or PAF) and symptomatic nOH with up to 4 weeks of treatment."
+    ],
+    "intervention": [
+      "ampreloxetine"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Change From Baseline in Orthostatic Hypotension Symptom Assessment (OHSA) Question #1 Score at Week 4"
+    ],
+    "population": [
+      "Parkinson, 30 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT03727139",
+    "summary": [
+      "The purpose of this survey is to evaluate the long-term safety of Rasagiline (AZILECT) in patients with Parkinson's disease in daily clinical practice and also collect efficacy information."
+    ],
+    "intervention": [
+      "Rasagiline"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Number of Participants Who Had One or More Adverse Events, Number of Participants Who Had One or More Adverse Drug Reactions"
+    ],
+    "population": [
+      "Parkinson, 00 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT03713957",
+    "summary": [
+      "This study will evaluate the safety, tolerability, and potential effects on cognition of GRF6021, a plasma-derived product, administered as an intravenous (IV) infusion, to subjects with Parkinson's disease and cognitive impairment."
+    ],
+    "intervention": [
+      "GRF6021"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Incidence of Treatment-emergent Adverse Events (TEAEs) and Serious Adverse Events (SAEs)"
+    ],
+    "population": [
+      "Parkinson, 40 - 85"
+    ]
+  },
+  {
+    "doc_id": "NCT03700684",
+    "summary": [
+      "This study addresses several issues related to the clinical management of speech and voice disorders associated with Parkinson's disease. Two behavioral treatment programs, Lee Silverman Voice Treatment and SpeechVive, are assessed in their ability to improve communication in persons with Parkinson's disease."
+    ],
+    "intervention": [
+      "Lee Silverman Voice Treatment, SpeechVive"
+    ],
+    "comparator": [
+      "no treatment"
+    ],
+    "outcome": [
+      "Treatment-related Changes in Vocal Intensity Will be Assessed Using Acoustic Analysis, Treatment-related Changes in Speech Breathing Will be Assessed Using Respiratory Kinematics, Treatment-related Changes in Speech Breathing Will be Assessed Using Laryngeal Aerodynamics (Open Quotient), Assessing Mental and Physical Effort Associated With Each Treatment Program Using the Modified National Aeronautics and Space Administration (NASA)-Task Load Index, Treatment-related Changes in Speech Breathing Will be Assessed Using Laryngeal Aerodynamics (MFDR)"
+    ],
+    "population": [
+      "Parkinson, 50 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT03696589",
+    "summary": [
+      "The purpose of this study is to assess the feasibility, in regards to acceptability and implementation, of the Pre-Active PD intervention for increased high intensity goal-directed aerobic exercise engagement in people with early-stage Parkinson's disease (Hoehn and Yahr stage I \\& II). In addition, the study aims to explore the effect estimates of the Pre-Active PD intervention on self-efficacy, motivation, stage of behavior change, and physical activity levels in people with early stage Parkinson's disease."
+    ],
+    "intervention": [
+      "Physical Activity Coaching"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Change From Baseline Moderate-Vigorous Physical Activity Using Actigraph at 4 Months, Change From Baseline in the Behavioral Regulation In Exercise Questionnaire (BREQ-2)"
+    ],
+    "population": [
+      "Parkinson, 18 - 85"
+    ]
+  },
+  {
+    "doc_id": "NCT03675282",
+    "summary": [
+      "Prospective, single center study to determine whether the current R2\\* iron mapping method for measuring nigral iron changes in the brain can be significantly improved by using the Quantitative Susceptibility Mapping (QSM) based iron mapping techniques with the goal of validating QSM for potential use in later clinical trials. Subjects with a diagnosis of Parkinson's Disease, Rapid Eye Movement (REM) Sleep Behavior Disorder, and Normal Volunteers who meet the inclusion and exclusion criteria will be eligible for participation in this study."
+    ],
+    "intervention": [
+      "(11C)PE2I, Ioflupane"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Change in Sensitivity of QSM MR Imaging From Baseline MR Imaging to 24 Month MR Imaging"
+    ],
+    "population": [
+      "Parkinson and healthy, 20 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT03670953",
+    "summary": [
+      "To evaluate the safety and efficacy of IPX203 (carbidopa and levodopa) extended-release capsules (IPX203 ER CD-LD) in comparison to immediate release (IR) CD-LD in the treatment of CD-LD-experienced participants with Parkinson's disease (PD) who have motor fluctuations."
+    ],
+    "intervention": [
+      "IPX203 ER CD-LD - Dose Conversion; IPX203 - Double blind Maintenance"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Mean Change From Baseline in \"Good on\" Time Per Day at Week 20/Early Termination (ET)"
+    ],
+    "population": [
+      "Parkinson, 40 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT03647137",
+    "summary": [
+      "Early stage Parkinson disease (PD) is characterized by a 'honeymoon' phase in terms of responsiveness of motor symptoms, including gait, to dopaminergic pharmacotherapy. Advancing PD is associated with disabling axial motor complications, such as freezing of gait (FoG), with decreased or even refractory dopamine responsiveness in over 50% of patients. The management of dopamine resistant gait problems represents the most important unmet need in PD. This study will related detailed motor testing to brain PET imaging to see if certain molecules (or lack thereof) involved with neurologic transmission in the brain are involved with FoG."
+    ],
+    "intervention": [
+      "Detailed motor testing"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "L-DOPA Insensitivity, Striatal FEOVB PET Binding, Striatal DTBZ PET Binding, Striatal PIB PET Binding"
+    ],
+    "population": [
+      "Parkinson, 50 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT03624920",
+    "summary": [
+      "This is a randomized, placebo-controlled, 3-way cross-over phase IIa trial comparing two dose levels of THN102 to placebo in patients suffering from Parkinson's disease associated with excessive daytime sleepiness."
+    ],
+    "intervention": [
+      "THN102 (Dose B and C)"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Safety Adverse Events"
+    ],
+    "population": [
+      "Parkinson, 18 - 80"
+    ]
+  },
+  {
+    "doc_id": "NCT03623386",
+    "summary": [
+      "Effect of Mental Imagery Training on Brain Plasticity and Motor Function in Individuals with Parkinson's Disease: A functional MRI investigation."
+    ],
+    "intervention": [
+      "Patients with PD neurofeedback training"
+    ],
+    "comparator": [
+      "Patients will not receive neurofeedback training."
+    ],
+    "outcome": [
+      "Change in Right Insula-dorsomedial Frontal Cortex Functional Connectivity Strength, Change in Resting-state Functional Connectivity Between the Right Insula and Dorsomedial Frontal Cortex, Change in Motor Impairment, Change in Motor Function"
+    ],
+    "population": [
+      "Parkinson, 40 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT03607695",
+    "summary": [
+      "The aging Veteran population, together with high exposure to Agent Orange or other herbicides during military service, has made diseases such as Parkinson's disease (PD), currently affecting more than 80,000 Veterans, a major health issue in the Veterans' health system. Mobility and cognitive limitations are a common problem in PD and are associated with significant disability, increased fall risk, reduced quality of life, and increased caregiver burden. While less is known about its benefit on cognition, physical therapy has proven to be an effective treatment to mitigate mobility limitations, though the response to rehabilitation interventions is highly variable. The proposed research will inform the investigators' understanding of the impact of certain genetic profiles associated with learning impairments on motor and cognitive benefits in response to gait rehabilitation, and will provide an important foundation for more personalized and improved gait rehabilitation programs for different subgroups of PD patients."
+    ],
+    "intervention": [
+      "Gait training"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Gait Speed (m/s), Montreal Cognitive Assessment Score"
+    ],
+    "population": [
+      "Parkinson, 50 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT03582137",
+    "summary": [
+      "The major purpose of this study is to assess the efficacy of CBD on motor symptoms of Parkinson's Disease (PD), and secondarily to study the safety and tolerability of CBD and other efficacy, particularly regarding tremor in PD. The study has been powered to detect a clinically significant reduction in Movement Disorder Society (MDS) Unified Parkinson's Disease Rating Scale (UPDRS) Part III motor scores. This is a 1:1 parallel, double-blind, randomized controlled trial (RCT) with 60 participants. The investigators will be recruiting up to 75 participants; the goal is to have 60 participants (30 in CBD group and 30 in placebo group) complete the study. The study drug is obtained from the National Institute on Drug Abuse (NIDA)."
+    ],
+    "intervention": [
+      "Cannabidiol"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Change in Movement Disorders Society-Unified Parkinson's Disease Rating Scale (MDS-UPDRS) Part III (Motor Examination) Scores"
+    ],
+    "population": [
+      "Parkinson, 40 - 80"
+    ]
+  },
+  {
+    "doc_id": "NCT03555695",
+    "summary": [
+      "The benefits of exercise for general health and wellbeing in older adults are well-established. Balance exercises such as tai chi and yoga, along with resistance training, can improve or maintain physical function in older adults and enhance muscle strength. Furthermore, aerobic activity is critical for maintaining and improving cardiovascular and functional health. Noncontact boxing has recently seen a surge in popularity among individuals with Parkinson's Disease (PD), with components of both aerobic and balance exercise. While participants anecdotally note improvements in stress and physical function, this has only been minimally studied. However, drawing on this experience and the combined aerobic, balance, and mindfulness practices that comprise karate, we hypothesize that participation in structured karate programs may offer similar or greater benefits. Specifically, the aim of this study is to test whether and to what degree a community-based karate class tailored for individuals with early- to middle-stage Parkinson's Disease (PD) 1) is feasible; and 2) improves objective and patient-reported outcomes."
+    ],
+    "intervention": [
+      "Karate Classes"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Change in Mobility as Measured by the Timed Up & Go (TUG)"
+    ],
+    "population": [
+      "Parkinson, 30 - 90"
+    ]
+  },
+  {
+    "doc_id": "NCT03542474",
+    "summary": [
+      "The overall objective of this study is to determine how high intensity endurance exercise affects both cognition and the signs and symptoms of Parkinson's disease as well as if certain brain structures and functions also change with this exercise."
+    ],
+    "intervention": [
+      "High Intensity Endurance Exercise"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Mean Change in Cognitive Function"
+    ],
+    "population": [
+      "Parkinson, 40 - 85"
+    ]
+  },
+  {
+    "doc_id": "NCT03540134",
+    "summary": [
+      "This study will evaluate safety foremost but also the distribution and initial effectiveness of infusion-enhanced, MRI-guided DBS for patients with medication-refractory, Parkinson's disease"
+    ],
+    "intervention": [
+      "Intracerebral Infusion of Autologous Cerebral Spinal Fluid"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Number of Participants With Adverse Events That Are Related to Treatment"
+    ],
+    "population": [
+      "Parkinson, 30 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT03541356",
+    "summary": [
+      "A Phase IIa, Randomized, Double Blind, Placebo Controlled, Single Dose, Safety and Pharmacokinetic/Pharmacodynamic Study of INP103 (POD L-dopa) Administered in the Presence of Decarboxylase Inhibitor to L-dopa Responsive Parkinson's Disease Patients"
+    ],
+    "intervention": [
+      "L-dopa 35 / 70 / 140 mg; L-dopa 70mg/carbidopa 7mg"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Number of Participants With Treatment Emergent Adverse Events"
+    ],
+    "population": [
+      "Parkinson, 40 - 80"
+    ]
+  },
+  {
+    "doc_id": "NCT03538262",
+    "summary": [
+      "An observational study to characterize and compare long-term clinical outcomes data collected remotely through periodic tele-visits, interactive smartphone app sessions, and web-based surveys in individuals with Parkinson's Disease (PD) who have completed the interventional phases of the STEADY-PD3 and SURE-PD3 clinical trials."
+    ],
+    "intervention": [
+      "AT-HOME PD"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Change in Tele-visit Modified MDS-UPDRS Parts 1-3 (Total Score), Change in Tele-visit MDS-UPDRS Part 2 (Score), Change in Smartphone Tapping (Score), Change in Fox Insight MDS-UPDRS Part 2 (Score)"
+    ],
+    "population": [
+      "Parkinson, 00 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT03521635",
+    "summary": [
+      "The main objective of the study is to explore firstly, then further evaluate and confirm the efficacy between Pramipexole Sustained Release (SR) versus Pramipexole Immediate Release (IR) on nocturnal symptoms (as measured by the change from baseline to the end of the maintenance period in Parkinson's Disease Sleep Scale 2nd version (PDSS-2) score) in L-dopa+ treated patients with advanced Parkinson's disease (PD)."
+    ],
+    "intervention": [
+      "Pramipexole SR"
+    ],
+    "comparator": [
+      "Pramipexole IR"
+    ],
+    "outcome": [
+      "Change From Baseline to Week 18 in Parkinson's Disease Sleep Scale 2nd Version (PDSS-2) Total Score"
+    ],
+    "population": [
+      "Parkinson, 30 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT03482882",
+    "summary": [
+      "The purpose of this study is to assess the efficacy of pimavanserin for the treatment of depression in adults with Parkinson's disease."
+    ],
+    "intervention": [
+      "Pimavanserin"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Change From Baseline to Week 8 in HAMD-17 (Hamilton Depression Scale -17 Items) Total Score"
+    ],
+    "population": [
+      "Parkinson, 50 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT03462082",
+    "summary": [
+      "This single-center, randomized, quadruple-blinded, double-crossover comparative efficacy trial will study the effects of unilateral 50% voltage reduction in axial motor dysfunction for patients with Parkinson's disease that develop treatment-resistant postural stability gait dysfunction after bilateral subthalamic nucleus deep brain stimulation surgery."
+    ],
+    "intervention": [
+      "Deep Brain Stimulation: Asymmetric STN-DBS"
+    ],
+    "comparator": [
+      "Bilateral STN-DBS"
+    ],
+    "outcome": [
+      "Change in Gait Velocity"
+    ],
+    "population": [
+      "Parkinson, 00 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT03462680",
+    "summary": [
+      "Inflammation plays a central role in Parkinson's disease. The use of anti-inflammatory drugs was found to reduce the risk of PD . Niacin may play an important role in reducing inflammation in PD. The investigators also found that individuals with PD have a chronic niacin deficiency .\n\nThe purposes of this study are to (1) examine the blood, urine and spinal fluid of persons with Parkinson's to look for evidence of inflammation and; (2) whether 6 months of vitamin B3 supplements may reduce the inflammation and/or improve symptoms."
+    ],
+    "intervention": [
+      "Niacin"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Unified Parkinson's Disease Rating Scale (UPDRS) Change, REM Sleep Pattern, Deep Sleep, Light Sleep, Sleep Time - Awake, Mini-Mental State Examination (MMSE) Change, Stroop Test Change, Fatigue Severity Scale"
+    ],
+    "population": [
+      "Parkinson, 35 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT03409120",
+    "summary": [
+      "This study occurs during five visits that are already scheduled as part of \"Biomarkers to Guide Directional DBS for Parkinson's Disease\" (ClinicalTrials.gov Identifier: NCT03353688). If participants have dystonia associated with Parkinson's disease, the investigators will consent and administer one additional rating scale (Burke-Fahn-Marsden Dystonia Rating Scale) to assess the severity of dystonia."
+    ],
+    "intervention": [
+      "Deep Brain Stimulation: Boston Scientific Vercise PC IPG with directional DBS lead"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Burke-Fahn-Marsden Dystonia Rating Scale"
+    ],
+    "population": [
+      "Parkinson, 18 - 70"
+    ]
+  },
+  {
+    "doc_id": "NCT03391882",
+    "summary": [
+      "A study of an investigational drug to see how it affects the people with Parkinson's Disease complicated by motor fluctuations (\"OFF\" Episodes) compared to an approved drug used to treat people with Parkinson's Disease complicated by motor fluctuations (\"OFF\" Episodes)"
+    ],
+    "intervention": [
+      "APL-130277"
+    ],
+    "comparator": [
+      "subcutaneous apomorphine"
+    ],
+    "outcome": [
+      "Change From Pre-dose to 90 Mins. Post-dose in Movement Disorders Society Unified Parkinson's Disease Rating Scale Part III Score After 4 Weeks of Dosing in Each Crossover Period (Assessed by the Blinded-rater In-clinic at Visit 3 and Visit 6 of PART B)."
+    ],
+    "population": [
+      "Parkinson, 18 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT03368170",
+    "summary": [
+      "Mesdopetam (IRL790) is an experimental small molecule compound with psychomotor stabilizing properties. The primary target is the dopamine D3 receptor, a target implicated in the generation of levodopa-induced dyskinesia, a side-effect frequently occurring with long-term levodopa treatment in patients with Parkinson's disease. In experimental animals mesdopetam potently reduced levodopa-induced involuntary movement without impairing the antiparkinsonian effect of levodopa.\n\nThe primary purpose of the trial is to investigate whether mesdopetam given as adjunctive treatment can reduce levodopa induced dyskinesia in patients with Parkinson's disease. The trial will also help to establish the most optimal dosing of the compound."
+    ],
+    "intervention": [
+      "Mesdopetam (IRL790)"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Unified Dyskinesia Rating Scale (UDysRS)"
+    ],
+    "population": [
+      "Parkinson, 18 - 79"
+    ]
+  },
+  {
+    "doc_id": "NCT03362879",
+    "summary": [
+      "The purpose of this study is to evaluate treatment of advanced Parkinson's Disease (PD) patients on levodopa-carbidopa intestinal gel (LCIG) monotherapy in a routine clinical setting."
+    ],
+    "intervention": [
+      "LCIG"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Percentage of Participants on Levodopa-Carbidopa Intestinal Gel (LCIG) Monotherapy From LCIG Initiation to 12 Months"
+    ],
+    "population": [
+      "Parkinson, 18 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT03353688",
+    "summary": [
+      "The purpose of this study is to investigate the clinical efficacy of directional DBS electrode technology and whether electrophysiology biomarkers can predict effective contact segments for chronic therapy."
+    ],
+    "intervention": [
+      "Deep Brain Stimulation: Boston Scientific Vercise PC IPG with directional DBS lead guided by biomarkers"
+    ],
+    "comparator": [
+      "Omnidirectional (\"ring mode\") stimulation, Directional DBS Guided by Behavior"
+    ],
+    "outcome": [
+      "Change From Preoperative Baseline in Movement Disorders Society Unified Parkinson's Disease Rating Scale Part 3 (MDS-UPDRS Part III) \"Off\" Medications"
+    ],
+    "population": [
+      "Parkinson, 18 - 70"
+    ]
+  },
+  {
+    "doc_id": "NCT03335150",
+    "summary": [
+      "To investigate the effectiveness of a novel compensatory cognitive rehabilitation program for individuals with Parkinson's disease (PD) and mild cognitive impairment (MCI)."
+    ],
+    "intervention": [
+      "CogSMART-PD"
+    ],
+    "comparator": [
+      "Behavioral: Supportive Care as active comparator"
+    ],
+    "outcome": [
+      "Wechsler Adult Intelligence Scale-IV (WAIS-IV) Matrix Reasoning Test Total Scaled Score"
+    ],
+    "population": [
+      "Parkinson, 40 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT03329508",
+    "summary": [
+      "P2B001 is an investigational drug that comprised of low doses of two drugs, pramipexole and rasagiline, which are both approved drugs and routinely used in standard therapy for Parkinson's disease. The two drugs work in two different mechanisms that help each other, so there is a reason to believe that their combined activity will be better than each individual drug, and that lower doses can be used without losing the therapeutic effect. Thus, the development of P2B001 is intended to provide a combination of low doses of these two drugs, in an improved formulation, that is hoped to be more effective in controlling Parkinson's disease symptoms and with less side effects than each of the drugs taken alone or the current available commercial drugs taken together. In a previously completed clinical trial a significant improvement in Parkinson's disease symptoms was seen in patients treated with P2B001 compared to patients that were treated with placebo.\n\nIn this phase 3 study , the safety and efficacy of P2B001 will be assessed by comparing P2B001 to its individual components pramipexole and rasagiline. This will be done by monitoring the motor and non-motor symptoms, evaluating responses participants provide on questionnaires relating to Parkinson's disease and quality of life that will be completed on every visit. In addition, this study will also compare P2B001 to a marketed drug of pramipexole ER. Approximately 525 patients will participate in this research study and the participation in this study will last between 14 to 18 weeks."
+    ],
+    "intervention": [
+      "P2B001 0.6/0.75 mg, Rasagiline 0.75 mg, Pramipexole 0.6 mg"
+    ],
+    "comparator": [
+      "Marketed Pramipexole ER "
+    ],
+    "outcome": [
+      "Change in Total Unified Parkinson's Disease Rating Scale (UPDRS) Score (Defined as Sum of Parts II and III, Scores (0-160)."
+    ],
+    "population": [
+      "Parkinson, 35 - 80"
+    ]
+  },
+  {
+    "doc_id": "NCT03325556",
+    "summary": [
+      "The purpose of this study is to evaluate the efficacy of pimavanserin compared to placebo in preventing relapse of psychotic symptoms in subjects with dementia-related psychosis who responded to 12 weeks of open label pimavanserin treatment."
+    ],
+    "intervention": [
+      "Pimavanserin 34 mg / 20 mg"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Time From Randomization to Relapse in the Double-blind (DB) Period"
+    ],
+    "population": [
+      "Meets clinical criteria for one of the following disorders: Dementia associated with Parkinson's disease, Dementia with Lewy bodies, Possible or probable Alzheimer's disease, Frontotemporal degeneration spectrum disorders, Vascular dementia, 00 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT03321019",
+    "summary": [
+      "This study will collect data on various aspects of airway sensation and function, and determine how it relates to the development of swallowing and cough dysfunction in Parkinson's disease. Participants will be followed over a 3-year period, with once-per-year visits to collect the data."
+    ],
+    "intervention": [
+      "Capsaicin, Resistive respiratory loads"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Respiratory Sensitivity, Urge to Cough Sensitivity, Penetration-aspiration Scale"
+    ],
+    "population": [
+      "Parkinson and healthy, 45 - 85"
+    ]
+  },
+  {
+    "doc_id": "NCT03318523",
+    "summary": [
+      "The primary objective of the study is to evaluate the clinical efficacy of BIIB054 via dose response using the change from baseline in Movement Disorder Society-Unified Parkinson's Disease Rating Scale (MDS-UPDRS) Total Score.\n\nThe secondary objectives of the study are to evaluate the dose-related safety of BIIB054, to evaluate the clinical efficacy of BIIB054 via MDS-UPDRS total score, to assess the pharmacokinetic (PK) profile of BIIB054, to evaluate the clinical efficacy of BIIB054 based on MDS-UPDRS subparts, to evaluate the pharmacodynamic effects of BIIB054 on the integrity of nigrostriatal dopaminergic nerve terminals and to evaluate the immunogenicity of BIIB054."
+    ],
+    "intervention": [
+      "BIIB054 250 mg / 1250 mg / 3500 mg"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Change From Baseline in Movement Disorder Society Sponsored Revision of the Unified Parkinson's Disease Rating Scale (MDS-UPDRS) Total Score (Sum of Parts I, II, and III) at Week 52, Change From Baseline in Movement Disorder Society Sponsored Revision of the Unified Parkinson's Disease Rating Scale (MDS-UPDRS) Total Score (Sum of Parts I, II, and III) at Week 72"
+    ],
+    "population": [
+      "Parkinson, 40 - 80"
+    ]
+  },
+  {
+    "doc_id": "NCT03305809",
+    "summary": [
+      "A randomized placebo-controlled trial to evaluate the safety and efficacy of three doses of study drug LY3154207 treated for 12 weeks in participants with mild-to-moderate dementia associated with LBD (PDD or DLB)."
+    ],
+    "intervention": [
+      "LY3154207 10 mg / 30 mg / 75 mg"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Change From Baseline in the Continuity of Attention (CoA) Composite Score of the Cognitive Drug Research Computerized Cognition Battery (CDR-CCB)"
+    ],
+    "population": [
+      "Parkinson and dementia, 40 - 85"
+    ]
+  },
+  {
+    "doc_id": "NCT03301272",
+    "summary": [
+      "Purpose: Rest tremor in Parkinson's disease is notoriously difficult to treat through pharmacological measures, currently only predictably attenuated by the invasive deep brain stimulation surgery. The investigators hope to find some predictable and clinically meaningful attenuation of tremor with targeted use of onabotulinum toxin on muscles involved in creating the tremor.\n\nParticipants: 16 subjects who meet United Kingdom (UK) brain bank criteria for Parkinson's disease with medically refractory rest tremor of at least 3 cm amplitude.\n\nProcedures (methods): Subjects will be blinded to receive either sham saline injection versus onabotulinum toxin injections directed to muscle groups felt to be clinically involved in causing the oscillatory movement of the tremor. Assessment of tremor severity and functional improvement from baseline after injection will occur within group (i.e. each subject will serve as their own control).\n\nHypotheses:\n\n1\\. (A) Onabotulinumtoxin A significantly attenuates the amplitude of medically-refractory rest tremor of the upper limb in Parkinson's patients as compared to sham injections; as measured by reduction in the Movement Disorders Society Unified Parkinson's Disease Rating Scale (MDS-UPDRS) tremor subscore.\n\n1\\. (B) Onabotulinumtoxin A significantly improves the limb function of Parkinson's patients with medically-refractory rest tremor of the upper limb as compared to sham injections; as measured by an increase in Action Research Arm Test (ARAT) scores."
+    ],
+    "intervention": [
+      "Onabotulinumtoxin A Injection"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Change in the MDS-UPDRS Tremor Subscore"
+    ],
+    "population": [
+      "Parkinson, 45 - 80"
+    ]
+  },
+  {
+    "doc_id": "NCT03292016",
+    "summary": [
+      "A study that compares the extent to which apomorphine becomes available in the body after taking either an investigational drug containing apomorphine or apomorphine that is injected under the skin in people with PD complicated by \"OFF\" episodes."
+    ],
+    "intervention": [
+      "APL-130277"
+    ],
+    "comparator": [
+      "Subcutaneous APO-go, Subcutaneous APOKYN"
+    ],
+    "outcome": [
+      "Maximum Observed Plasma Concentration (Cmax), Observed Time of the Maximum Concentration (Tmax)"
+    ],
+    "population": [
+      "Parkinson, 18 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT03250117",
+    "summary": [
+      "Subjects stable on L-Dopa and oral ropinirole will have their ropinirole replaced with the Ropinirole Implant(s). The Ropinirole Implant was designed using the ProNeura™ implant technology where the implant is inserted under the skin. This study will measure how much ropinirole is released in the blood during 12 weeks of ropinirole implant treatment, and evaluate the side effects of this new formulation."
+    ],
+    "intervention": [
+      "Ropinirole oral product, Ropinirole Implant"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "AUC0-24 Hours of Ropinirole, Total Number of Adverse Events Across Participants"
+    ],
+    "population": [
+      "Parkinson, 30 - 80"
+    ]
+  },
+  {
+    "doc_id": "NCT03235284",
+    "summary": [
+      "Patients with Parkinson's disease present motor dysfunctions such as stiffness, tremor, postural instability and bradykinesia, which leads to alterations of balance, necessitating specialized physiotherapeutic treatment. In this way this study aims to determine the effectiveness of two tools used in physiotherapy, kinesiotherapy and the Nintendo Wii. 45 patients will be evaluated through the Berg Balance Scale, Dynamic Gait Index, Timed up and go and PDQ-39, and will then be randomized to receive 16 sessions of Exercises or Nintendo Wii alone or together. After this period the patients will be reassessed to verify the effects of the techniques."
+    ],
+    "intervention": [
+      "Exercises and Nintendo Wii"
+    ],
+    "comparator": [
+      "Exercises, Nintendo Wii"
+    ],
+    "outcome": [
+      "Berg Balance Scale"
+    ],
+    "population": [
+      "Parkinson, 40 - 80"
+    ]
+  },
+  {
+    "doc_id": "NCT03219892",
+    "summary": [
+      "This study is a double blind comparative study examining the effectiveness of the rTMS treatment on Freezing of Gait (FOG) in patients with Parkinson's disease (PD). The investigators hypothesize that treatment with rTMS on supplemental motor area will improve gait quality and decrease the frequency of FOG in PD patients."
+    ],
+    "intervention": [
+      "High-frequency rTMS"
+    ],
+    "comparator": [
+      "Sham rTMS"
+    ],
+    "outcome": [
+      "Changes of the New Freezing of Gait Questionnaire (NFOGQ) Score"
+    ],
+    "population": [
+      "Parkinson, 40 - 80"
+    ]
+  },
+  {
+    "doc_id": "NCT03213873",
+    "summary": [
+      "This project aims to determine the effects of the HiBalance program on neuroplastic changes in people with mild to moderate Parkinson´s disease. The main hypothesis is that highly challenging exercise will lead to greater gait and balance ability, increased levels of physical activity and an improved health related quality of life. The investigators further hypothesize that neuroplasticity changes will be seen in corresponding areas of the brain, neuropsychological changes on cognitive test measures, and that exercise will inhibit the degeneration of dopaminergic neurons in the brain through the mediation of neurotrophic factors."
+    ],
+    "intervention": [
+      "HiBalance"
+    ],
+    "comparator": [
+      "Speech therapy"
+    ],
+    "outcome": [
+      "Mini-BESTest"
+    ],
+    "population": [
+      "Parkinson, 60 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT03204526",
+    "summary": [
+      "Prospective trial of low frequency deep brain stimulation of the ventral subthalamic nucleus to improve cognitive performance in patients with advanced Parkinson's disease. All study participants have undergone DBS implantation surgery as part of their routine care for motor manifestations of Parkinson's disease. In this study, a temporary low frequency period of stimulation will be applied to determine its effects on cognition."
+    ],
+    "intervention": [
+      "deep brain stimulation"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Mean Reaction Time for Computerized Color Naming Stroop Task, Mean Accuracy Rates Using Computerized Color Naming Stroop Task"
+    ],
+    "population": [
+      "Parkinson, 18 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT03205488",
+    "summary": [
+      "This study will assess the safety and tolerability of daily oral administration of nilotinib (150-300mg once daily) in Parkinson's Disease."
+    ],
+    "intervention": [
+      "Nilotinib Oral Capsules (150mg or 300mg)"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Tolerability of Nilotinib Over Placebo, Safety of Nilotinib"
+    ],
+    "population": [
+      "Parkinson, 40 - 79"
+    ]
+  },
+  {
+    "doc_id": "NCT03194217",
+    "summary": [
+      "This phase 2b study is designed as multicentre, multinational, randomized, double blind, parallel group and placebo controlled with three doses of Bavisant (0.5, 1, and 3 mg/d) in subjects with excessive daytime sleepiness with Parkinson's disease."
+    ],
+    "intervention": [
+      "BEN-2001 0.5 mg / 1.0 mg / 3.0 mg"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Measurement of Sleepiness Using the Epworth Sleepiness Scale (ESS) at Baseline and Post Dose"
+    ],
+    "population": [
+      "Parkinson, 50 - 80"
+    ]
+  },
+  {
+    "doc_id": "NCT03192046",
+    "summary": [
+      "Parkinson disease (PD) is a progressive neurological disease that results in characteristic gait dysfunction. Gait problems include decreased velocity, decreased stride length, difficulty with initiation of gait, postural stability problems and alteration in joint kinematics.1 In this typically older patient population, these gait deviations affect their participation in household and community activities. The standard of care is currently focused on therapeutic exercise and cueing of various types (visual, auditory, verbal). Current interventions have not been demonstrated to markedly improve gait kinematics, so there is a need to identify interventions that could improve gait performance in this population. Lower extremity bracing is a common and well-established intervention for gait dysfunction with other populations, including stroke and brain injury. The braces allow for improved stability, sensory feedback, and consistent tactile cues to allow patients to have the best gait mechanics with each step. It is reasonable to hypothesize that appropriate bracing may have the potential to improve gait function and kinematics in PD since these patient often have gastroc-soleus weakness. Data from our early pilot studies indicates that bracing individuals with PD can positively impact their mobility. This includes improvements in velocity, step length, and dynamic balance. Additional data supported an upward trend in quality of life."
+    ],
+    "intervention": [
+      "Carbon Fiber Ankle Foot Orthosis (AFO)"
+    ],
+    "comparator": [
+      "Walking Program Only"
+    ],
+    "outcome": [
+      "Change in Gait Capacity as Assessed b 6-Minute Walk Test"
+    ],
+    "population": [
+      "Parkinson, 30 - 85"
+    ]
+  },
+  {
+    "doc_id": "NCT03189563",
+    "summary": [
+      "This is a phase IIa, first in human, randomized, double-blind, multicenter study to evaluate the safety, tolerability and efficacy of DA-9805 at 45mg, 90mg versus placebo in subjects diagnosed with early Parkinson's disease."
+    ],
+    "intervention": [
+      "DA-9805 45mg / 90 mg"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Change in Motor MDS-UPDRS Score From Baseline at Week 12"
+    ],
+    "population": [
+      "Parkinson, 30 - 79"
+    ]
+  },
+  {
+    "doc_id": "NCT03185481",
+    "summary": [
+      "The purpose of this study is to evaluate the long term safety and tolerability of PF-06649751 in Parkinson's disease patients who experience motor-fluctuations."
+    ],
+    "intervention": [
+      "QD PF-06649751 (different dosages)"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Number of Participants With Treatment-Emergent Adverse Events (All Causalities)"
+    ],
+    "population": [
+      "Parkinson, 40 - 87"
+    ]
+  },
+  {
+    "doc_id": "NCT03187301",
+    "summary": [
+      "A cardiac safety study of an investigational drug to see how it affects the heart in people with Parkinson's Disease Complicated by Motor Fluctuations (\"OFF\" Episodes)"
+    ],
+    "intervention": [
+      "APL-130277"
+    ],
+    "comparator": [
+      "moxifloxacin + Placebo"
+    ],
+    "outcome": [
+      "Time-Matched Change From Baseline in QTc, Placebo-Adjusted and Corrected for Heart Rate Based on the Fridericia Correction Method (QTcF) Using Delta Delta Method (ΔΔQTcF): Comparison Between APL-130277 and Placebo (Central Tendency Analysis), Time-Matched Change From Baseline in QTc, Placebo-Adjusted and Corrected for Heart Rate Based on QTcF Using ΔΔQTcF: Comparison Between Moxifloxacin and Placebo (Assay Sensitivity Analysis)"
+    ],
+    "population": [
+      "Parkinson, 18 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT03104725",
+    "summary": [
+      "Background:\n\nParkinsons disease (PD) causes slow movement, stiffness, and poor balance. Many symptoms are due to the loss of brain cells that make the brain chemical dopamine. The cells may be damaged by the breakdown of dopamine by a process called oxidation. The drug N-acetylcysteine (NAC) can act as an antioxidant. Researchers want to test if NAC can decrease the oxidation of brain dopamine in people with PD.\n\nObjective:\n\nTo look at the effect of NAC on brain chemistry in people with PD.\n\nEligibility:\n\nPeople ages 18 and older with PD that were diagnosed within the past 5 years. They must be taking a monoamine oxidase inhibitor.\n\nHealthy volunteer participants ages 18 and older.\n\nDesign:\n\nParticipants will be screened with:\n\nMedical history\n\nPhysical exam\n\nBlood and urine tests\n\nParticipants will be hospitalized for 4 to 8 days.\n\nOn day 1, participants will have blood and urine tests. For several hours, they cannot eat or drink anything but water and their medications. Late in the morning they will have a meal.\n\nAbout 2 hours later they will have a spinal tap (lumbar puncture). For this, a numbing medicine is injected into the back. A needle is inserted between the bones in the back to remove a small amount of fluid. The spinal tap may use x-rays to see inside the body.\n\nAfter the spinal tap, they will start taking NAC by mouth.\n\nThey will take NAC twice a day for 2 more days.\n\nOn the next day, they will not eat until a meal in the late morning. They will take a final NAC dose.\n\nAbout 2 hours later they will have a second spinal tap.\n\nHealthy Volunteer (HV) participants will receive a spinal tap on day one, followed by a second spinal tap 48 hours after the first spinal tap. HV participants will not receive NAC."
+    ],
+    "intervention": [
+      "N-Acetylcysteine, Procedure: Lumbar Puncture"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "The Mean Percent Change in Cerebrospinal Fluid (CSF) Concentration of 5-S-cysteinyl-dopamine (Cys-DA) Pre and Post-N-acetylcysteine (NAC) Treatment"
+    ],
+    "population": [
+      "Parkinson, 18 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT03103919",
+    "summary": [
+      "Evaluate the benefits of Kinesia-360™ wearable technology in addition to standard clinical practice on improving Parkinson´s disease motor symptoms, Neupro dosing regimen and adherence to Neupro compared with only standard clinical practice."
+    ],
+    "intervention": [
+      "Kinesia-ONE™, Kinesia-360™, Rotigotine"
+    ],
+    "comparator": [
+      "Rotigotine + Standard Care"
+    ],
+    "outcome": [
+      "Change From Baseline to Visit 2 in Unified Parkinson's Disease Rating Scale (UPDRS) Part III Motor Score, Change From Baseline to Visit 2 in Kinesia-ONE™ Variable: Finger Tapping Speed Score, Change From Baseline to Visit 2 in Kinesia-ONE™ Variable: Rest Tremor Score, Change From Baseline to Visit 2 in Kinesia-ONE™ Variable: Averaged Finger Tapping Speed and Resting Tremor Scores, Change From Baseline to Visit 2 in Kinesia-ONE™ Variable: Postural Tremor Score, Change From Baseline to Visit 2 in Kinesia-ONE™ Variable: Finger Tapping Amplitude Score, Change From Baseline to Visit 2 in Kinesia-ONE™ Variable: Hand Grasp Speed Score, Change From Baseline to Visit 2 in Kinesia-ONE™ Variable: Hand Grasp Amplitude Score, Change From Baseline to Visit 2 in Kinesia-ONE™ Variable: Rapid Alternating Movement Speed Score, Change From Baseline to Visit 2 in Kinesia-ONE™ Variable: Rapid Alternating Amplitude Score, Change From Baseline to Visit 2 in Kinesia-ONE™ Variable: Dyskinesia Score, Neupro Dose Per 24h at Visit 2 (Week 12), Number of Neupro Dose Changes During the Study, Number of Subjects Who Discontinued the Treatment With Neupro During the Course of the Study"
+    ],
+    "population": [
+      "Parkinson, 18 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT03100149",
+    "summary": [
+      "This multicenter, randomized, double-blind, placebo-controlled, Phase 2 study will evaluate the efficacy of intravenous prasinezumab (RO7046015/PRX002) versus placebo over 52 weeks in participants with early Parkinson's Disease (PD) who are untreated or treated with monoamine oxidase B (MAO-B) inhibitors since baseline. The study will consist of three parts: a 52-week, double-blind, placebo-controlled treatment period (Part 1) after which eligible participants will continue into an all-participants-on-treatment blinded dose extension for an additional 52 weeks (Part 2). Participants who complete Part 2 (including the 12-week treatment-free follow up visit assessing long term safety and efficacy of RO7046015) will be offered participation in Part 3 open-label extension (all-participants-on-RO7046015-treatment) for an additional 520 weeks."
+    ],
+    "intervention": [
+      "Prasinezumab (high and low dose)"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Change From Baseline in Movement Disorder Society-Unified Parkinson's Disease Rating Scale (MDS-UPDRS) Total Score (Sum of Parts I, II, and III) at Week 52"
+    ],
+    "population": [
+      "Parkinson, 40 - 80"
+    ]
+  },
+  {
+    "doc_id": "NCT03083132",
+    "summary": [
+      "Freezing of gait is a late stage complication of Parkinson's disease in which patients note that their feet feel stuck or glued to the ground. This can lead to imbalance and falls and the secondary complications that can result from falls such as fractures and hospitalizations. While levodopa can help freezing of gait in some patients, it does not help in all, and the dose needed to treat freezing may be limited by side effects of the medications. Currently there are no treatments targeted towards freezing of gait and the goal of this research is to see if Modafinil could be one such drug to help freezing of gait in Parkinson's disease."
+    ],
+    "intervention": [
+      "Modafinil 50mg"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Mean Change From Baseline Freezing of Gait (FOG) After First 12 Weeks of Treatment, as Measured by the Giladi Freezing of Gait Questionnaire (FOG-Q), Mean Change From Baseline Stride Length After 12 Weeks on Treatment, as Measured Using an Instrumented Gait Mat."
+    ],
+    "population": [
+      "Parkinson, 50 - 90"
+    ]
+  },
+  {
+    "doc_id": "NCT03051607",
+    "summary": [
+      "Phase 3, international, multicenter, open-label 12 month safety study."
+    ],
+    "intervention": [
+      "Tozadenant"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "To Evaluate the Safety and Tolerability of Tozadenant in Levodopa-treated PD Patients Experiencing Motor Fluctuations."
+    ],
+    "population": [
+      "Parkinson, 30 - 80"
+    ]
+  },
+  {
+    "doc_id": "NCT03047629",
+    "summary": [
+      "This is a Phase 1/2a study to assess the safety, tolerability, pharmacokinetics, and pharmacodynamics of an orally-administered medication to relieve symptoms of constipation associated with Parkinson's Disease. Ten patients will be enrolled in Phase 1, and will be studied over an 8-12 week period. Forty patients will be enrolled in Phase 2, and will be studied over an 8-10 week period. All subjects will receive the study drug during one of the observational periods of the study."
+    ],
+    "intervention": [
+      "ENT-01"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Number of Participants With Treatment-related Adverse Events as Assessed by Common Terminology Criteria for Adverse Events"
+    ],
+    "population": [
+      "Parkinson, 30 - 86"
+    ]
+  },
+  {
+    "doc_id": "NCT03037203",
+    "summary": [
+      "This study is a 4-week, multicenter, randomized, double-blind, placebo-controlled, ascending dose, 4-period crossover study designed to evaluate the safety, tolerability, efficacy, and PK of JZP-110 (75, 150, and 300 mg) in the treatment of excessive sleepiness in adult subjects with idiopathic PD."
+    ],
+    "intervention": [
+      "JZP-110 75 mg / 150 mg / 300 mg"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Number of Participants With Treatment Emergent Adverse Events (TEAEs) Leading to Early Discontinuation"
+    ],
+    "population": [
+      "Parkinson, 35 - 80"
+    ]
+  },
+  {
+    "doc_id": "NCT03022799",
+    "summary": [
+      "This first in human, single-center, randomized, placebo-controlled, double blind, sequential group Phase 1 study in healthy subjects will be conducted to evaluate the safety, tolerability, PK, and PD following the escalation of single and multiple doses of KM-819.\n\nThe study will consist of 2 parts. In Part A, up to 5 cohorts of young adult male subjects, and 1 single dose cohort of elderly male or post menopausal female subjects will receive escalating single doses of KM-819. In Part B, up to 4 cohorts of healthy young adult male subjects and 1 multiple dose cohort of elderly male or post menopausal female subjects will receive escalating multiple doses of KM-819. Part B will be conducted after completion of all cohorts of young adult male subjects in Part A.\n\nDose escalation to the next level will be determined using safety, tolerability, and PK data of the previous cohort.\n\nPart A, Single Ascending Dose (SAD) Up to 40 healthy young adult male subjects and 8 healthy elderly male or post menopausal female subjects will be enrolled and randomized to receive either KM-819 or placebo.\n\nEach of the 5 dose escalation cohorts consists of 8 healthy young adult male subjects; 6 subjects will receive 10, 30, 100, 200, or 400 mg of KM-819 and 2 subjects will receive placebo. In each single dose cohort, dosing of subjects will be sentinel, i.e., 2 subjects will be dosed on the first day (1 subject will receive active treatment and 1 subject will receive placebo) and the remaining 6 subjects will be dosed at least 24 hours after the first 2 subjects.\n\nCohorts will be dosed sequentially with escalating doses. Eight elderly male or post-menopausal female subjects will be enrolled into an additional cohort; 6 subjects will receive 200 mg KM-819 and 2 subjects will receive placebo.\n\nPart A consists of a Screening period of up to 28 days, and a 3 day Confinement period when subjects are hospitalized for study activities. Subjects are required to return for outpatient visits on Day 4, 7 and for the Follow up Visit on Day 14.\n\nPart B, Multiple Ascending Dose (MAD) Up to 32 healthy young adult male subjects and 8 healthy elderly male or post menopausal female subjects will be enrolled and randomized to receive either KM-819 or placebo.\n\nEach of the 4 dose escalation cohorts consists of 8 healthy young adult male subjects; 6 subjects will receive 30, 100, 200, or 400 mg of KM-819 once a day (QD) for 7 days and 2 subjects will receive placebo. Cohorts will be dosed sequentially with escalating doses.\n\nEight elderly male or post-menopausal female subjects will be enrolled into an additional cohort; 6 subjects will receive 200 mg KM-819 QD for 7 days and 2 subjects will receive placebo."
+    ],
+    "intervention": [
+      "KM-819"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Number of Participants With Adverse Events"
+    ],
+    "population": [
+      "healthy, 19 - 45"
+    ]
+  },
+  {
+    "doc_id": "NCT03007888",
+    "summary": [
+      "Primary Objective:\n\nTo compare the pharmacokinetics (PK) of single and multiple doses of IPX203 with Immediate release carbidopa-levodopa (IR CD-LD) in subjects with advanced Parkinson's disease (PD).\n\nSecondary Objectives:\n\nTo compare the pharmacodynamics of single and multiple doses of IPX203 with IR CD-LD.\n\nTo compare the efficacy of IPX203 with IR CD-LD following multiple doses.\n\nTo evaluate the safety of IPX203."
+    ],
+    "intervention": [
+      "IPX203"
+    ],
+    "comparator": [
+      "Sinemet"
+    ],
+    "outcome": [
+      "Levodopa Cmax Following First Dose on Day 1"
+    ],
+    "population": [
+      "Parkinson, 40 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT03000569",
+    "summary": [
+      "This study assesses the safety, tolerability, pharmacokinetics and efficacy of SAGE-217 in 29 participants with moderate to severe Parkinson's Disease."
+    ],
+    "intervention": [
+      "SAGE-217, Levodopa"
+    ],
+    "comparator": [
+      "SAGE-217, Antiparkinsonian Agent(s)"
+    ],
+    "outcome": [
+      "Percentage of Participants With Treatment-emergent Adverse Events (TEAEs) - Part A, Percentage of Participants With TEAEs, Graded by Severity - Part A, Percentage of Participants With a Response of 'Yes' to Any Columbia Suicide Severity Rating Scale (C-SSRS) Suicidal Ideation or Suicidal Behavior Item - Part A, CFB in the Movement Disorder Society-Unified Parkinson's Disease Rating Scale (MDS-UPDRS) Part II/III Score - Part B"
+    ],
+    "population": [
+      "Parkinson, 40 - 75"
+    ]
+  },
+  {
+    "doc_id": "NCT02969369",
+    "summary": [
+      "A study to evaluate the safety and tolerability of SEP-363856 in subjects with Parkinson's Disease Psychosis. This study is accepting male and female participants 55 years of age and older who have been diagnosed with Parkinson's Disease. This study will be conducted in 24 study centers in the United States.\n\nThe study will last approximately 21 weeks."
+    ],
+    "intervention": [
+      "SEP-363856"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Change From Double Blind (DB) Baseline in Total Scale for Assessment of Positive Symptoms - Parkinson's Disease (SAPS-PD) Score at Week 6"
+    ],
+    "population": [
+      "Parkinson, 55 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT02968433",
+    "summary": [
+      "The purpose of this study is to demonstrate that young plasma infusions can be performed safely in patients with Parkinson's Disease (PD). Secondary outcomes will include behavioral and laboratory data that will support the next study that will inquire whether young plasma infusions improve or slow the progression of cognitive, mood and/or motor impairment and rate markers of the disease."
+    ],
+    "intervention": [
+      "Infusions of young plasma"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Number of Related and Unrelated Adverse Events"
+    ],
+    "population": [
+      "Parkinson, 50 - 80"
+    ]
+  },
+  {
+    "doc_id": "NCT02953665",
+    "summary": [
+      "The purpose of this study is to test the efficacy and safety of liraglutide in the treatment of patients with idiopathic Parkinson's disease (PD)."
+    ],
+    "intervention": [
+      "Liraglutide"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Change in Unified Parkinson's Disease Rating Scale (UPDRS Part III Motor Examination) During \"OFF\" Time From Baseline to the End of Double-Blind Maintenance Period, Change in the Non-Motor Symptoms Scale (NMSS) Total Score From Baseline to the End of the Double-Blind Maintenance Period, Change in the Mattis Dementia Rating Scale (DRS-2) From Baseline to the End of Double-Blind Maintenance Period"
+    ],
+    "population": [
+      "Parkinson, 25 - 85"
+    ]
+  },
+  {
+    "doc_id": "NCT02935842",
+    "summary": [
+      "Due to Parkinson's Disease (PD) speech and language (SL) deficits may occur. Further, the literature reports that PD patients, who have not undergone deep brain stimulation (DBS), have deficits regarding voice quality (e.g. loudness and intelligibility of their voice), while PD patients who have undergone DBS suffer from deficits in word retrieval and speech apraxia symptoms. To-date, therapeutic approaches focusing specifically on SL deficits observed in PD-DBS patients are yet to be developed and evaluated.\n\nTherefore, this study investigates the short-and longterm effectiveness of specific and intensive, high-frequency speech-language therapy in terms of reducing SL-deficits compared to a nonspecific and non-verbal sham treatment (i.e. a rhythmic balance-movement training (rBMT)) as well as to a 'no-therapy' condition."
+    ],
+    "intervention": [
+      "Specific SL-therapy"
+    ],
+    "comparator": [
+      "Rhythmic Balance-Movement Training (rBMT), no therapy"
+    ],
+    "outcome": [
+      "Velocity in Gait, Cadence in Gait, Speech Velocity, Speech Cadence"
+    ],
+    "population": [
+      "Parkinson and healthy, 45 - 80"
+    ]
+  },
+  {
+    "doc_id": "NCT02933476",
+    "summary": [
+      "The purpose of this study is to examine the possibility of a new, non-invasive, non-drug treatment for Parkinson's disease. The treatment involves gentle vibratory stimulation delivered to the fingertips (called 'vibrotactile stimulation'). Along with the treatment, participants will also undergo kinematic testing."
+    ],
+    "intervention": [
+      "Vibrotactile Stimulation"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Number of Patients Reporting Any Adverse Effects"
+    ],
+    "population": [
+      "Parkinson, 18 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT02933372",
+    "summary": [
+      "Varying oral doses of Varenicline (VCN), starting with very low doses, will be administered to participants with Parkinson's Disease (PD) or healthy controls without PD for several days. Positron emission tomography (PET) scans after administration of VCN will be used to determine the lowest oral dose of VCN producing an adequate brain level of VCN. These experiments (1 \\& 2) will be used to determine an appropriate oral dose of VCN to administer to PD participants for experiment 3 of the study (see NCT04403399)."
+    ],
+    "intervention": [
+      "Varenicline"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Varenicline Occupancy of alpha4beta2* Nicotinic Acetylcholine Receptors"
+    ],
+    "population": [
+      "Parkinson and healthy, 45 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT02927691",
+    "summary": [
+      "Currently, there are no efficacious behavioral treatment approaches to address uncompensated aspiration, or aspiration without appropriate cough response, in Parkinson's disease (PD). This is of particular public health concern given that aspiration pneumonia is the leading cause of death in persons with PD. The overarching aim of the proposed study is to determine the efficacy of two distinct intensive rehabilitation paradigms, expiratory muscle strength training (EMST) and sensorimotor treatment for airway protection (smTAP), on airway protective clinical outcomes in persons with PD and dysphagia. The investigators anticipate the results will lead to reductions in the risks associated with airway protective deficits."
+    ],
+    "intervention": [
+      "EMST"
+    ],
+    "comparator": [
+      "Behavioral: smTAP"
+    ],
+    "outcome": [
+      "Change in Voluntary Cough Peak Flow"
+    ],
+    "population": [
+      "Parkinson, 45 - 90"
+    ]
+  },
+  {
+    "doc_id": "NCT02920632",
+    "summary": [
+      "This study evaluates the efficacy of an eight-week online cognitive training program on objective and subjective cognitive functions in Parkinson's disease. Moreover, we intend to map the effect on brain network function, and if cognitive training can prevent the development of PD-MCI/PD-D after one- and two-year follow-up. In this study, two training groups will be compared (N: 70 vs 70). In a part of the participants MRI will be assessed (N: 40 vs. 40). We expect cognitive training to improve cognitive functions, and to improve the efficiency of brain network function. Moreover, we expect that cognitive training can decrease the risk of PD-MCI/PD-D at one- and two-year follow-up."
+    ],
+    "intervention": [
+      "Online cognitive training"
+    ],
+    "comparator": [
+      "Online cognitive training"
+    ],
+    "outcome": [
+      "Accuracy on the Tower of London Task"
+    ],
+    "population": [
+      "Parkinson, 00 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT02917122",
+    "summary": [
+      "Parkinson's disease (PD) is one of the most common neurological diseases manifested by movement disturbance. The concomitant psychiatric symptoms, especially depression, are often observed and have also great impact on patients' quality of life. The treatment of depressive symptoms in PD with antidepressants as the majority remains variable and inefficient, which complicates the disease prognosis. Transcranial direct current stimulation (tDCS) is a non-invasive brain modulation technique and has been demonstrated to improve psychiatric diseases such as major depression. In this study the investigators will assess the combined effects of tDCS on sertraline for the treatment of depression in PD. Ten sessions of tDCS in two weeks will be applied and the follow-up evaluation will continue bi-weekly for one month after completing all sessions. The efficacy of tDCS vs sertraline will be compared and evaluated with behavioral and cognitive outcome. In addition, the investigators will evaluate if the baseline dopaminergic activity in brain could predict the treatment outcome by using SPECT imaging. The investigators aim to establish the therapeutic parameters and safety criteria of tDCS as an add-on or alternative therapy, and further enhance the overall clinical efficacy in the treatment of depression in PD."
+    ],
+    "intervention": [
+      "active tDCS, Sertraline"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Change of Modified-Unified Parkinson's Disease Rating Scale Among Different Weeks"
+    ],
+    "population": [
+      "Parkinson, 18 - 75"
+    ]
+  },
+  {
+    "doc_id": "NCT02910102",
+    "summary": [
+      "This study seeks to evaluate the effect of intepirdine (RVT-101) on gait and balance in patients with Alzheimer's Disease, Dementia with Lewy Bodies or Parkinson's Disease Dementia."
+    ],
+    "intervention": [
+      "RVT-101 35 mg"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Change From Baseline in Gait Speed (cm/Sec) Measurements From Baseline to the End of Each Double-blind Treatment Period Based on Computerized Gait Assessment Tools, Change in Gait Measurements (cm/Sec) Under Dual Task Condition From Baseline to the End of Each Double-blind Treatment Period Based on Computerized Gait Assessment Tools"
+    ],
+    "population": [
+      "Parkinson and dementia, 50 - 89"
+    ]
+  },
+  {
+    "doc_id": "NCT02906020",
+    "summary": [
+      "Primary Objectives:\n\n* Part 1: To determine the safety and tolerability of 4, 8, and 15 milligrams of GZ/SAR402671 (venglustat) administered orally for 4 weeks, as compared to placebo in participants with early-stage Parkinson's disease (PD) carrying a glucocerebrosidase gene (GBA) mutation or other pre-specified variants.\n* Part 2: To determine the efficacy of GZ/SAR402671 administered orally daily, as compared to placebo in participants with early-stage PD carrying a GBA mutation or other pre-specified variants.\n\nSecondary Objectives:\n\nPart 1:\n\n* To assess the pharmacokinetic (PK) profile of oral dosing of GZ/SAR402671 in plasma when administered in early-stage PD participants carrying a GBA mutation.\n* To assess the exposure of GZ/SAR402671 in cerebrospinal fluid (CSF) when administered in early-stage PD participants carrying a GBA mutation.\n\nPart 2:\n\n* To demonstrate overall safety and tolerability of GZ/SAR402671 administered orally for 52 weeks in early-stage PD participants carrying a GBA mutation as compared to placebo.\n* To assess the pharmacodynamic response to daily oral dosing of GZ/SAR402671 in plasma and CSF as measured by glucosylceramide (GL-1) when administered in early-stage PD participants carrying a GBA mutation over a 52-week period."
+    ],
+    "intervention": [
+      "venglustat GZ/SAR402671"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Number of Participants With Treatment-Emergent Adverse Events (TEAEs), and Treatment-Emergent Serious Adverse Events (TESAEs), Number of Participants With Abnormal Physical Examination Findings, Number of Participants With Abnormal Neurological Examination Findings, Number of Participants With Potentially Clinically Significant Laboratory Abnormalities: Hematology, Liver Function Parameters, Renal Parameters, Metabolic Parameters, Electrolytes Parameters, Number of Participants With Potentially Clinically Significant Vital Signs Abnormalities, Number of Participants With Potentially Clinically Significant Ophthalmological Abnormalities, Number of Participants With Potentially Clinically Significant Electrocardiogram Abnormalities, Change From Baseline to Week 52 in Movement Disorder Society-Unified Parkinson's Disease Rating Scale (MDS-UPDRS) Part II+III Total Score"
+    ],
+    "population": [
+      "Parkinson, 18 - 80"
+    ]
+  },
+  {
+    "doc_id": "NCT02898740",
+    "summary": [
+      "This project is investigating whether a home-based exercise program will reduce depression in patients with Parkinson's disease."
+    ],
+    "intervention": [
+      "Structural exercise"
+    ],
+    "comparator": [
+      "Health Education"
+    ],
+    "outcome": [
+      "Change in Hamilton Rating Scale for Depression (HAM-D) From Baseline to 6 Months"
+    ],
+    "population": [
+      "Parkinson, 40 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT02847650",
+    "summary": [
+      "The purpose of this study is to evaluate the efficacy, safety and tolerability of PF-06649751 in Parkinson's disease patients at early stage of the disease."
+    ],
+    "intervention": [
+      "PF-06649751"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Change From Baseline in the Movement Disorder Society - Unified Parkinson's Disease Rating Scale (MDS-UPDRS) Part III Total Score at Week 15"
+    ],
+    "population": [
+      "Parkinson, 45 - 80"
+    ]
+  },
+  {
+    "doc_id": "NCT02818777",
+    "summary": [
+      "The major purpose of the Stage 1 is to study the safety and tolerability of the proposed dosage regimen of the study drug. The form of cannabidiol (CBD) used in this study is GWP42003, supplied by GW Pharmaceuticals. The dosage regime is based on their experience. This is an open label study in 10 subjects, during which the dose is gradually increased to the manufacturers recommended target dose, with tolerability being evaluated at each dose level. Based on the response of subjects in the Stage 1, a target dose is determined for the next stage. Standardized tools will be administered to study both tolerability and efficacy. Efficacy assessments are simply explorative, and are done to look for an effect that warrants specific or different evaluation in the next stage."
+    ],
+    "intervention": [
+      "Cannabidiol"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Severity of Participants Reporting Study-related Adverse Events at Each Dose Level, Number of Participants Had Changes in Orthostatic Blood Pressure, Number of Participants Had Changes in Physical Exam, Number of Participants Had Changes in EKG, Number of Participants Had Changes in Laboratory Values, Proportion of Subjects That Drop Out of the Study Due to Study Drug Intolerance, Change in Movement Disorder Society-Unified Parkinsons Disease Rating Scale Total Score, Change in Montreal Cognitive Assessment (MoCA), Change in Anxiety Short Form, Change in Neuropsychiatric Inventory (NPI), Change in Depression Short Form, Change in Scales for Outcomes in Parkinson's Disease (SCOPA)-Sleep-night Time Sleep, Change From Baseline of REM Sleep Behavior Disorder Screening Questionnaire (RBDSQ), Change in Emotional and Behavioral Dyscontrol Short Form, Change in Pain Severity Form, Change in Questionnaire for Impulsive-Compulsive Disorders in Parkinson's Disease-Rating Scale (QUIP-RS), Change in Fatigue Severity Scale, Change in International Restless Legs Syndrome Study Group Rating Scale for Restless, Change in Unified Dyskinesia Rating Scale (UDysRS)"
+    ],
+    "population": [
+      "Parkinson, 40 - 80"
+    ]
+  },
+  {
+    "doc_id": "NCT02819011",
+    "summary": [
+      "The investigators propose a randomized control trial to evaluate long term effects and effectiveness of Moore Balance Brace (MBB) ankle foot orthoses (AFO) in reducing risk of falling in older adults.\n\nPrimary Endpoints • Characterize the impact of MBB AFO on balance, gait, risk of falling, frailty status, and adverse events\n\nSecondary Endpoints • Characterize the Impact of MBB AFO on spontaneous daily physical activities • Characterize the feasibility of the MBB AFO device on patient adherence, acceptability, user-friendliness, and perception of benefit for daily usage"
+    ],
+    "intervention": [
+      "MBB AFO"
+    ],
+    "comparator": [
+      "no MBB AFO"
+    ],
+    "outcome": [
+      "Hip Sway Change From Baseline to 6 Months, Ankle Sway Change From Baseline to 6 Months, Center of Mass (COM) Sway Change Baseline to 6 Months"
+    ],
+    "population": [
+      "people with high risk of fall, 65 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT02803749",
+    "summary": [
+      "Anxiety is highly prevalent in Parkinson's disease and negatively impacts quality of life yet it frequently remains untreated and there have been no clinical trials dedicated to evaluating the pharmacological treatment of anxiety in Parkinson's disease. Buspirone is effective for the treatment of generalized anxiety disorder in the general and elderly population. It is not known if it is effective for the treatment of anxiety in Parkinson's disease. This is a single-center, placebo-controlled, double-blind design with participants randomized with a 4:1 allocation ratio to flexible dosage buspirone (maximum dosage 30 mg twice daily) or placebo for 12 weeks."
+    ],
+    "intervention": [
+      "Buspirone"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "The Number of Participants Who Fail to Complete the 12-week Study on Study Drug."
+    ],
+    "population": [
+      "Parkinson, 18 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT02799381",
+    "summary": [
+      "The primary objective of this study was to examine the effect of levodopa-carbidopa intestinal gel (LCIG) compared with optimized medical treatment (OMT) on dyskinesia in participants with advanced Parkinson's disease (PD)."
+    ],
+    "intervention": [
+      "Levodopa-Carbidopa Intestinal Gel (LCIG)"
+    ],
+    "comparator": [
+      "Optimized Medical Treatment (OMT)"
+    ],
+    "outcome": [
+      "Mean Change From Baseline to Week 12 in Unified Dyskinesia Rating Scale (UDysRS) Total Score"
+    ],
+    "population": [
+      "Parkinson, 30 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT02789020",
+    "summary": [
+      "Parkinson's disease (PD) is a neurodegenerative brain disorder that impairs the ability to perform functions such as grooming, dressing, cooking, and other activities of daily living. PD affected between 4.1 and 4.6 million people worldwide in 2005, and it is projected that up to 9.3 million people will be affected by 2030. Although current pharmacological therapies provide beneficial effects on motor symptoms of the disease (tremor, rigidity, and bradykinesia), intolerable disability eventually develops in most patients. A disease-modifying therapy that slows disease progression is a major unmet medical need in PD. Numerous agents have neuroprotective effects in pre-clinical laboratory models, but none have been shown to have indisputable disease-modifying effects in clinical trials for patients with PD.\n\nThe purpose of this research study is to investigate how the brain and motor behavior changes in PD over time in response to rasagiline which is a monoamine oxidase-B(MAO-B) inhibitor. The drug rasagiline will be tested in this study as the MAO-B inhibitor. Rasagiline has been prescribed for many years to treat symptomatic Parkinson's disease. It is FDA approved for the treatment of Parkinson's disease but has not been shown to slow disease progression. The outcome and impact of this study will provide the first evaluation of MAO-B inhibitors at slowing the progression of the nigrostriatal pathway using advanced Magnetic Resonance Imaging (MRI) and functional Magnetic Resonance Imaging (fMRI) methods in PD."
+    ],
+    "intervention": [
+      "Rasagiline, Magnetic Resonance Imaging"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Change in Free-water Accumulation in the Substantia Nigra, Change in Blood Oxygen Level-dependent(BOLD) Signal in the Posterior Putamen, M1, and Supplementary Motor Area(SMA)"
+    ],
+    "population": [
+      "Parkinson, 40 - 77"
+    ]
+  },
+  {
+    "doc_id": "NCT02728843",
+    "summary": [
+      "The goal of this study is to evaluate the effects of deferiprone, an iron-chelating drug, in patients with Parkinson's disease. Participants will be randomized to receive one of four different dosages of deferiprone or placebo, and will take the assigned study product twice a day for nine months."
+    ],
+    "intervention": [
+      "Deferiprone 300 mg / 600 mg / 900 mg / 1200 mg"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Change in Score on the Part III Subscale of the Movement Disorder Society-Unified Parkinson's Disease Rating Scale (MDS-UPDRS)"
+    ],
+    "population": [
+      "Parkinson, 18 - 80"
+    ]
+  },
+  {
+    "doc_id": "NCT02727478",
+    "summary": [
+      "This effectiveness-implementation study is a part of the larger study BETA-PD (Balance, Elderly, Training and Activity in Parkinson's Disease), which has the long-term goal to reduce the risk of falling in people with Parkinson's disease (PD) by improving balance, gait and physical activity level. The main hypothesis is that highly challenging balance training will lead to greater gait and balance ability, increased levels of physical activity and an improved health related quality of life. The main aims of the study are to evaluate the effectiveness of the HiBalance program in real-life clinical settings, while exploring facilitators and barriers for program implementation on a wider scale."
+    ],
+    "intervention": [
+      "HiBalance training program"
+    ],
+    "comparator": [
+      "no intervention"
+    ],
+    "outcome": [
+      "Change in Mini-BESTest Score From Baseline at 1 Week Post Intervention"
+    ],
+    "population": [
+      "Parkinson, 18 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT02726386",
+    "summary": [
+      "This is a multi-center, international, open-label, safety study of ND0612, a solution of levodopa/carbidopa (LD/CD) delivered via a pump system as a continuous SC infusion in subjects with advanced Parkinson's Disease (PD)."
+    ],
+    "intervention": [
+      "ND0612 (24-hour / 16-hour dosing regimen)"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Adverse Events (Long-term Safety), Percentages of Subjects Who Complete the 12-month Treatment Period or Discontinue Due to AE (Tolerability)"
+    ],
+    "population": [
+      "Parkinson, 30 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT02708186",
+    "summary": [
+      "This study seeks to evaluate the safety and efficacy of Nelotanserin for the treatment of Rapid Eye Movement (REM) Sleep Behavior Disorder (RBD) in subjects with dementia with Lewy bodies (DLB) or Parkinson's disease dementia (PDD)."
+    ],
+    "intervention": [
+      "Nelotanserin"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Change in the Frequency of REM Sleep Behavior Disorders (RBD) From Baseline to the End of the Treatment Period (28 Days) Based on a Clinical Evaluator"
+    ],
+    "population": [
+      "Parkinson and dementia, 50 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT02705586",
+    "summary": [
+      "To evaluate the feasibility of a video based mindfulness intervention for stress reduction and to evaluate the cortisol response in persons with PD and their caregivers. The data from this project will be used for a future grant application of a stress reduction intervention in persons with PD."
+    ],
+    "intervention": [
+      "Mindfulness"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Salivary Cortisol Levels (Pre- and Post-) Mindfulness-Based Stress Reduction Program"
+    ],
+    "population": [
+      "Parkinson, 18 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT02703844",
+    "summary": [
+      "The purpose of this study is to determine whether caloric vestibular stimulation improves symptoms of Parkinson's Disease."
+    ],
+    "intervention": [
+      "Caloric Vestibular Stimulation"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Change From Baseline in the Nonmotor Symptom Severity Scale (NMSS)"
+    ],
+    "population": [
+      "Parkinson, 18 - 95"
+    ]
+  },
+  {
+    "doc_id": "NCT02702102",
+    "summary": [
+      "This study uses a special type of scan called a positron emission tomography (PET) scan to take pictures of the brain. During the PET scan, a special dye called 11C-PBR28 is injected into the body.\n\n11C-PBR28 sticks to parts of the brain where there is inflammation. The purpose of this study is to see if 11C-PBR28 can detect inflammation in patients with Parkinson's disease dementia or dementia with Lewy bodies.\n\n11C-PBR28 is considered a drug by the Food and Drug Administration. 11C-PBR28 is not a treatment for any disease. Rather, 11C-PBR28 can be used to measure inflammation in the brain."
+    ],
+    "intervention": [
+      "11C-PBR28"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Absolute 11C-PBR28 Binding (Total Distribution Volume Corrected for Free Fraction in Plasma)"
+    ],
+    "population": [
+      "Parkinson and dementia, 60 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT02701647",
+    "summary": [
+      "The purpose of this study is to investigate whether the beneficial effect of treadmill training on people with Parkinson's disease can be enhanced by high- and low-frequency repetitive transcranial magnetic stimulation (rTMS)."
+    ],
+    "intervention": [
+      "Repetitive transcranial magnetic stimulation (rTMS) (1 Hz / 25 Hz)"
+    ],
+    "comparator": [
+      "Sham-TT"
+    ],
+    "outcome": [
+      "Fastest Walking Speed"
+    ],
+    "population": [
+      "Parkinson, 40 - 70"
+    ]
+  },
+  {
+    "doc_id": "NCT02687542",
+    "summary": [
+      "The purpose of this study is to evaluate the efficacy, safety and tolerability of PF-06649751 in Parkinson's disease patients who experience motor-fluctuations."
+    ],
+    "intervention": [
+      "PF-06649751"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Change From Baseline in Daily OFF Time at Week 10"
+    ],
+    "population": [
+      "Parkinson, 40 - 85"
+    ]
+  },
+  {
+    "doc_id": "NCT02649608",
+    "summary": [
+      "To evaluate the safety, tolerability, pharmacokinetics, and efficacy of the Lu AE04621 and metabolite after ascending oral doses of Lu AE04621 in patients with Parkinson's Disease."
+    ],
+    "intervention": [
+      "Lu AE04621 (0.04 mg, 0.08 mg, 0.2 mg, 0.4 mg, 0.6 mg, 0.8 mg, 1.0 mg, 1.2 mg)"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Safety and Tolerability Based on the Safety Variables (Adverse Events, Clinical Safety Laboratory Tests, Vital Signs, Weight, and ECG)"
+    ],
+    "population": [
+      "Parkinson, 40 - 75"
+    ]
+  },
+  {
+    "doc_id": "NCT02642393",
+    "summary": [
+      "A multicenter, randomized, double-blind, placebo-controlled, phase 3 trial to determine whether oral inosine dosed to moderately elevate serum urate (from ≤5.7 mg/dL to 7.1-8.0 mg/dL) over 2 years slows clinical decline in early PD.\n\nClinical decline will be assessed as change in the primary outcome variable of the Movement Disorders Society-Unified Parkinson's Disease Rating Scale (MDS-UPDRS), a composite scale comprising patient- and clinician-reported outcomes."
+    ],
+    "intervention": [
+      "Inosine"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Rate of Clinical Decline"
+    ],
+    "population": [
+      "Parkinson, 30 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT02610231",
+    "summary": [
+      "This is a Phase 3, 52-week, open-label, flexible-dose, multinational, multicenter study to evaluate the safety and tolerability of istradefylline 20 or 40 mg/d in subjects with moderate to severe PD with motor fluctuations and dyskinesia on levodopa combination (levodopa/carbidopa or levodopa/benserazide) therapy plus at least one adjunctive PD medication. Subjects who completed 12 weeks of double-blind treatment and the 30-day follow-up period in Study No. 6002-014 will undergo Screening and Baseline evaluations for eligibility for the study. Eligible subjects will be treated with istradefylline at a starting dose of 20 mg/d with an option for a dose adjustment to 40 mg/d at Week 12 based on the Investigator's judgment of each subject's response and tolerability. If deemed necessary, one unscheduled dose adjustment visit between Week 2 to Week 12 is allowed in accordance with clinical judgment of the Investigator. Subjects who had a dose adjustment to 40 mg/d can have their dose decreased to 20 mg/d by the Investigator at a second unscheduled dose adjustment visit if there are tolerability issues. The istradefylline dose should remain fixed between Week 26 to Week 52. Consultation with the Sponsor's Medical Monitor is required prior to any unscheduled dose adjustment visits. A subject may discontinue from the study at any time."
+    ],
+    "intervention": [
+      "Istradefylline 20 mg or 40 mg"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Evaluation of the Long-term Safety and Tolerability of Oral Istradefylline (20mg or 40mg/Day [mg/d])"
+    ],
+    "population": [
+      "Parkinson, 30 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT02598973",
+    "summary": [
+      "Parkinson's disease (PD) is a common neurodegenerative disorder affecting approximately 80,000 Veterans, representing a priority area for VA research. Current medicines for PD only improve symptoms, treatments that slow disease progression are needed, and earlier diagnosis of PD may be the key to their development. PD symptoms can be mimicked by medicines (most commonly antipsychotic drugs that block dopamine), and some of these patients actually have underlying \"prodromal\" PD that was \"unmasked\" years before it would have caused symptoms. This problem is increasing as these medicines are now used for common conditions including post-traumatic stress disorder and depression. The investigators will identify prodromal PD in patients with drug-induced symptoms using brain scans. These patients will be enrolled in a randomized clinical trial of aerobic exercise which slows progression in animal models of PD and has other health benefits. The investigators will measure the effect of exercise on symptoms, disease progression (using brain scans) and markers of PD risk (using blood tests). These studies will improve early PD diagnosis and potentially identify a way to slow progression of PD."
+    ],
+    "intervention": [
+      "Exercise aerobic walking"
+    ],
+    "comparator": [
+      "no intervention"
+    ],
+    "outcome": [
+      "Change in Dopamine Transporter Imaging"
+    ],
+    "population": [
+      "Parkinson, 45 - 89"
+    ]
+  },
+  {
+    "doc_id": "NCT02586623",
+    "summary": [
+      "To evaluate the time to treatment intervention in patients with Parkinson's Disease (PD), Multiple System Atrophy (MSA), Pure Autonomic Failure (PAF), Non-Diabetic Autonomic Neuropathy (NDAN) or Dopamine Beta Hydroxylase (DBH) Deficiency who have been previously stabilized with droxidopa therapy for symptoms of neurogenic orthostatic hypotension (NOH) (dizziness, light-headedness, or feelings that they are about to black out)"
+    ],
+    "intervention": [
+      "Droxidopa capsules"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Time To Intervention"
+    ],
+    "population": [
+      "symptomatic orthostatic hypotension associated with Primary Autonomic Failure (PD, MSA or PAF) or NDAN or DBH Deficiency, 18 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT02577523",
+    "summary": [
+      "This is a multicenter, parallel-group, rater-blinded, randomized clinical study in subjects with advanced PD investigating the efficacy, PK, safety and tolerability of continuous SC infusion of 2 dosing regimens of ND0612H, a solution of LD/CD delivered via a pump system as a continuous SC infusion, compared to standard oral LD/CD. After screening, subjects will undergo 1 day of standard oral LD/CD inpatient dosing followed by 2 days of inpatient treatment with 1 of 2 randomly allocated (1:1 randomization ratio) dosing regimens of ND0612H continuous SC infusion. Subjects will then continue on a maintenance dose of the assigned ND0612H dosing regimen for the next 25 days. A safety visit will be performed 4 weeks after the last SC administration of the study drug for a total of about 2.5 months of participation for each subject enrolled into the trial."
+    ],
+    "intervention": [
+      "ND0612 (+ morning oral IR-LD/CD)"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Change in Daily \"OFF\" Time"
+    ],
+    "population": [
+      "Parkinson, 30 - 80"
+    ]
+  },
+  {
+    "doc_id": "NCT02565628",
+    "summary": [
+      "This study is designed to assess safety, tolerability and pharmacokinetic data for multiple doses of PF-06669571 in subjects with idiopathic Parkinson's disease. In addition, this study will assess whether PF-06669571 is able to demonstrate superior efficacy compared with placebo in the treatment of the motor symptoms of idiopathic Parkinson's disease."
+    ],
+    "intervention": [
+      "PF-06669571"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Maximum Percent Change From Baseline in Movement Disorder Society-Sponsor Revision of the Unified Parkinson's Disease Rating Scale (MDS-UPDRS) Part III at Day 7, Number of Participants in Each Columbia Classification Algorithm of Suicide Assessment (C-CASA) Category by Study Visit on Day -2, Day 8 or Early Withdrawal, and Early Withdrawal/Follow-Up Visit, Number of Participants With New Onset and Worsening of Post-Baseline Suicidality, Number of Participants With Treatment Emergent Adverse Events (All Causalities), Number of Participants With Supine and Standing Vital Sign Abnormalities of Potential Clinical Concern (Absolute Values), Number of Participants With Supine and Standing Vital Sign Abnormalities of Potential Clinical Concern (Increase From Baseline), Number of Participants With Supine and Standing Vital Sign Abnormalities (Decrease From Baseline), Number of Participants With Electrocardiogram (ECG) That Met Categorical Criteria for Concern (Absolute Value), Primary: Number of Participants With Electrocardiogram (ECG) That Met Categorical Criteria for Concern(Increase From Baseline), Number of Participants With Laboratory Abnormalities That Met Categorical Criteria for Concern (Without Regard to Baseline Abnormality)"
+    ],
+    "population": [
+      "Parkinson, 45 - 85"
+    ]
+  },
+  {
+    "doc_id": "NCT02549573",
+    "summary": [
+      "To determine if PT intervention will be improved while in the \"on\" motor state vs. the \"end-of-dose-off\" motor state during the PT Intervention Visit in subjects with PD."
+    ],
+    "intervention": [
+      "Apokyn treatment withheld before Physical Therapy"
+    ],
+    "comparator": [
+      "Apokyn treatment before physical therapy"
+    ],
+    "outcome": [
+      "Change From Baseline in Activities-specific Balance Confidence (ABC) Scale"
+    ],
+    "population": [
+      "Parkinson, 18 - 78"
+    ]
+  },
+  {
+    "doc_id": "NCT02549092",
+    "summary": [
+      "The primary objective of this study is to examine the effect of LCIG relative to that of OMT on NMS associated with PD."
+    ],
+    "intervention": [
+      "Levodopa-Carbidopa Intestinal Gel"
+    ],
+    "comparator": [
+      "Optimized Medical Treatment (OMT)"
+    ],
+    "outcome": [
+      "Change From Baseline to Week 26 in the NMSS Total Score, Change From Baseline to Week 26 in the Modified PDSS-2 Total Score"
+    ],
+    "population": [
+      "Parkinson, 30 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT02549859",
+    "summary": [
+      "Our recent study (Xie et al, Neurology 2015; 84: 415-420) found that bilateral STN DBS of 60Hz, compared to the traditional 130Hz, decreased the aspiration frequency and swallowing difficulty, freezing of gait (FOG), and other axial symptoms and parkinsonism in Parkinson patients with FOG refractory to 130Hz and medications. The benefit of 60Hz stimulation persisted during the 6-week study period, but with worsening tremor in one patient. However, it remains unknown whether the benefit of 60Hz would persist on prolonged stimulation period, and whether there is carry-over effect across different conditions. Hence, the investigators would like to test the hypothesis that the 60Hz stimulation, compared to 130Hz might have persistent benefit over an extended period in reducing the swallowing dysfunction, FOG, and other axial symptoms in these PD patients even after correcting the potential carry-over effect."
+    ],
+    "intervention": [
+      "Deep Brain Stimulation (DBS) at 60 Hz / 130 Hz"
+    ],
+    "comparator": [
+      "Deep Brain Stimulation (DBS) Off (Sham)"
+    ],
+    "outcome": [
+      "Frequency of Aspiration Events on Videofluoroscopic Swallow Study at Visit 1&2, Perceived Swallowing Difficulty on Swallowing Disturbance Questionnaire at Visit 1&2, Freezing of Gait Questionnaire at Visit 1&2, Stand-Walk-Sit Freezing of Gait Spells at Visit 1&2, Stand-Walk-Sit Time at Visit 1&2"
+    ],
+    "population": [
+      "Parkinson, 45 - 75"
+    ]
+  },
+  {
+    "doc_id": "NCT02542696",
+    "summary": [
+      "An Open-Label Phase 3 Study to Examine the Long-Term Safety, Tolerability and Efficacy of APL-130277 for the Acute Treatment of \"OFF\" Episodes in Patients With Parkinson's Disease"
+    ],
+    "intervention": [
+      "APL-130277"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Evaluation of Safety and Tolerability Data Collected, Based on Number of Participants With Adverse Events in the LTS Phase"
+    ],
+    "population": [
+      "Parkinson, 18 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT02538029",
+    "summary": [
+      "The primary aim of the proposed project is to characterize dual tasking (DT) deficits to improve motor, cognitive, and quality of life outcomes in individuals with Parkinson's disease (PD). Phase 1 of the intervention will involve an in-depth gait analysis on 15 individuals with PD. This gait analysis will utilize the Computer Assisted Rehabilitation Environment (CAREN) system, a virtual reality system with a fully integrated 3-D motion capture system. The purpose of Phase 1 is to generalize characteristics of gait and postural control during specific DT conditions. Phase 2 (N=20) involves the clinical translation of these findings. This phase will involve creating a clinical intervention based on the objective information gathered the CAREN system. The intervention will take place 3x/week for a total of 8 weeks. Interventional groups will include: 1) DT clinical group (N=10) and 2) Single task group (N=10). Outcome measures will be used at the beginning and end of the intervention to assess the feasibility and efficacy of the intervention."
+    ],
+    "intervention": [
+      "Dual Task Group"
+    ],
+    "comparator": [
+      "Single Task Group"
+    ],
+    "outcome": [
+      "Step Length During Gait, Walking Speed During Gait"
+    ],
+    "population": [
+      "Parkinson, 00 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT02533921",
+    "summary": [
+      "The purpose of this study is to improve outcomes for persons living with Parkinson's Disease (PD) and their family caregivers. The investigators hypothesize that outpatient interdisciplinary palliative care will improve patient-centered outcomes for PD patients at high-risk for poor outcomes."
+    ],
+    "intervention": [
+      "Interdisciplinary outpatient palliative care"
+    ],
+    "comparator": [
+      "Standard of care"
+    ],
+    "outcome": [
+      "Changes in the Subjects Quality of Life (QOL), Changes in Caregiver Distress"
+    ],
+    "population": [
+      "Parkinson, 40 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT02475954",
+    "summary": [
+      "When Veterans with Parkinson's disease (PD) suffer from depression, they are more likely to experience disease complications, interpersonal difficulties with caregivers, and poorer quality of life. Unfortunately, depression in Veterans with PD is inadequately treated at the current time. Treatment for depressed Veterans with PD will require the elimination of geographical barriers to care and approaches that address the unique aspects of PD. The proposed study will be the first to explore a novel and innovative, PD-informed psychotherapy package for depressed Veterans with PD and their Caregivers, delivered through video-to-home telehealth. If the results of this proposal are promising, a much needed treatment can be made available to Veterans with PD and their Caregivers across the country, regardless of geographical location."
+    ],
+    "intervention": [
+      "TH-CBT"
+    ],
+    "comparator": [
+      "Standard of care"
+    ],
+    "outcome": [
+      "Hamilton Depression Rating Scale"
+    ],
+    "population": [
+      "Parkinson, 35 - 85"
+    ]
+  },
+  {
+    "doc_id": "NCT02474329",
+    "summary": [
+      "Background: Long-term management of Parkinson's disease (PD) does not reach its full potential due to lack of knowledge about disease progression. The Real-PD study aim to evaluate the feasibility and compliance of usage of wearable sensors in PD patients in real life. Moreover, an explorative analysis concerning activity level, medication intake and mood will be done.\n\nMethods: Overall, 1000 PD patients and 250 physiotherapist will be enrolled in this observational study. Dutch PD patients will be recruited across the country and an assessment will be performed using a short version of the Parkinson's Progression Markers Initiative (PPMI) protocol. Moreover, participants will wear a set of medical devices (Pebble Smartwatch, fall detector) and they will use a smartphone with The Fox Insight App (Android app), 24/7, during 13 weeks. Primary measures of interest are: 1) physical activity, falls and tremor, measured by the axial accelerometers embedded in the Pebble watch and fall detector; and 2) medication intake and mood reports measured by patients' self-report in the Android app. To measure motor impact, an assessment will be performed by physiotherapists who are all certified to perform the Movement Disorders Society Unified Parkinson's Disease Rating Scale (MDS-UPDRS).\n\nDiscussion: Management of PD patients is complex and appears to be a challenging task for health care professionals. The main reason is the lack of knowledge in the disease pattern. This issue could be solved by a long term follow-up of patients' during their everyday life, and wearable medical devices can act as a way to collect data about every day life activities. Therefore, the Real-PD study will be a first contribution in increasing the lack of knowledge in disease progression, developing a new medical decision system and improving PD patients' care."
+    ],
+    "intervention": [
+      "Fox Insight self-monitoring android app and falls detector"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Parkinson's Disease Symptoms"
+    ],
+    "population": [
+      "Parkinson, 30 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT02470780",
+    "summary": [
+      "This study investigates the effect of treating Small Intestinal Bacterial Overgrowth (SIBO) in patients with Parkinson's Disease (PD). It will test the hypothesis that treating SIBO with the antibiotic rifaximin will improve motor complications in previously SIBO-positive PD patients."
+    ],
+    "intervention": [
+      "Rifaximin"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Change in \"Off\" Time as Measured by Patient Diary, Change in \"Off\" Time as Measured by Wireless Computer Monitoring System"
+    ],
+    "population": [
+      "Parkinson, 18 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT02469090",
+    "summary": [
+      "A 12-week, prospective, multi-center, randomized, double-blind, placebo controlled, Phase 3 study in L-Dopa responsive PD patients with motor fluctuations (\"OFF\" episodes), designed to determine the efficacy, safety and tolerability of APL-130277."
+    ],
+    "intervention": [
+      "APL-130277"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Mean Change From Pre-Dose to 30 Minutes Post-Dose in The Movement Disorders Society Unified Parkinson's Disease Rating Scale Part III Motor Examination (MDS-UPDRS Part III) Score at Maintenance Visit 4 (MV4) - Week 12"
+    ],
+    "population": [
+      "Parkinson, 18 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT02462603",
+    "summary": [
+      "Open-label study with 30-day run-in phase and adaptive design component to include more participants if deemed appropriate by investigators."
+    ],
+    "intervention": [
+      "PTC-589"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Number of Participants With Drug-Related Serious Adverse Events (SAEs)"
+    ],
+    "population": [
+      "Parkinson, 21 - 75"
+    ]
+  },
+  {
+    "doc_id": "NCT02453386",
+    "summary": [
+      "Phase 3, international, multicenter, randomized, double-blind, placebo-controlled, parallel-group, 3-arm safety and efficacy study (Part A) with an open-label phase (Part B)."
+    ],
+    "intervention": [
+      "Tozadenant 60mg / 120mg"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Change From Baseline to Week 24 in the Number of Hours Per Day Spent in OFF Time"
+    ],
+    "population": [
+      "Parkinson, 30 - 80"
+    ]
+  },
+  {
+    "doc_id": "NCT02448914",
+    "summary": [
+      "This study evaluates the continuous addition of entacapone to infused levodopa and carbidopa on the pharmacokinetic (PK) profile in patients with advanced Parkinson's disease (PD). All patients will receive both study drugs, i.e. TRIGEL (levodopa, carbidopa, and entacapone) and Duodopa (levodopa and carbidopa), in randomized order."
+    ],
+    "intervention": [
+      "TRIGEL, then Duodopa"
+    ],
+    "comparator": [
+      "Duodopa, then TRIGEL"
+    ],
+    "outcome": [
+      "Dose Adjusted Area Under the Curve (AUC) (0-14h) for Levodopa"
+    ],
+    "population": [
+      "Parkinson, 30 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT02418546",
+    "summary": [
+      "This is a phase II feasibility, safety, tolerability and preliminary efficacy study of an e-Health application versus in-person nutritional counseling to maintain or increase weight in patients with neurodegenerative diseases including amyotrophic lateral sclerosis (ALS), Parkinson's Disease (PD) and Huntington's disease (HD). Primary Objectives include the feasibility, safety, tolerability and efficacy of an e-Health application to maintain or increase body weight compared to in-person nutritional counseling. Secondary Objectives are to measure the number of calories required to maintain or increase body weight in neurodegenerative diseases at all stages of the disease. Tertiary Objectives are to test the effects of an e-Health application compared to in-person nutritional counseling on disease progression using the ALSFRS-R, UHDRS or UDysRS, on survival, and on quality of life using the PROMIS SF v1.1 scale."
+    ],
+    "intervention": [
+      "Nutritional counseling using an e-Health Application"
+    ],
+    "comparator": [
+      "In-Person Nutritional Counseling"
+    ],
+    "outcome": [
+      "Estimated Mean Change in Weight From Baseline to 6 Months"
+    ],
+    "population": [
+      "Parkinson, 18 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT02401308",
+    "summary": [
+      "The purpose of the proposed study is to demonstrate that the functional outcomes of DBS surgery utilizing the \"asleep\" technique are not inferior to those reported for traditional \"awake\" DBS technique."
+    ],
+    "intervention": [
+      "Deep Brain Stimulation Awake  surgery"
+    ],
+    "comparator": [
+      "Asleep Deep Brain Stimulation surgery"
+    ],
+    "outcome": [
+      "Functional Outcomes"
+    ],
+    "population": [
+      "Parkinson, 18 - 85"
+    ]
+  },
+  {
+    "doc_id": "NCT02384421",
+    "summary": [
+      "Continuous deep brain stimulation (cDBS) is an established therapy for the major motor signs in Parkinson's disease. Currently, cDBS is limited to \"open-loop\" stimulation, without real-time adjustment to the patient's state of activity, fluctuations and types of motor symptoms, medication dosages, or neural markers of the disease. The purpose of this study is to determine if an adaptive DBS system, responding to patient specific, clinically relevant neural or kinematic feedback, is efficacious on the motor Unified Parkinson's Disease Rating Scale (UPDRS III) and specific phenotypic measures in Parkinson's Disease compared to OFF therapy (i.e., OFF DBS and withdrawn from medication) and more efficient than cDBS. Not every recruited participant completed every part of the protocol."
+    ],
+    "intervention": [
+      "Deep Brain Stimulation: Adaptive DBS"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Normalized Beta Band Power (13-30 Hz) During aDBS, Change in UPDRS III Score"
+    ],
+    "population": [
+      "Parkinson, 18 - 80"
+    ]
+  },
+  {
+    "doc_id": "NCT02380859",
+    "summary": [
+      "Subjects diagnosed with Idiopathic Parkinson's Disease, between ages of 40-85 inclusive, who have been referred for gait training. Since there can be subtle differences in the brain organization of left- and right-handed people that may influence some of the measurements, right handed participants are preferred. However, a left handed participant may be considered. Participants will be randomly assigned to one of two groups to undergo two weeks of twice-daily sessions. Group A receiving goggles fitted with lenses that distort vision and Group B patients receiving sham goggles"
+    ],
+    "intervention": [
+      "Prism adaptation"
+    ],
+    "comparator": [
+      "neutral lenses"
+    ],
+    "outcome": [
+      "Change in Postural Control - Reaction Time on the Limits of Stability Test (Smart Equitest Balance Master System), Change in Postural Control - Maximum Velocity on the Limits of Stability Test (Smart Equitest Balance Master System), Change in Postural Control - Maximum Extension on the Limits of Stability Test (Smart Equitest Balance Master System), Change in Postural Control - Composite Score on the Sensory Organization Test SMART EquiTest Balance Master, Change in Postural Control - Forward-backward Displacement of Centre of Gravity on the Sensory Organization Test SMART EquiTest Balance Master, Change in Postural Control - Composite Latency Score on the Motor Control Test, Change in Postural Control - Composite Latency Score on the Berg Balance Scale"
+    ],
+    "population": [
+      "Parkinson, 40 - 85"
+    ]
+  },
+  {
+    "doc_id": "NCT02365870",
+    "summary": [
+      "This study will evaluate the effectiveness of the rotigotine transdermal patch in reducing anxiety in people with Parkinson's disease."
+    ],
+    "intervention": [
+      "rotigotine transdermal patch"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Change in Anxiety Symptom Severity as Assessed by the Hamilton Anxiety Rating Scale"
+    ],
+    "population": [
+      "Parkinson, 21 - 89"
+    ]
+  },
+  {
+    "doc_id": "NCT02358876",
+    "summary": [
+      "Study objectives are to improve motion sensor algorithms for measuring bradykinesia in the clinic and the home, evaluate test-retest reliability of motion sensor algorithms for measuring bradykinesia compared to clinician raters, determine if participant-perceived symptom severities correlate with motion sensor measures, determine if speed, amplitude, and rhythm fluctuate differentially throughout the day in individuals with implanted deep brain stimulation systems, receive feedback on the usability of Kinesia One, and evaluate Kinesia One compliance in the home."
+    ],
+    "intervention": [
+      "Kinesia One Assessments"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Percentage of Kinesia One Assessments Performed"
+    ],
+    "population": [
+      "Parkinson, 18 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT02352363",
+    "summary": [
+      "This study is a 12-month, open-label, randomized, multicenter study which will evaluate the safety and efficacy of CVT-301 for the treatment of up to 5 OFF episodes per day in Parkinson's Disease (PD) patients experiencing motor fluctuations (OFF episodes) and will include a concurrent observational cohort of PD patients managed using the usual standards of care."
+    ],
+    "intervention": [
+      "CVT-301"
+    ],
+    "comparator": [
+      "Standard of care"
+    ],
+    "outcome": [
+      "Pulmonary Safety Assessed by Forced Expiratory Volume in 1 Second [FEV1], Pulmonary Safety Assessed by Forced Vital Capacity [FVC], Pulmonary Safety Assessed by Forced Expiratory Volume in 1 Second / Forced Vital Capacity Ratio"
+    ],
+    "population": [
+      "Parkinson, 30 - 85"
+    ]
+  },
+  {
+    "doc_id": "NCT02349789",
+    "summary": [
+      "Gait and balance disturbances are one of the most incapacitating symptoms of Parkinson's disease (PD) (Boonstra et al. 2008). They can cause falls and are therefore associated with the negative spiral of (near) falls, fear of falling, fractures, reduced mobility and social isolation; hence, having a profound negative impact on quality of life (Lin et al. 2012). Originally, symptoms of PD were ascribed to dopamine deficiency and basal ganglia dysfunction (Wu et al. 2013). However, in the last decades it has become clear that other brain structures are also involved in the pathophysiology of PD (Snijders et al. 2011; Stefani et al. 2007). An intriguing, emerging insight is that the cerebellum may be involved in the pathophysiology of PD (Wu et al. 2013). That is, the cerebellum is hyperactive in PD patients during different motor tasks (Yu et al. 2007; Hanakawa et al. 1999; del Olmo et al. 2006). However, whether cerebellar hyperactivity is pathological or compensatory and how it affects gait and balance in PD patients remain open questions. Here, the investigators aim to elucidate the role of the hyperactive cerebellum in gait dysfunction in PD patients by modulating cerebellar excitability with state-of-the-art non-invasive brain stimulation techniques and investigate the effects on gait."
+    ],
+    "intervention": [
+      "-"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "-"
+    ],
+    "population": [
+      "Parkinson, 18 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT02337725",
+    "summary": [
+      "The purpose of this study is to evaluate the efficacy and safety of TVP-1012 (1 mg/day) administered to Japanese patients with early Parkinson's disease."
+    ],
+    "intervention": [
+      "TVP-1012"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Change From Baseline in Movement Disorder Society-Unified Parkinson's Disease Rating Scale (MDS-UPDRS) Part II + Part III Total Score"
+    ],
+    "population": [
+      "Parkinson, 30 - 80"
+    ]
+  },
+  {
+    "doc_id": "NCT02337764",
+    "summary": [
+      "The purpose of this study is to evaluate long-term safety of TVP-1012 (1 mg/day) with levodopa in Japanese participants with Parkinson's disease."
+    ],
+    "intervention": [
+      "TVP-1012"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Number of Participants Who Experience at Least One Treatment Emergent Adverse Events (TEAEs) and Serious Adverse Events (SAEs)"
+    ],
+    "population": [
+      "Parkinson, 30 - 79"
+    ]
+  },
+  {
+    "doc_id": "NCT02337738",
+    "summary": [
+      "The purpose of this study is to evaluate the efficacy and safety of TVP-1012 (0.5 mg or 1 mg/day) as an add-on to levodopa in Japanese participants with Parkinson's disease with wearing-off phenomenon."
+    ],
+    "intervention": [
+      "TVP-1012 1 mg / 0.5 mg"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Change From Baseline in Mean Daily OFF-time During Treatment Period"
+    ],
+    "population": [
+      "Parkinson, 30 - 79"
+    ]
+  },
+  {
+    "doc_id": "NCT02337751",
+    "summary": [
+      "The purpose of this study is to evaluate the long-term safety of TVP-1012 (1 mg/day) in Japanese participants with early Parkinson's disease."
+    ],
+    "intervention": [
+      "TVP-1012"
+    ],
+    "comparator": [
+      "Placebo"
+    ],
+    "outcome": [
+      "Number of Participants Who Experience at Least One Treatment Emergent Adverse Event (TEAE)"
+    ],
+    "population": [
+      "Parkinson, 30 - 79"
+    ]
+  },
+  {
+    "doc_id": "NCT02263885",
+    "summary": [
+      "The proposed study will evaluate the safety, and initial efficacy of using the ExAblate Transcranial to create a unilateral lesion in the globus pallidus as an adjunct to PD medications in subjects who are over 30 years of age and considered medication-refractory with advanced idiopathic Parkinson's disease (PD)."
+    ],
+    "intervention": [
+      "ExAblate Transcranial System"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Adverse Events"
+    ],
+    "population": [
+      "Parkinson, 30 - 99"
+    ]
+  },
+  {
+    "doc_id": "NCT02352363",
+    "summary": [
+      "This study is a 12-month, open-label, randomized, multicenter study which will evaluate the safety and efficacy of CVT-301 for the treatment of up to 5 OFF episodes per day in Parkinson's Disease (PD) patients experiencing motor fluctuations (OFF episodes) and will include a concurrent observational cohort of PD patients managed using the usual standards of care."
+    ],
+    "intervention": [
+      "CVT-301 (low and high dose)"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Pulmonary Safety of CVT-301 Change From Baseline for FEV1, Pulmonary Safety for CVT-301 Change From Baseline for FVC, Pulmonary Safety for CVT-301 Change From Baseline for (FEV1/FVC)"
+    ],
+    "population": [
+      "Parkinson, 30 - 86"
+    ]
+  },
+  {
+    "doc_id": "NCT05205772",
+    "summary": [
+      "This is a randomized, single-blinded, triple crossover study focused on determining the feasibility of using transcranial magnetic stimulation (TMS) for treatment of Parkinson's disease related autonomic dysfunction and depression. Participants will undergo TMS to three brain regions: medial prefrontal cortex (mPFC) (experimental site), dorsolateral prefrontal cortex (DLPFC) (alternative experimental site), or primary sensory cortex (S1) (control site) in a triple crossover design. Participants will complete symptom questionnaires, neurologic examination and cognitive assessments, and orthostatic vital signs recording before and after each brain stimulation session."
+    ],
+    "intervention": [
+      "transcranial magnetic stimulation"
+    ],
+    "comparator": [
+      "-"
+    ],
+    "outcome": [
+      "Change in Frontal Midline Theta EEG Power After Brain Stimulation, Correlation Between the Scales for Outcomes in Parkinson's Disease - Autonomic (SCOPA-AUT) Total Score and EEG, Correlation Between the Orthostatic Hypotension Questionnaire (OHQ) and EEG, Correlation Between Degree of Orthostatic Hypotension and EEG"
+    ],
+    "population": [
+      "Parkinson, 50 - 90"
+    ]
+  }
+]
